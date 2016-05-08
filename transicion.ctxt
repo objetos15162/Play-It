@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=transicion
+comment0.text=\n\ Write\ a\ description\ of\ class\ transicion\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=op
+comment1.target=transicion(int)
+comment1.text=\n\ enta\ op\ que\ ayudar\u00E1\ a\ definir\ qu\u00E9\ mundo\ se\ abre\ \n\ despu\u00E9s\ de\ la\ transici\u00F3n\n
+comment2.params=
+comment2.target=void\ act()
+comment2.text=\n\ cuando\ se\ llama\ transicion\ por\ un\ objeto\ o\ clase,\ y\ el\ caso\ 1\ llama\ \n\ a\ las\ piezas\ (ensambles)\ disponibles\n\ la\ opcion\ 2\ abre\ un\ dueto\n\ la\ opcion\ 3\ abre\ el\ trio\n\ la\ opcion\ 4\ abre\ el\ cuarteto\n
+numComments=3
