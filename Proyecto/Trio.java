@@ -9,13 +9,15 @@ import javax.sound.sampled.*;
  */
 public class Trio extends Pieza
 {
-    private ArrayList<GreenfootSound> piano;
+    private ArrayList<GreenfootSound> piano,cello,violin;
     private Integer j=0;
     private GreenfootSound m;
      private long soundStartTime=0;
     public Trio()
     {
         piano=new ArrayList();
+        cello=new ArrayList();
+        violin=new ArrayList();
         fillArrays();
     }
     public void act() 
@@ -48,33 +50,28 @@ public class Trio extends Pieza
           }
    
         }
-        /*int i=1,j=0;
-        GreenfootSound x=null;
-        Boolean c;
-        while(x.isPlaying()||piano.get(j)!=null){
-            if(i==1){
-                System.out.println(piano.get(j));
-                System.out.println(x.toString());
-                x=new GreenfootSound(piano.get(j));
-                x.play();
-        
-                if(x.isPlaying()){
-                    i=0;
-                }else{
-                    i=1;
-                }
-            }
-        }*/
     
     }  
     private void fillArrays() 
     {
         int x=1;
-       
+        int y=1;
+        int z=1;
+        
         while(x!=27){
             piano.add(new GreenfootSound("tp"+x+".wav"));
             System.out.println("tp"+x+".wav");
             x++;
+        }
+        while(y!=28){
+            cello.add(new GreenfootSound("tc"+y+".wav"));
+            System.out.println("tc"+x+".wav");
+            y++;
+        }
+        while(z!=36){
+            violin.add(new GreenfootSound("tv"+z+".wav"));
+            System.out.println("tv"+z+".wav");
+            z++;
         }
        
     }
