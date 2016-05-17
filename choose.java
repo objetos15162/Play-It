@@ -3,10 +3,10 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 /**
  * Write a description of class choose here.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (Lilia & Esaú) 
+ * @version (may 2016)
  */
-public class choose extends Actor
+public class Choose extends Actor
 {
     /**
      * Act - do whatever the choose wants to do. This method is called whenever

@@ -3,10 +3,10 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 /**
  * Write a description of class about here.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (Lilia & Esaú) 
+ * @version (may 2016)
  */
-public class about extends botones
+public class About extends Boton
 {
     /**
      * Act - do whatever the about wants to do. This method is called whenever
@@ -17,7 +17,7 @@ public class about extends botones
         // Add your action code here.
         if(Greenfoot.mouseClicked(this))
         {
-            credits newWorld = new credits();
+            Credito newWorld = new Credito();
           
             Greenfoot.setWorld(newWorld);
         }
