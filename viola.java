@@ -3,10 +3,10 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 /**
  * Write a description of class viola here.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (Lilia & Esaú) 
+ * @version (may 2016)
  */
-public class viola extends detectores
+public class Viola extends Detector
 {
     /**
      * Act - do whatever the ej wants to do. This method is called whenever

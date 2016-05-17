@@ -3,16 +3,16 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 /**
  * Write a description of class pianistaa here.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (Lilia & Esaú) 
+ * @version (may 2016)
  */
-public class pianistaa extends pianista
+public class Pianistaa extends Pianista
 {
     /**
      * Act - do whatever the pianistaa wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
-    public pianistaa()
+    public Pianistaa()
     {
     
         im1=new GreenfootImage("pianista1.png");

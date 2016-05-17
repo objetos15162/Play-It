@@ -3,10 +3,10 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 /**
  * Write a description of class puntuacion here.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (Lilia & Esaú) 
+ * @version (may 2016)
  */
-public class puntuacion extends Actor
+public class Puntuacion extends Actor
 {
     /**
      * Act - do whatever the puntuacion wants to do. This method is called whenever

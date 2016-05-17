@@ -3,10 +3,10 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 /**
  * Write a description of class pianista here.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (Lilia & Esaú) 
+ * @version (may 2016)
  */
-public class pianista extends musicos
+public class Pianista extends Musico
 {
     /**
      * Act - do whatever the pianista wants to do. This method is called whenever
@@ -18,6 +18,8 @@ public class pianista extends musicos
         if(Greenfoot.isKeyDown("p"))
         {
         super.act();
+        Trio t=new Trio();
+        t.playSounds();
         }
     }
 }

@@ -14,7 +14,7 @@ public class Menu extends World
      * 
      */
     
-    private botones play,about,howt;
+    private Boton play,about,howt;
     private GreenfootImage ima1;
     /**
      * Constructor del Menú
@@ -47,14 +47,14 @@ public class Menu extends World
      */
     private void prepare()
     {
-        about about = new about();
+        About about = new About();
         addObject(about,488,272);
-        how_to how_to = new how_to();
+        BHowTo how_to = new BHowTo();
         addObject(how_to,120,273);
-        play play = new play();
+        BPlay play = new BPlay();
         addObject(play,303,274);
 
-        quit quit = new quit();
+        BQuit quit = new BQuit();
         addObject(quit,34,33);
         quit.setLocation(27,30);
     }

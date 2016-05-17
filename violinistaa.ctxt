@@ -1,8 +1,8 @@
 #BlueJ class context
-comment0.target=violinistaa
-comment0.text=\n\ Write\ a\ description\ of\ class\ violinistaa\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment0.target=Violinistaa
+comment0.text=\n\ Write\ a\ description\ of\ class\ violinistaa\ here.\n\ \n\ @author\ (Lilia\ &\ Esa\u00FA)\ \n\ @version\ (may\ 2016)\n
 comment1.params=
-comment1.target=violinistaa()
+comment1.target=Violinistaa()
 comment1.text=\n\ Act\ -\ do\ whatever\ the\ violinistaa\ wants\ to\ do.\ This\ method\ is\ called\ whenever\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\n
 comment2.params=
 comment2.target=void\ act()

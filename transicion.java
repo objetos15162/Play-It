@@ -3,10 +3,10 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 /**
  * Write a description of class transicion here.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (Lilia & Esaú) 
+ * @version (may 2016)
  */
-public class transicion extends World
+public class Transicion extends World
 {
 
     /**
@@ -20,7 +20,7 @@ public class transicion extends World
      * enta op que ayudará a definir qué mundo se abre 
      * después de la transición
      */
-    public transicion(int op)
+    public Transicion(int op)
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1); 
@@ -59,16 +59,16 @@ public class transicion extends World
             switch(o)
             {
             case 1:
-            menu_piezas newWorld = new menu_piezas();
+            MenuPiezas newWorld = new MenuPiezas();
             Greenfoot.setWorld(newWorld);
             break;
-            case 2: esc_dueto newW = new esc_dueto();
+            case 2: EscDueto newW = new EscDueto();
             Greenfoot.setWorld(newW);
             break;
-            case 3: esc_trio newoW = new esc_trio();
+            case 3: EscTrio newoW = new EscTrio();
             Greenfoot.setWorld(newoW);
             break;
-            case 4: esc_cuarteto newaW = new esc_cuarteto();
+            case 4: EscCuarteto newaW = new EscCuarteto();
             Greenfoot.setWorld(newaW);
             break;
             }

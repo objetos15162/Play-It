@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class violinistab extends violinista
+public class Violinistab extends Violinista
 {
     /**
      * Act - do whatever the violinistab wants to do. This method is called whenever
@@ -14,7 +14,7 @@ public class violinistab extends violinista
      */
     
     
-    public violinistab(){
+    public Violinistab(){
         im1=new GreenfootImage("violinista1b.png");
         im2=new GreenfootImage("violinista2b.png");
         im3=new GreenfootImage("violinista3b.png");

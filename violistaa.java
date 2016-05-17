@@ -6,13 +6,13 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class violistaa extends violista
+public class Violistaa extends Violista
 {
     /**
      * Act - do whatever the violistaa wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
-    public violistaa()
+    public Violistaa()
     {
         im1=new GreenfootImage("violista1a.png");
         im2=new GreenfootImage("violista2a.png");
