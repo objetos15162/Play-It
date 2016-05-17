@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Instruccion3
+comment0.text=\n\ Write\ a\ description\ of\ class\ instrucciones\ here.\n\ \n\ @author\ (Lilia\ &\ Esa\u00FA)\ \n\ @version\ (may\ 2016)\n
+comment1.params=nomArch
+comment1.target=Instruccion3(java.lang.String)
+comment2.params=
+comment2.target=void\ act()
+comment3.params=
+comment3.target=void\ generarInstruc()
+numComments=4

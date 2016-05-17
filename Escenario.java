@@ -3,8 +3,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 /**
  * Write a description of class Escenario here.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (Lilia & Esaú) 
+ * @version (may 2016)
  */
 public class Escenario extends World
 {
@@ -22,21 +22,21 @@ public class Escenario extends World
         super(600, 400, 1); 
         
         prepare();
-    }
+}
   
     
     private void prepare()
     {
 
 
-        violistaa violistaa = new violistaa();
+        Violistaa violistaa = new Violistaa();
         addObject(violistaa,253,238);
-        violinistab violinistab = new violinistab();
+        Violinistab violinistab = new Violinistab();
         addObject(violinistab,106,256);
-        violinistaa violinistaa = new violinistaa();
+        Violinistaa violinistaa = new Violinistaa();
         addObject(violinistaa,198,278);
         
-        cellistab cellistab = new cellistab();
+        Cellistab cellistab = new Cellistab();
         addObject(cellistab,420,253);
         cellistab.setLocation(400,239);
         cellistab.setLocation(408,232);
