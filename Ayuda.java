@@ -10,7 +10,7 @@ public class Ayuda extends World
 {
 
     /**
-     * Constructor for objects of class ayuda.
+     * Constructor para los objetos de la clase ayuda.
      * 
      */
     private GreenfootImage a1,aup,afin;
