@@ -3,8 +3,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 /**
  * Write a description of class cello here.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (Esaú & Lilia)
+ * @version (may 2016)
  */
 public class Cello extends Detector
 {

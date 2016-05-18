@@ -1,9 +1,10 @@
 #BlueJ class context
 comment0.target=BPlay
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ play\ here.\r\n\ \r\n\ @author\ (Lilia\ &\ Esa\u00FA)\ \r\n\ @version\ (may\ 2016)\r\n
+comment0.text=\n\ Bot\u00F3n\ para\ irse\ al\ men\u00FA\ de\ piezas\ para\ iniciar\ el\ juego\n\ \n\ @author\ (Lilia\ &\ Esa\u00FA)\ \n\ @version\ (may\ 2016)\n
 comment1.params=
 comment1.target=BPlay()
-comment1.text=\r\n\ Act\ -\ do\ whatever\ the\ play\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
+comment1.text=\n\ constructor\n
 comment2.params=
 comment2.target=void\ act()
+comment2.text=\n\ Act\ -\ lleva\ al\ men\u00FA\ de\ ensambles\ ya\ para\ iniciar\ el\ juego\ si\ \n\ se\ da\ click\ sobre\ \u00E9l\n
 numComments=3

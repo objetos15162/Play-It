@@ -1,7 +1,7 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class izq here.
+ * Flecha para ir a la pantala anterior en las instrucciones
  * 
  * @author (Lilia & Esaú) 
  * @version (may 2016)

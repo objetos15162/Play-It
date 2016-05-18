@@ -2,10 +2,11 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 import java.util.ArrayList;
 import javax.sound.sampled.*;
 /**
- * Write a description of class Trio here.
+ * clase de sonidos para el trio, genera los arreglos de sonido y se encarga de
+ * su reproducción
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (LiliaC) 
+ * @version (may 2016)
  */
 public class Trio extends Pieza
 {
@@ -14,7 +15,10 @@ public class Trio extends Pieza
     private ArrayList<GreenfootSound> violin;
     private Integer j;
     private GreenfootSound m;
-     private long soundStartTime;
+    private long soundStartTime;
+    /**
+     * constructor de la clase Trio
+     */
     public Trio()
     {
         piano = new ArrayList();
@@ -24,6 +28,9 @@ public class Trio extends Pieza
         soundStartTime = 0;
         fillArrays();
     }
+    /**
+     * 
+     */
     public void act() 
     {
         // Add your action code here.
@@ -32,6 +39,9 @@ public class Trio extends Pieza
             playSounds();
         }
     }
+    /**
+     * 
+     */
     public void playSounds() 
     {
         // mientras siga habiendo elementos en el arreglo
@@ -56,6 +66,10 @@ public class Trio extends Pieza
         }
     
     }  
+    /**
+     * Método para rellenar los arreglos con los archivos de sonido
+     * 
+     */
     private void fillArrays() 
     {
         int x=1;

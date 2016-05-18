@@ -4,7 +4,8 @@ import java.util.Scanner;
 import java.io.IOException;
 import java.io.File;
 /**
- * La funcion principal de la clase es recibir un string en su contructor que sera el nombre de algun archivo para asi poder abrirlo y leerlo linea por linea
+ * La funcion principal de la clase es recibir un string 
+ * en su contructor que sera el nombre de algun archivo para asi poder abrirlo y leerlo linea por linea
  * 
  * @author (EsauBz) 
  * @version (1.0)

@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Instruccion2
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ Instruccion\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\nClase\ para\ generar\ las\ instrucciones\ para\ el\ dueto\n\ usa\ la\ clase\ Lectura\ para\ leer\ un\ archivo\ con\ el\ que\ \n\ se\ define\ cad\ acuando\ mostrar\ las\ instrucciones\n\ \n\ @author\ (Esa\u00FA\ &\ Lilia)\ \n\ @version\ (may\ 2016)\n
 comment1.params=
 comment1.target=Instruccion2()
 comment2.params=

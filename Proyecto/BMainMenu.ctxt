@@ -1,7 +1,7 @@
 #BlueJ class context
 comment0.target=BMainMenu
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ main_menu\ here.\r\n\ \r\n\ @author\ (Lilia\ &\ Esa\u00FA)\ \r\n\ @version\ (may\ 2016)\r\n
+comment0.text=\n\ bot\u00F3n\ para\ regresar\ al\ men\u00FA\ principal\n\ \n\ @author\ (Lilia\ &\ Esa\u00FA)\ \n\ @version\ (may\ 2016)\n
 comment1.params=
 comment1.target=void\ act()
-comment1.text=\r\n\ Act\ -\ do\ whatever\ the\ main_menu\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
+comment1.text=\n\ Act\ -\ si\ se\ da\ click\ en\ \u00E9l,\ se\ manda\ al\ men\u00FA\ principal\n
 numComments=2

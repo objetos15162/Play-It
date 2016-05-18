@@ -1,11 +1,11 @@
 #BlueJ class context
 comment0.target=Musico
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ musicos\ here.\r\n\ \r\n\ @author\ (Lilia\ &\ Esa\u00FA)\ \r\n\ @version\ (may\ 2016)\r\n
+comment0.text=\n\ Write\ a\ description\ of\ class\ musicos\ here.\n\ \n\ @author\ (Lilia\ &\ Esa\u00FA)\ \n\ @version\ (may\ 2016)\n
 comment1.params=
 comment1.target=Musico()
 comment2.params=
 comment2.target=void\ act()
-comment2.text=\r\n\ cambia\ las\ imagenes\ para\ hacer\ la\ animaci\u00F3n\ de\ los\ musicos\r\n\ dir\ muestra\ si\ van\ de\ ida\ o\ vuelta\r\n\ mov\ muestra\ en\ qu\u00E9\ etapa\ del\ movimiento\ va\r\n
+comment2.text=\n\ cambia\ las\ imagenes\ para\ hacer\ la\ animaci\u00F3n\ de\ los\ musicos\n\ dir\ muestra\ si\ van\ de\ ida\ o\ vuelta\n\ mov\ muestra\ en\ qu\u00E9\ etapa\ del\ movimiento\ va\n
 comment3.params=
 comment3.target=void\ musiciansmove()
 numComments=4

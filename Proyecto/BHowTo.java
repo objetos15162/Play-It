@@ -1,7 +1,8 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class how_to here.
+ * Botón para llevar a las instrucciones del juego
+ * llama a la clase ayuda
  * 
  * @author (Lilia & Esaú) 
  * @version (may 2016)
@@ -9,14 +10,13 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class BHowTo extends Boton
 {
     /**
-     * Act - do whatever the how_to wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
+     * Act - si se da click en el botón, lleva a las pantallas de ayuda
+     * 
      */
     public void act() 
     {
         // Add your action code here.
-         if(Greenfoot.mouseClicked(this))
-        {
+         if(Greenfoot.mouseClicked(this)){
             Ayuda newWorld = new Ayuda();
             Greenfoot.setWorld(newWorld);
         }

@@ -1,9 +1,9 @@
 #BlueJ class context
 comment0.target=EscTrio
-comment0.text=\r\n\ Clase\ que\ maneja\ la\ parte\ del\ tr\u00EDo\r\n\ \r\n\ @author\ Lilia\ y\ Esa\u00FA\ \r\n\ @version\ (11.04.2016)\r\n
+comment0.text=\n\ Clase\ que\ maneja\ la\ parte\ del\ tr\u00EDo\n\ \n\ @author\ Lilia\ y\ Esa\u00FA\ \n\ @version\ (11.04.2016)\n
 comment1.params=
 comment1.target=EscTrio()
 comment2.params=
 comment2.target=void\ prepare()
-comment2.text=\r\n\ Prepara\ el\ mundo\r\n\ Crea\ el\ pianista,\ violinista\ y\ cellista\ y\ los\ posiciona\r\n
+comment2.text=\n\ Prepara\ el\ mundo\n\ Crea\ el\ pianista,\ violinista\ y\ cellista\ y\ los\ posiciona\n
 numComments=3

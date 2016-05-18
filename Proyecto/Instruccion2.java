@@ -1,10 +1,12 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Instruccion here.
+ *Clase para generar las instrucciones para el dueto
+ * usa la clase Lectura para leer un archivo con el que 
+ * se define cad acuando mostrar las instrucciones
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (Esaú & Lilia) 
+ * @version (may 2016)
  */
 public class Instruccion2 extends Lineas2
 {
@@ -12,7 +14,8 @@ public class Instruccion2 extends Lineas2
      * Act - do whatever the Instruccion wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
-    private Lectura p,v;
+    private Lectura p;
+    private Lectura v;
     
     public Instruccion2()
     {

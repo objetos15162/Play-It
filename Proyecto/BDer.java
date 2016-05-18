@@ -1,7 +1,7 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class der here.
+ * Flecha para ir a la derecha o a la pantalla siguiente en las instrucciones
  * 
  * @author (Lilia & Esaú) 
  * @version (may 2016)

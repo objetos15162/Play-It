@@ -1,18 +1,20 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Instruccion2 here.
+ * Clase para generar las instrucciones para el cuarteto
+ * usa la clase Lectura para leer un archivo con el que 
+ * se define cada cuando mostrar las instrucciones
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (Esaú & Lilia)
+ * @version (may 2016)
  */
 public class Instruccion4 extends Lineas4
 {
-    /**
-     * Act - do whatever the Instruccion2 wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
-     private Lectura va,vb,v,c;
+    
+     private Lectura va;
+     private Lectura vb;
+     private Lectura v;
+     private Lectura c;
     public Instruccion4()
     {
         

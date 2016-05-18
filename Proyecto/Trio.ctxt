@@ -1,12 +1,16 @@
 #BlueJ class context
 comment0.target=Trio
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ Trio\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\n\ clase\ de\ sonidos\ para\ el\ trio,\ genera\ los\ arreglos\ de\ sonido\ y\ se\ encarga\ de\n\ su\ reproducci\u00F3n\n\ \n\ @author\ (LiliaC)\ \n\ @version\ (may\ 2016)\n
 comment1.params=
 comment1.target=Trio()
+comment1.text=\n\ constructor\ de\ la\ clase\ Trio\n
 comment2.params=
 comment2.target=void\ act()
+comment2.text=\n\ \n
 comment3.params=
 comment3.target=void\ playSounds()
+comment3.text=\n\ \n
 comment4.params=
 comment4.target=void\ fillArrays()
+comment4.text=\n\ M\u00E9todo\ para\ rellenar\ los\ arreglos\ con\ los\ archivos\ de\ sonido\n\ \n
 numComments=5
