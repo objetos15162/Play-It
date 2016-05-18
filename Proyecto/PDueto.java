@@ -18,9 +18,7 @@ public class PDueto extends BotonMenu
         if(Greenfoot.mouseClicked(this))
         {
             Transicion newWorld = new Transicion(2);
-          
-            Greenfoot.setWorld(newWorld);
-            
+            Greenfoot.setWorld(newWorld);  
         }
     }    
 }

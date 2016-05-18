@@ -18,7 +18,6 @@ public class PTrio extends BotonMenu
         if(Greenfoot.mouseClicked(this))
         {
             Transicion newWorld = new Transicion(3);
-          
             Greenfoot.setWorld(newWorld);
         }
     }    

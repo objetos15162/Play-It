@@ -18,7 +18,6 @@ public class PCuarteto extends BotonMenu
         if(Greenfoot.mouseClicked(this))
         {
             Transicion newWorld = new Transicion(4);
-          
             Greenfoot.setWorld(newWorld);
         }
     }    

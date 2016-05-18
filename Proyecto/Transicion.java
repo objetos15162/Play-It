@@ -13,8 +13,14 @@ public class Transicion extends World
      * Constructor for objects of class transicion.
      * 
      */
-    private GreenfootImage ima1,ima2,ima3,ima4,ima5,ima6;
-    private Integer  x,o;
+    private GreenfootImage ima1;
+    private GreenfootImage ima2;
+    private GreenfootImage ima3;
+    private GreenfootImage ima4;
+    private GreenfootImage ima5;
+    private GreenfootImage ima6;
+    private Integer  x;
+    private Integer  o;
     
     /**
      * enta op que ayudará a definir qué mundo se abre 
@@ -24,14 +30,14 @@ public class Transicion extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1); 
-        o=op;
-        x=3;
-        ima1=new GreenfootImage("m4.png");
-        ima2=new GreenfootImage("e2.png");
-        ima3=new GreenfootImage("e3.png");
-        ima4=new GreenfootImage("e4.png");
-        ima5=new GreenfootImage("e5.png");
-        ima6=new GreenfootImage("e6.png");
+        o = op;
+        x = 3;
+        ima1 = new GreenfootImage("m4.png");
+        ima2 = new GreenfootImage("e2.png");
+        ima3 = new GreenfootImage("e3.png");
+        ima4 = new GreenfootImage("e4.png");
+        ima5 = new GreenfootImage("e5.png");
+        ima6 = new GreenfootImage("e6.png");
 
         
     }
@@ -57,21 +63,24 @@ public class Transicion extends World
             setBackground(ima6);
             Greenfoot.delay(x);
             switch(o)
-            {
-            case 1:
-            MenuPiezas newWorld = new MenuPiezas();
-            Greenfoot.setWorld(newWorld);
-            break;
-            case 2: EscDueto newW = new EscDueto();
-            Greenfoot.setWorld(newW);
-            break;
-            case 3: EscTrio newoW = new EscTrio();
-            Greenfoot.setWorld(newoW);
-            break;
-            case 4: EscCuarteto newaW = new EscCuarteto();
-            Greenfoot.setWorld(newaW);
-            break;
-            }
+           {
+              case 1:
+             MenuPiezas newWorld = new MenuPiezas();
+             Greenfoot.setWorld(newWorld);
+               break;
+              case 2: 
+             EscDueto newW = new EscDueto();
+             Greenfoot.setWorld(newW);
+               break;
+             case 3: 
+             EscTrio newoW = new EscTrio();
+             Greenfoot.setWorld(newoW);
+               break;
+             case 4: 
+             EscCuarteto newaW = new EscCuarteto();
+             Greenfoot.setWorld(newaW);
+               break;
+           }
             
     }
 }

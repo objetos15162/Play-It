@@ -13,18 +13,22 @@ public class Ayuda extends World
      * Constructor para los objetos de la clase ayuda.
      * 
      */
-    private GreenfootImage a1,aup,afin;
-    private Boton bmore, bplay;
-    private Integer cont=1;
+    private GreenfootImage a1;
+    private GreenfootImage aup;
+    private GreenfootImage afin;
+    private Boton bmore;
+    private Boton bplay;
+    private Integer cont;
     public Ayuda()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1); 
+        cont = 1;
         a1 = new GreenfootImage("ayuda_carteles1.png");
         aup = new GreenfootImage("ayuda_cartelesuphere.png");
         afin = new GreenfootImage("ayuda_cartelesfin.png");
         bmore = new BMoreAbout();
-        bplay=new BPlay();
+        bplay= new BPlay();
         setBackground(a1);
         prepare();
     }
@@ -37,15 +41,14 @@ public class Ayuda extends World
     {
         BMainMenu main_menu = new BMainMenu();
         addObject(main_menu,28,383);
-   
-        
         
     }
     public void act()
     {
-        switch(cont)
-        {
-        case 1: if(Greenfoot.isKeyDown("right"))
+    switch(cont)
+    {
+        case 1: 
+         if(Greenfoot.isKeyDown("right"))
                 {
                     Greenfoot.delay(2);
                     setBackground(aup);
@@ -53,7 +56,8 @@ public class Ayuda extends World
                 }
                 
         break;
-        case 2: if(Greenfoot.isKeyDown("right"))
+        case 2:
+           if(Greenfoot.isKeyDown("right"))
                 {
                     Greenfoot.delay(2);
                     setBackground(afin);
@@ -61,12 +65,13 @@ public class Ayuda extends World
                     addObject(bplay, 400,300);
                     cont++;
                 }
-                else {if(Greenfoot.isKeyDown("left"))
+                else {
+                    if(Greenfoot.isKeyDown("left"))
                 {
-                cont--;
-            }
+                  cont--;
+                }
         }
-        
+        break;
     }
     }
 }

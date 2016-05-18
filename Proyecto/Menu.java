@@ -14,7 +14,9 @@ public class Menu extends World
      * 
      */
     
-    private Boton play,about,howt;
+    private Boton play;
+    private Boton about;
+    private Boton howt;  //Unuse variable
     private GreenfootImage ima1;
     /**
      * Constructor del Menú
@@ -26,7 +28,7 @@ public class Menu extends World
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         
         super(600, 400, 1); 
-        ima1=new GreenfootImage("m4.png");
+        ima1 = new GreenfootImage("m4.png");
         setBackground(ima1);
         prepare();
     }
@@ -38,7 +40,6 @@ public class Menu extends World
     public void act()
     {
        
-
     }
     
     /**
@@ -47,14 +48,16 @@ public class Menu extends World
      */
     private void prepare()
     {
-        About about = new About();
+        about = new About();
         addObject(about,488,272);
+        
         BHowTo how_to = new BHowTo();
         addObject(how_to,120,273);
-        BPlay play = new BPlay();
+        
+        play = new BPlay();
         addObject(play,303,274);
 
-        BQuit quit = new BQuit();
+        BQuit quit = new BQuit(); //Undeclared variable
         addObject(quit,34,33);
         quit.setLocation(27,30);
     }

@@ -30,8 +30,10 @@ public class MenuPiezas extends World
 
         PDueto p_dueto = new PDueto();
         addObject(p_dueto,123,208);
+        
         PTrio p_trio = new PTrio();
         addObject(p_trio,304,198);
+        
         PCuarteto p_cuarteto = new PCuarteto();
         addObject(p_cuarteto,494,196);
 
