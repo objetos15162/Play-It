@@ -17,9 +17,9 @@ public class Pianista extends Musico
     {
         if(Greenfoot.isKeyDown("p"))
         {
-        super.act();
-        Trio t=new Trio();
-        t.playSounds();
+          super.act();
+          Trio t=new Trio();
+          t.playSounds();
         }
     }
 }

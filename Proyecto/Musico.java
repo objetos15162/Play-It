@@ -12,7 +12,10 @@ public class Musico extends Actor
      * Act - do whatever the musicos wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
-    public GreenfootImage im1,im2,im3,im4;
+    public GreenfootImage im1;
+    public GreenfootImage im2;
+    public GreenfootImage im3;
+    public GreenfootImage im4;
     private Integer mov=1;
     private Integer dir=1;
     public Musico()
@@ -27,10 +30,7 @@ public class Musico extends Actor
     public void act() 
     {
         // Add your action code here.
-        musiciansmove();
-        
-            
-    
+        musiciansmove();     
     }
     private void musiciansmove()
     {

@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Instruccion3
-comment0.text=\n\ Write\ a\ description\ of\ class\ instrucciones\ here.\n\ \n\ @author\ (Lilia\ &\ Esa\u00FA)\ \n\ @version\ (may\ 2016)\n
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ instrucciones\ here.\r\n\ \r\n\ @author\ (Lilia\ &\ Esa\u00FA)\ \r\n\ @version\ (may\ 2016)\r\n
 comment1.params=nomArch
 comment1.target=Instruccion3(java.lang.String)
 comment2.params=

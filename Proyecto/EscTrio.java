@@ -14,7 +14,9 @@ public class EscTrio extends Escenarios
      * Constructor para los objetos, llama a la función prepare
      * 
      */
-    private Instruccion3 insp,insv,insc;
+    private Instruccion3 insp;
+    private Instruccion3 insv;
+    private Instruccion3 insc;
     
     public EscTrio()
     {    
@@ -24,10 +26,7 @@ public class EscTrio extends Escenarios
        insv=new Instruccion3("trioviolin.txt");
        
        prepare();
-       
-       
-       
-    
+                 
     }
 
     /**
@@ -38,8 +37,10 @@ public class EscTrio extends Escenarios
     {
         Pianistaa pianistaa2 = new Pianistaa();
         addObject(pianistaa2,356,212);
+        
         Violinistaa violinistaa = new Violinistaa();
         addObject(violinistaa,181,277);
+        
         Cellistab cellistab2 = new Cellistab();
         addObject(cellistab2,407,273);
 
@@ -49,14 +50,13 @@ public class EscTrio extends Escenarios
         addObject(insv,588,37);
         addObject(insp,588,92);
         addObject(insc,588,148);
-        
 
         Lineas3 lineas3 = new Lineas3();
         addObject(lineas3,353,93);
-
         
         Piano piano3 = new Piano();
         addObject(piano3,85,91);
+        
         Cello cello = new Cello();
         addObject(cello,93,149);
 

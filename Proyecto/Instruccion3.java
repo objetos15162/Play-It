@@ -17,7 +17,7 @@ public class Instruccion3 extends Lineas3
     
     public Instruccion3(String nomArch)
     {
-        arch=new Lectura(nomArch);
+        arch = new Lectura(nomArch);
        
         
     }
@@ -28,7 +28,6 @@ public class Instruccion3 extends Lineas3
     }    
     public void generarInstruc()
     {
-       
         
     }
    

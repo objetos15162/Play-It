@@ -30,7 +30,7 @@ public class Violinistab extends Violinista
         // Add your action code here.
         if(Greenfoot.isKeyDown("z"))
         {
-        super.act();
+         super.act();
         }
     }   
     

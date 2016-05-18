@@ -18,6 +18,6 @@ public class Violista extends Musico
          if(Greenfoot.isKeyDown("l"))
          {
             super.act();
-            }
+         }
      }
 }

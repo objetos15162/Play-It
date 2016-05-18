@@ -28,8 +28,6 @@ public class Pianistaa extends Pianista
     public void act() 
     {
         // Add your action code here.
-        super.act();
-        
-        
+        super.act();     
     }    
 }

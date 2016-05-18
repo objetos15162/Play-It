@@ -9,15 +9,19 @@ import javax.sound.sampled.*;
  */
 public class Trio extends Pieza
 {
-    private ArrayList<GreenfootSound> piano,cello,violin;
-    private Integer j=0;
+    private ArrayList<GreenfootSound> piano;
+    private ArrayList<GreenfootSound> cello;
+    private ArrayList<GreenfootSound> violin;
+    private Integer j;
     private GreenfootSound m;
-     private long soundStartTime=0;
+     private long soundStartTime;
     public Trio()
     {
-        piano=new ArrayList();
-        cello=new ArrayList();
-        violin=new ArrayList();
+        piano = new ArrayList();
+        cello = new ArrayList();
+        violin = new ArrayList();
+        j = 0;
+        soundStartTime = 0;
         fillArrays();
     }
     public void act() 
