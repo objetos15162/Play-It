@@ -3,5 +3,5 @@ comment0.target=Violinista
 comment0.text=\n\ Write\ a\ description\ of\ class\ violinista\ here.\n\ \n\ @author\ (Lilia\ &\ Esa\u00FA)\ \n\ @version\ (may\ 2016)\n
 comment1.params=
 comment1.target=void\ act()
-comment1.text=\n\ Act\ -\ do\ whatever\ the\ violinista\ wants\ to\ do.\ This\ method\ is\ called\ whenever\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\n
+comment1.text=\n\ Act\ -\ llama\ a\ Act\ de\ Musico\ para\ hacer\ el\ cambio\ de\ las\ im\u00E1genes\ y\ que\ se\ mueva\n
 numComments=2

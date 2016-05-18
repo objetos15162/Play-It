@@ -19,11 +19,11 @@ public class Transicion extends World
     private GreenfootImage ima4;
     private GreenfootImage ima5;
     private GreenfootImage ima6;
-    private Integer  x;
-    private Integer  o;
+    private Integer  x; // tiempo que espera para hacer la transicion más suave
+    private Integer  o; //variable para escoger qué escenario se abre
     
     /**
-     * enta op que ayudará a definir qué mundo se abre 
+     * @param int op que ayudará a definir qué mundo se abre 
      * después de la transición
      */
     public Transicion(int op)
@@ -50,6 +50,7 @@ public class Transicion extends World
      */
     public void act()
     {
+           //cambio de imágenes
             setBackground(ima1);
             Greenfoot.delay(x);
             setBackground(ima2);

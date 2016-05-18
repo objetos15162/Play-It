@@ -9,8 +9,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Cellista extends Musico
 {
     /**
-     * Act - do whatever the cellista wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
+     * Act - Llama a act de Músico para el intercambio de imágenes y que parezca 
+     * que se mueve
      */
     public void act()
     {

@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Musico
-comment0.text=\n\ Write\ a\ description\ of\ class\ musicos\ here.\n\ \n\ @author\ (Lilia\ &\ Esa\u00FA)\ \n\ @version\ (may\ 2016)\n
+comment0.text=\n\ Maneja\ todos\ los\ m\u00FAsicos\ y\ sus\ movimientos\n\ \n\ @author\ (Lilia\ &\ Esa\u00FA)\ \n\ @version\ (may\ 2016)\n
 comment1.params=
 comment1.target=Musico()
 comment2.params=

@@ -1,7 +1,8 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class pianista here.
+ * Clase para el Pianista
+ * declara sus imágenes y controla cuándo se mueve
  * 
  * @author (Lilia & Esaú) 
  * @version (may 2016)
@@ -9,8 +10,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Pianista extends Musico
 {
     /**
-     * Act - do whatever the pianista wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
+     * Act - Llama a pianista para que se mueva y los sonidos una vez que pasa eso
      */
     
     public void act()

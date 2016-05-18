@@ -1,7 +1,7 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class ayuda here.
+ * Clase que muestra y maneja las pantallas de ayuda
  * 
  * @author (Lilia & Esaú) 
  * @version (may 2016)
@@ -45,6 +45,7 @@ public class Ayuda extends World
     }
     public void act()
     {
+        //transicion entre pantallas
     switch(cont)
     {
         case 1: 

@@ -1,7 +1,7 @@
 #BlueJ class context
 comment0.target=Pianista
-comment0.text=\n\ Write\ a\ description\ of\ class\ pianista\ here.\n\ \n\ @author\ (Lilia\ &\ Esa\u00FA)\ \n\ @version\ (may\ 2016)\n
+comment0.text=\n\ Clase\ para\ el\ Pianista\n\ declara\ sus\ im\u00E1genes\ y\ controla\ cu\u00E1ndo\ se\ mueve\n\ \n\ @author\ (Lilia\ &\ Esa\u00FA)\ \n\ @version\ (may\ 2016)\n
 comment1.params=
 comment1.target=void\ act()
-comment1.text=\n\ Act\ -\ do\ whatever\ the\ pianista\ wants\ to\ do.\ This\ method\ is\ called\ whenever\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\n
+comment1.text=\n\ Act\ -\ Llama\ a\ pianista\ para\ que\ se\ mueva\ y\ los\ sonidos\ una\ vez\ que\ pasa\ eso\n
 numComments=2

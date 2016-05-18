@@ -1,7 +1,8 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class pianistaa here.
+ * Clase para el Pianista
+ * declara sus imágenes y controla cuándo se mueve
  * 
  * @author (Lilia & Esaú) 
  * @version (may 2016)

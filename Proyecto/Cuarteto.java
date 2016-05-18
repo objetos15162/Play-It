@@ -1,12 +1,13 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Cuarteto here.
+ * clase de sonidos para el cuarteto, genera los arreglos de sonido y se encarga de
+ * su reproducción
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (LiliaC) 
+ * @version (may 2016)
  */
-public class Cuarteto extends Pieza
+public class Cuarteto extends Sonido
 {
     /**
      * Act - do whatever the Cuarteto wants to do. This method is called whenever

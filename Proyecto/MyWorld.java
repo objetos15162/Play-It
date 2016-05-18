@@ -13,13 +13,15 @@ public class MyWorld extends World
      * Constructor para los objetos
      * 
      */
-   
     //violinista v=new violinista();
-    private GreenfootImage imag1,imag2,imag3,imag4;
+    private GreenfootImage imag1;
+    private GreenfootImage imag2;
+    private GreenfootImage imag3;
+    private GreenfootImage imag4;
     public MyWorld()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-          super(600, 400, 1); 
+        super(600, 400, 1); 
           
         imag1=new GreenfootImage("m1.png");
         imag2=new GreenfootImage("m2.png");

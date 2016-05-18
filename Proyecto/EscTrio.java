@@ -7,7 +7,7 @@ import javax.sound.sampled.*;
  * @author Lilia y Esaú 
  * @version (11.04.2016)
  */
-public class EscTrio extends Escenarios
+public class EscTrio extends Ensamble
 {
 
     /**
@@ -61,10 +61,7 @@ public class EscTrio extends Escenarios
         addObject(cello,93,149);
 
         Violin violin = new Violin();
-        addObject(violin,93,39);
-        violin.setLocation(78,36);
-        violin.setLocation(85,39);
-        violin.setLocation(84,36);
+        addObject(violin,84,36);
     }
 
     

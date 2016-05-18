@@ -1,7 +1,7 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class menu_piezas here.
+ * Muestra el menú de las piezas para jugar
  * 
  * @author (Lilia & Esaú) 
  * @version (april & may 2016)
@@ -10,7 +10,7 @@ public class MenuPiezas extends World
 {
 
     /**
-     * Constructor for objects of class menu_piezas.
+     * Constructor para la clase menu_piezas.
      * 
      */
     public MenuPiezas()
@@ -29,23 +29,17 @@ public class MenuPiezas extends World
     {
 
         PDueto p_dueto = new PDueto();
-        addObject(p_dueto,123,208);
-        
+        addObject(p_dueto,105,264);
         PTrio p_trio = new PTrio();
-        addObject(p_trio,304,198);
-        
+        addObject(p_trio,294,264);
         PCuarteto p_cuarteto = new PCuarteto();
-        addObject(p_cuarteto,494,196);
-
-        p_dueto.setLocation(105,268);
-        p_cuarteto.setLocation(482,264);
-        p_trio.setLocation(294,266);
+        addObject(p_cuarteto,482,264);
+       
         Choose choose = new Choose();
-        addObject(choose,310,87);
-        choose.setLocation(303,71);
-        choose.setLocation(298,71);
+        addObject(choose,298,71);
+        
         BMainMenu main_menu = new BMainMenu();
-        addObject(main_menu,31,390);
-        main_menu.setLocation(27,384);
+        addObject(main_menu,27,384);
+        
     }
 }

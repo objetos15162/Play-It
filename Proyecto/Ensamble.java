@@ -1,19 +1,20 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class escenarios here.
+ * Clase escenarios que contiene los escenarios de los distintos duetos
+ * 
  * 
  * @author (Lilia & Esaú) 
  * @version (may 2016)
  */
-public class Escenarios extends World
+public class Ensamble extends World
 {
 
     /**
      * Constructor for objects of class escenarios.
      * 
      */
-    public Escenarios()
+    public Ensamble()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1);

@@ -8,7 +8,7 @@ import javax.sound.sampled.*;
  * @author (LiliaC) 
  * @version (may 2016)
  */
-public class Trio extends Pieza
+public class Trio extends Sonido
 {
     private ArrayList<GreenfootSound> piano;
     private ArrayList<GreenfootSound> cello;
@@ -68,27 +68,28 @@ public class Trio extends Pieza
     }  
     /**
      * Método para rellenar los arreglos con los archivos de sonido
-     * 
+     * en secuencia
      */
     private void fillArrays() 
     {
+        //contadores
         int x=1;
         int y=1;
         int z=1;
         
         while(x!=27){
             piano.add(new GreenfootSound("tp"+x+".wav"));
-            System.out.println("tp"+x+".wav");
+            //System.out.println("tp"+x+".wav"); comprueba que se rellenen correctamente
             x++;
         }
         while(y!=28){
             cello.add(new GreenfootSound("tc"+y+".wav"));
-            System.out.println("tc"+x+".wav");
+            //System.out.println("tc"+x+".wav");
             y++;
         }
         while(z!=36){
             violin.add(new GreenfootSound("tv"+z+".wav"));
-            System.out.println("tv"+z+".wav");
+            //System.out.println("tv"+z+".wav");
             z++;
         }
        

@@ -1,10 +1,11 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class cellistab here.
+ * Clase para el cellista b
+ * declara sus imágenes y controla cuándo se mueve
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (Lilia & Esaú) 
+ * @version (may 2016)
  */
 public class Cellistab extends Cellista
 {

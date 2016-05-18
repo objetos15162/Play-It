@@ -1,7 +1,7 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class musicos here.
+ * Maneja todos los músicos y sus movimientos
  * 
  * @author (Lilia & Esaú) 
  * @version (may 2016)

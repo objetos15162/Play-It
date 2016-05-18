@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Cellistab
-comment0.text=\n\ Write\ a\ description\ of\ class\ cellistab\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment0.text=\n\ Clase\ para\ el\ cellista\ b\n\ declara\ sus\ im\u00E1genes\ y\ controla\ cu\u00E1ndo\ se\ mueve\n\ \n\ @author\ (Lilia\ &\ Esa\u00FA)\ \n\ @version\ (may\ 2016)\n
 comment1.params=
 comment1.target=Cellistab()
 comment1.text=\n\ Act\ -\ do\ whatever\ the\ cellistab\ wants\ to\ do.\ This\ method\ is\ called\ whenever\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\n

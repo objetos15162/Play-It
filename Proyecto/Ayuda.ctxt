@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Ayuda
-comment0.text=\n\ Write\ a\ description\ of\ class\ ayuda\ here.\n\ \n\ @author\ (Lilia\ &\ Esa\u00FA)\ \n\ @version\ (may\ 2016)\n
+comment0.text=\n\ Clase\ que\ muestra\ y\ maneja\ las\ pantallas\ de\ ayuda\n\ \n\ @author\ (Lilia\ &\ Esa\u00FA)\ \n\ @version\ (may\ 2016)\n
 comment1.params=
 comment1.target=Ayuda()
 comment2.params=

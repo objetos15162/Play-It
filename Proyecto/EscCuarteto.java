@@ -1,19 +1,22 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class esc_cuarteto here.
+ * Crea el escenario para el cuarteto
  * 
  * @author (Lilia & Esaú) 
  * @version (may 2016)
  */
-public class EscCuarteto extends Escenarios
+public class EscCuarteto extends Ensamble
 {
 
     /**
      * Constructor for objects of class esc_cuarteto.
      * 
      */
-    private Instruccion4 insva,insv,insc,insvb;
+    private Instruccion4 insva;
+    private Instruccion4 insv;
+    private Instruccion4 insc;
+    private Instruccion4 insvb;
     public EscCuarteto()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
@@ -31,39 +34,27 @@ public class EscCuarteto extends Escenarios
     private void prepare()
     {
         Violistaa violistaa = new Violistaa();
-        addObject(violistaa,329,228);
-        violistaa.setLocation(342,250);
+        addObject(violistaa,340,272);
         Violinistaa violinistaa = new Violinistaa();
-        addObject(violinistaa,235,250);
+        addObject(violinistaa,247,272);
         Violinistab violinistab = new Violinistab();
-        addObject(violinistab,197,285);
-        violinistaa.setLocation(270,262);
+        addObject(violinistab,157,284);
         Cellistab cellistab = new Cellistab();
         addObject(cellistab,447,277);
 
         BMainMenu main_menu3 = new BMainMenu();
-        addObject(main_menu3,36,387);
-        main_menu3.setLocation(28,385);
+        addObject(main_menu3,28,385);
 
-        
         Lineas4 lineas4 = new Lineas4();
         addObject(lineas4,349,101);
 
-        violistaa.setLocation(340,272);
-        violinistaa.setLocation(247,272);
-        violinistab.setLocation(171,280);
-        violinistab.setLocation(157,284);
         Cello cello2 = new Cello();
-        addObject(cello2,89,187);
-        cello2.setLocation(81,183);
+        addObject(cello2,81,183);
         Viola viola = new Viola();
-        addObject(viola,102,125);
-        viola.setLocation(87,124);
+        addObject(viola,87,124);
         Violin violin = new Violin();
-        addObject(violin,92,78);
-        violin.setLocation(90,77);
+        addObject(violin,90,77);
         Violin violin2 = new Violin();
-        addObject(violin2,91,33);
-        violin2.setLocation(92,31);
+        addObject(violin2,92,31);
     }
 }

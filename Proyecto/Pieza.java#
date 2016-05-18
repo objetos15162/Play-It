@@ -1,16 +1,15 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * clase de sonidos para el dueto, genera los arreglos de sonido y se encarga de
- * su reproducción
+ * Clase de l
  * 
- * @author (LiliaC) 
+ * @author (Esaú & Lilia) 
  * @version (may 2016)
  */
-public class Dueto extends Sonido
+public class Pieza extends Actor
 {
     /**
-     * Act - do whatever the Dueto wants to do. This method is called whenever
+     * Act - do whatever the Pieza wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public void act() 

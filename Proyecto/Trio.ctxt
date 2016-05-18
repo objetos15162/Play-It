@@ -12,5 +12,5 @@ comment3.target=void\ playSounds()
 comment3.text=\n\ \n
 comment4.params=
 comment4.target=void\ fillArrays()
-comment4.text=\n\ M\u00E9todo\ para\ rellenar\ los\ arreglos\ con\ los\ archivos\ de\ sonido\n\ \n
+comment4.text=\n\ M\u00E9todo\ para\ rellenar\ los\ arreglos\ con\ los\ archivos\ de\ sonido\n\ en\ secuencia\n
 numComments=5

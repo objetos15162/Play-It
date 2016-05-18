@@ -1,18 +1,18 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class violinistaa here.
+ * Clase para el violinista a
+ * declara sus imágenes y controla cuándo se mueve
  * 
  * @author (Lilia & Esaú) 
  * @version (may 2016)
  */
 public class Violinistaa extends Violinista
 {
-    /**
-     * Act - do whatever the violinistaa wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
     
+    /**
+     * contstructor para la clase violinistaa
+     */
     public Violinistaa()
     {
         im1=new GreenfootImage("violinista1.png");
@@ -23,7 +23,7 @@ public class Violinistaa extends Violinista
         setImage(im1);
     }
     /**
-     * llama a act de violinista para que se mueva
+     * Act - llama a aAct de Violinista para que actúe (en este caso, se mueva)
      */
     public void act() 
     {

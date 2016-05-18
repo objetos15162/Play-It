@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (Esaú y Lilia) 
  * @version (21.04.2016)
  */
-public class EscDueto extends Escenarios
+public class EscDueto extends Ensamble
 {
 
     /**
@@ -32,23 +32,19 @@ public class EscDueto extends Escenarios
         addObject(pianistaa,256,208);
 
         BMainMenu main_menu3 = new BMainMenu();
-        addObject(main_menu3,43,383);
-        main_menu3.setLocation(26,383);
+        addObject(main_menu3,26,383);
 
         //addObject(insp,588,55);
         //addObject(insv,588,130);
 
         Lineas2 lineas2 = new Lineas2();
-        addObject(lineas2,354,103);
-        lineas2.setLocation(351,93);
+        addObject(lineas2,351,93);
         Piano piano = new Piano();
-        addObject(piano,88,58);
-        piano.setLocation(90,58);
+        addObject(piano,90,58);
 
 
         Violinistab violinistab = new Violinistab();
-        addObject(violinistab,371,292);
-        violinistab.setLocation(370,267);
+        addObject(violinistab,370,267);
         Violin violin5 = new Violin();
         addObject(violin5,95,129);
     }

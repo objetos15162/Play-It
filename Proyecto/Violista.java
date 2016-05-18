@@ -1,7 +1,8 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class violista here.
+ * Clase para el violista 
+ * declara sus imágenes y controla cuándo se mueve
  * 
  * @author (Lilia & Esaú) 
  * @version (may 2016)
@@ -9,8 +10,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Violista extends Musico
 {
     /**
-     * Act - do whatever the violista wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
+     * Act - Llama a Act de Musico para el cambio de imagenes y que se mueva
      */
     
      public void act()
