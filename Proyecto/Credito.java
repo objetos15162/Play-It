@@ -27,7 +27,6 @@ public class Credito extends World
     private void prepare()
     {
         BMainMenu main_menu = new BMainMenu();
-        addObject(main_menu,32,385);
-        main_menu.setLocation(23,383);
+        addObject(main_menu,23,383);
     }
 }

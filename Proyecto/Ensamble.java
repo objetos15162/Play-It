@@ -7,7 +7,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (Lilia & Esaú) 
  * @version (may 2016)
  */
-public class Ensamble extends World
+public class Ensamble extends KinectWorld
 {
 
     /**
@@ -17,7 +17,7 @@ public class Ensamble extends World
     public Ensamble()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        super(600, 400, 1);
+       
         prepare();
       
     }
@@ -37,8 +37,7 @@ public class Ensamble extends World
         addObject(vidas4,500,370);
         vidas4.setLocation(497,365);
         Vida vidas5 = new Vida();
-        addObject(vidas5,476,372);
-        vidas5.setLocation(473,365);
+        addObject(vidas5,473,365);
     }
     
     

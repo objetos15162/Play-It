@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (Lilia & Esaú) 
  * @version (may 2016)
  */
-public class Ayuda extends World
+public class Ayuda extends KinectWorld
 {
 
     /**
@@ -22,7 +22,7 @@ public class Ayuda extends World
     public Ayuda()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        super(600, 400, 1); 
+       
         cont = 1;
         a1 = new GreenfootImage("ayuda_carteles1.png");
         aup = new GreenfootImage("ayuda_cartelesuphere.png");
@@ -64,7 +64,7 @@ public class Ayuda extends World
                     setBackground(afin);
                     addObject(bmore, 200,300);
                     addObject(bplay, 400,300);
-                    cont++;
+                    
                 }
                 else {
                     if(Greenfoot.isKeyDown("left"))

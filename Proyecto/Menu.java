@@ -16,7 +16,7 @@ public class Menu extends World
     
     private Boton play;
     private Boton about;
-    private Boton howt;//Unused variable
+    private Boton howt;
     private Boton quit;
     private GreenfootImage ima1;
     /**
@@ -32,14 +32,6 @@ public class Menu extends World
         setBackground(ima1);
         prepare();
     }
-     /**
-     * actúa
-     */
-    public void act()
-    {
-       
-    }
-    
     /**
      * Prepara el menú colocando los botones necesarios
      * 

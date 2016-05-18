@@ -7,7 +7,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (Lilia & Esaú) 
  * @version (may 2016)
  */
-public class Cellistab extends Cellista
+public class Cellistab extends Musico
 {
     /**
      * Act - do whatever the cellistab wants to do. This method is called whenever
@@ -27,7 +27,9 @@ public class Cellistab extends Cellista
      */
     public void act() 
     {
-        // Add your action code here.
+        if(Greenfoot.isKeyDown("c"))
+        {
         super.act();
+        }
     }    
 }

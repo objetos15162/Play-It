@@ -10,13 +10,6 @@ public class BPlay extends Boton
 {
     
     /**
-     * constructor
-     */
-    public BPlay()
-    {
-        
-    }
-    /**
      * Act - lleva al menú de ensambles ya para iniciar el juego si 
      * se da click sobre él
      */

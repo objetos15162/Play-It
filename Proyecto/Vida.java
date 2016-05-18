@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (Lilia & Esaú) 
  * @version (may 2016)
  */
-public class Vida extends Puntuacion
+public class Vida extends GameControl
 {
     /**
      * Act - do whatever the vidas wants to do. This method is called whenever

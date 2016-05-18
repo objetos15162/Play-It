@@ -13,7 +13,8 @@ public class EscDueto extends Ensamble
      * Constructor para la clase dueto
      * 
      */
-    private Instruccion2 insp,insv;
+    private Instruccion2 insp;
+    private Instruccion2 insv;
     public EscDueto()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
@@ -33,7 +34,7 @@ public class EscDueto extends Ensamble
 
         BMainMenu main_menu3 = new BMainMenu();
         addObject(main_menu3,26,383);
-
+            //nn lineas
         //addObject(insp,588,55);
         //addObject(insv,588,130);
 
