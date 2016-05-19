@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (Lilia & Esaú) 
  * @version (april & may 2016)
  */
-public class MenuPiezas extends World
+public class MenuPiezas extends Menu
 {
 
     /**
@@ -16,7 +16,7 @@ public class MenuPiezas extends World
     public MenuPiezas()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        super(600, 400, 1); 
+        
         prepare();
     }
     public void act()

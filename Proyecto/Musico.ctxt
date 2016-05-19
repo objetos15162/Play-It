@@ -7,5 +7,5 @@ comment2.params=
 comment2.target=void\ act()
 comment2.text=\n\ cambia\ las\ imagenes\ para\ hacer\ la\ animaci\u00F3n\ de\ los\ musicos\n\ dir\ muestra\ si\ van\ de\ ida\ o\ vuelta\n\ mov\ muestra\ en\ qu\u00E9\ etapa\ del\ movimiento\ va\n
 comment3.params=
-comment3.target=void\ musiciansmove()
+comment3.target=void\ musiciansMove()
 numComments=4
