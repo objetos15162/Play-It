@@ -44,8 +44,7 @@ public class EscTrio extends Ensamble
         Cellistab cellistab2 = new Cellistab();
         addObject(cellistab2,407,273);
 
-        BMainMenu main_menu2 = new BMainMenu();
-        addObject(main_menu2,26,385);
+        
 
         addObject(insv,588,37);
         addObject(insp,588,92);

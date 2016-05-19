@@ -32,8 +32,7 @@ public class EscDueto extends Ensamble
         Pianistaa pianistaa = new Pianistaa();
         addObject(pianistaa,256,208);
 
-        BMainMenu main_menu3 = new BMainMenu();
-        addObject(main_menu3,26,383);
+        
             //nn lineas
         //addObject(insp,588,55);
         //addObject(insv,588,130);

@@ -1,7 +1,4 @@
 #BlueJ class context
 comment0.target=Sonido
 comment0.text=\n\ Clase\ de\ sonido\ que\ contiene\ y\ controla\ los\ sonidos\ de\ las\ piezas\n\ \n\ @author\ (Esa\u00FA\ &\ Lilia)\ \n\ @version\ (may\ 2016)\n
-comment1.params=
-comment1.target=void\ act()
-comment1.text=\n\ Act\ -\ do\ whatever\ the\ Pieza\ wants\ to\ do.\ This\ method\ is\ called\ whenever\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\n
-numComments=2
+numComments=1

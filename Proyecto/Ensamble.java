@@ -14,10 +14,11 @@ public class Ensamble extends KinectWorld
      * Constructor for objects of class escenarios.
      * 
      */
+     BMainMenu main_menu3;
     public Ensamble()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-       
+       main_menu3 = new BMainMenu();
         prepare();
       
     }
@@ -38,6 +39,7 @@ public class Ensamble extends KinectWorld
         vidas4.setLocation(497,365);
         Vida vidas5 = new Vida();
         addObject(vidas5,473,365);
+        addObject(main_menu3,28,385);
     }
     
     
