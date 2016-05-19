@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (Lilia & Esaú) 
  * @version (may 2016)
  */
-public class BDer extends Boton
+public class FDer extends Boton
 {
     /**
      * Act - do whatever the der wants to do. This method is called whenever

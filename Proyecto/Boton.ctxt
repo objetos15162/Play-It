@@ -3,6 +3,4 @@ comment0.target=Boton
 comment0.text=\n\ Write\ a\ description\ of\ class\ botones\ here.\n\ \n\ @author\ (Lilia\ &\ Esa\u00FA)\ \n\ @version\ (may\ 2016)\n
 comment1.params=
 comment1.target=Boton()
-comment2.params=
-comment2.target=void\ act()
-numComments=3
+numComments=2

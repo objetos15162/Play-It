@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (Lilia & Esaú) 
  * @version (may 2016)
  */
-public class BotonMenu extends Boton
+public abstract class BotonMenu extends Boton
 {
     /**
      * Act - do whatever the botones_menu wants to do. This method is called whenever

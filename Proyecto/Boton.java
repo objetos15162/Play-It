@@ -11,9 +11,5 @@ public abstract class Boton extends Actor
     public Boton()
     {
        
-    }
-    public void act() 
-    {
-        
-    }    
+    } 
 }

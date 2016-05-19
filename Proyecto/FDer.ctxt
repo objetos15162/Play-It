@@ -1,5 +1,5 @@
 #BlueJ class context
-comment0.target=BDer
+comment0.target=FDer
 comment0.text=\n\ Flecha\ para\ ir\ a\ la\ derecha\ o\ a\ la\ pantalla\ siguiente\ en\ las\ instrucciones\n\ \n\ @author\ (Lilia\ &\ Esa\u00FA)\ \n\ @version\ (may\ 2016)\n
 comment1.params=
 comment1.target=void\ act()
