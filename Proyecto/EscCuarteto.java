@@ -13,15 +13,15 @@ public class EscCuarteto extends Ensamble
      * Constructor for objects of class esc_cuarteto.
      * 
      */
-    Violistaa violistaa;
-    Violinistaa violinistaa;
-    Violinistab violinistab;
-    Cellistab cellistab;
-    Lineas4 lineas4;
-    Cello cello2;
-    Viola viola;
-    Violin violin;
-    Violin violin2;
+    private Violistaa violistaa;
+    private Violinistaa violinistaa;
+    private Violinistab violinistab;
+    private Cellistab cellistab;
+    private Lineas4 lineas4;
+    private Cello cello2;
+    private Viola viola;
+    private Violin violin;
+    private Violin violin2;
     public EscCuarteto()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.

@@ -14,17 +14,25 @@ public class EscTrio extends Ensamble
      * Constructor para los objetos, llama a la función prepare
      * 
      */
-    private Instruccion3 insp;
-    private Instruccion3 insv;
-    private Instruccion3 insc;
     
+    private Violin violin;
+    private Cello cello;
+    private Piano piano3;
+    private Lineas3 lineas3;
+    private Cellistab cellistab2;
+    private Violinistaa violinistaa;
+    private Pianistaa pianistaa2;
     public EscTrio()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-       insp=new Instruccion3("triopiano.txt");
-       insc=new Instruccion3("triocello.txt");
-       insv=new Instruccion3("trioviolin.txt");
        
+       violin = new Violin();
+       cello = new Cello();
+       piano3 = new Piano();
+       lineas3 = new Lineas3();
+       cellistab2 = new Cellistab();
+       violinistaa = new Violinistaa();
+       pianistaa2 = new Pianistaa();
        prepare();
                  
     }
@@ -35,31 +43,19 @@ public class EscTrio extends Ensamble
      */
     private void prepare()
     {
-        Pianistaa pianistaa2 = new Pianistaa();
+        
         addObject(pianistaa2,356,212);
         
-        Violinistaa violinistaa = new Violinistaa();
         addObject(violinistaa,181,277);
         
-        Cellistab cellistab2 = new Cellistab();
         addObject(cellistab2,407,273);
 
-        
-
-        addObject(insv,588,37);
-        addObject(insp,588,92);
-        addObject(insc,588,148);
-
-        Lineas3 lineas3 = new Lineas3();
         addObject(lineas3,353,93);
         
-        Piano piano3 = new Piano();
         addObject(piano3,85,91);
-        
-        Cello cello = new Cello();
+                
         addObject(cello,93,149);
-
-        Violin violin = new Violin();
+        
         addObject(violin,84,36);
     }
 
