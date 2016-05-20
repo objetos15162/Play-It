@@ -13,8 +13,6 @@ public class Trio extends Sonido
     private ArrayList<GreenfootSound> piano;
     private ArrayList<GreenfootSound> cello;
     private ArrayList<GreenfootSound> violin;
-    private Integer j;
-    private GreenfootSound m;
     private long soundStartTime;
     /**
      * constructor de la clase Trio
@@ -24,7 +22,6 @@ public class Trio extends Sonido
         piano = new ArrayList();
         cello = new ArrayList();
         violin = new ArrayList();
-        j = 0;
         soundStartTime = 0;
         fillArrays();
     }
@@ -45,6 +42,8 @@ public class Trio extends Sonido
     public void playSounds() 
     {
         // mientras siga habiendo elementos en el arreglo
+        Integer j = 0;
+        GreenfootSound m = null;
        while(j<26){
            //actualiza el archivo que va a abrir
         m = piano.get(j);
@@ -70,7 +69,7 @@ public class Trio extends Sonido
      * Método para rellenar los arreglos con los archivos de sonido
      * en secuencia
      */
-    private void fillArrays() 
+    public void fillArrays() 
     {
         //contadores
         int x=1;
@@ -79,17 +78,14 @@ public class Trio extends Sonido
         
         while(x!=27){
             piano.add(new GreenfootSound("tp"+x+".wav"));
-            //System.out.println("tp"+x+".wav"); comprueba que se rellenen correctamente
             x++;
         }
         while(y!=28){
             cello.add(new GreenfootSound("tc"+y+".wav"));
-            //System.out.println("tc"+x+".wav");
             y++;
         }
         while(z!=36){
             violin.add(new GreenfootSound("tv"+z+".wav"));
-            //System.out.println("tv"+z+".wav");
             z++;
         }
        

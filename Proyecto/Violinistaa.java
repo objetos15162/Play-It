@@ -7,7 +7,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (Lilia & Esaú) 
  * @version (may 2016)
  */
-public class Violinistaa extends Violinista
+public class Violinistaa extends Musico
 {
     
     /**

@@ -1,9 +1,9 @@
 #BlueJ class context
 comment0.target=MenuPiezas
-comment0.text=\n\ Muestra\ el\ men\u00FA\ de\ las\ piezas\ para\ jugar\n\ \n\ @author\ (Lilia\ &\ Esa\u00FA)\ \n\ @version\ (april\ &\ may\ 2016)\n
+comment0.text=\r\n\ Muestra\ el\ men\u00FA\ de\ las\ piezas\ para\ jugar\r\n\ \r\n\ @author\ (Lilia\ &\ Esa\u00FA)\ \r\n\ @version\ (april\ &\ may\ 2016)\r\n
 comment1.params=
 comment1.target=MenuPiezas()
-comment1.text=\n\ Constructor\ para\ la\ clase\ menu_piezas.\n\ \n
+comment1.text=\r\n\ Constructor\ para\ la\ clase\ menu_piezas.\r\n\ \r\n
 comment2.params=
 comment2.target=void\ act()
 comment3.params=

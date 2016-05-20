@@ -7,7 +7,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (Lilia & Esaú) 
  * @version (may 2016)
  */
-public class Violistaa extends Violista
+public class Violistaa extends Musico
 {
     /**
      * Act - do whatever the violistaa wants to do. This method is called whenever
@@ -27,7 +27,9 @@ public class Violistaa extends Violista
      */
     public void act() 
     {
-        // Add your action code here.
-        super.act();
+        if(Greenfoot.isKeyDown("l"))
+         {
+            super.act();
+         }
     }    
 }

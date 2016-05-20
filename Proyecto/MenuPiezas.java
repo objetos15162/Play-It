@@ -35,7 +35,7 @@ public class MenuPiezas extends World
         PCuarteto p_cuarteto = new PCuarteto();
         addObject(p_cuarteto,482,264);
        
-        Choose choose = new Choose();
+        Choose choose = new Choose(); 
         addObject(choose,298,71);
         
         BMainMenu main_menu = new BMainMenu();

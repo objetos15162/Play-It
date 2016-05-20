@@ -7,7 +7,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (Lilia & Esaú) 
  * @version (may 2016)
  */
-public class Violinistab extends Violinista
+public class Violinistab extends Musico
 {
     /**
      * Act - do whatever the violinistab wants to do. This method is called whenever

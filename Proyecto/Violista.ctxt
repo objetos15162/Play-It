@@ -1,7 +1,0 @@
-#BlueJ class context
-comment0.target=Violista
-comment0.text=\n\ Clase\ para\ el\ violista\ \n\ declara\ sus\ im\u00E1genes\ y\ controla\ cu\u00E1ndo\ se\ mueve\n\ \n\ @author\ (Lilia\ &\ Esa\u00FA)\ \n\ @version\ (may\ 2016)\n
-comment1.params=
-comment1.target=void\ act()
-comment1.text=\n\ Act\ -\ Llama\ a\ Act\ de\ Musico\ para\ el\ cambio\ de\ imagenes\ y\ que\ se\ mueva\n
-numComments=2

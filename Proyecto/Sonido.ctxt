@@ -1,4 +1,8 @@
 #BlueJ class context
 comment0.target=Sonido
-comment0.text=\n\ Clase\ de\ sonido\ que\ contiene\ y\ controla\ los\ sonidos\ de\ las\ piezas\n\ \n\ @author\ (Esa\u00FA\ &\ Lilia)\ \n\ @version\ (may\ 2016)\n
-numComments=1
+comment0.text=\r\n\ Clase\ de\ sonido\ que\ contiene\ y\ controla\ los\ sonidos\ de\ las\ piezas\r\n\ \r\n\ @author\ (Esa\u00FA\ &\ Lilia)\ \r\n\ @version\ (may\ 2016)\r\n
+comment1.params=
+comment1.target=void\ fillArrays()
+comment2.params=
+comment2.target=void\ playSounds()
+numComments=3

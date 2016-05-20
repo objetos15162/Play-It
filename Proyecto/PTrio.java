@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (Lilia & Esaú) 
  * @version (may 2016)
  */
-public class PTrio extends BotonMenu
+public class PTrio extends Boton
 {
     /**
      * Act - llama a la trnasicion y le dice qué escenario cargar, en 

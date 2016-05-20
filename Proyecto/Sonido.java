@@ -8,5 +8,6 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public abstract class Sonido extends Actor
 {
-
+  public abstract void fillArrays();
+  public abstract void playSounds();
 }

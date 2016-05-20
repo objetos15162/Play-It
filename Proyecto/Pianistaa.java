@@ -7,7 +7,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (Lilia & Esaú) 
  * @version (may 2016)
  */
-public class Pianistaa extends Pianista
+public class Pianistaa extends Musico
 {
     /**
      * Act - do whatever the pianistaa wants to do. This method is called whenever
@@ -28,7 +28,11 @@ public class Pianistaa extends Pianista
      */
     public void act() 
     {
-        // Add your action code here.
-        super.act();     
+        if(Greenfoot.isKeyDown("p"))
+        {
+          super.act();
+          Trio t=new Trio();
+          t.playSounds();
+        }     
     }    
 }
