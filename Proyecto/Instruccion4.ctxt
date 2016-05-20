@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Instruccion4
-comment0.text=\r\n\ Clase\ para\ generar\ las\ instrucciones\ para\ el\ cuarteto\r\n\ usa\ la\ clase\ Lectura\ para\ leer\ un\ archivo\ con\ el\ que\ \r\n\ se\ define\ cada\ cuando\ mostrar\ las\ instrucciones\r\n\ \r\n\ @author\ (Esa\u00FA\ &\ Lilia)\r\n\ @version\ (may\ 2016)\r\n
+comment0.text=\n\ Clase\ para\ generar\ las\ instrucciones\ para\ el\ cuarteto\n\ usa\ la\ clase\ Lectura\ para\ leer\ un\ archivo\ con\ el\ que\ \n\ se\ define\ cada\ cuando\ mostrar\ las\ instrucciones\n\ \n\ @author\ (Esa\u00FA\ &\ Lilia)\n\ @version\ (may\ 2016)\n
 comment1.params=
 comment1.target=Instruccion4()
 comment2.params=

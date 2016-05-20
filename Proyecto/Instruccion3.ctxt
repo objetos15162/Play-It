@@ -1,9 +1,9 @@
 #BlueJ class context
 comment0.target=Instruccion3
-comment0.text=\r\n\ Clase\ para\ generar\ las\ instrucciones\ para\ el\ trio\r\n\ usa\ la\ clase\ Lectura\ para\ leer\ un\ archivo\ con\ el\ que\ \r\n\ se\ define\ cada\ cuando\ mostrar\ las\ instrucciones\r\n\ \r\n\ @author\ (Lilia\ &\ Esa\u00FA)\ \r\n\ @version\ (may\ 2016)\r\n
+comment0.text=\n\ Clase\ para\ generar\ las\ instrucciones\ para\ el\ trio\n\ usa\ la\ clase\ Lectura\ para\ leer\ un\ archivo\ con\ el\ que\ \n\ se\ define\ cada\ cuando\ mostrar\ las\ instrucciones\n\ \n\ @author\ (Lilia\ &\ Esa\u00FA)\ \n\ @version\ (may\ 2016)\n
 comment1.params=nomArch
 comment1.target=Instruccion3(java.lang.String)
-comment1.text=\r\n\ constructos\ para\ la\ clase\ Instruccion3\r\n\ @String\ nomArch\ nombre\ del\ archivo\ a\ abrir\r\n
+comment1.text=\n\ constructos\ para\ la\ clase\ Instruccion3\n\ @String\ nomArch\ nombre\ del\ archivo\ a\ abrir\n
 comment2.params=
 comment2.target=void\ act()
 comment3.params=
