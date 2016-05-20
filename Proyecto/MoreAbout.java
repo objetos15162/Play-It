@@ -2,8 +2,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 /**
  * Write a description of class MoreAbout here.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (EsauBz & Lilia) 
+ * @version (Mayo 2016)
  */
 public class MoreAbout extends World 
 {
