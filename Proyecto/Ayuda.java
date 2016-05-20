@@ -54,6 +54,11 @@ public class Ayuda extends KinectWorld
                     Greenfoot.delay(2);
                     setBackground(aup);
                     cont++;
+                }else {
+                    if(Greenfoot.isKeyDown("left"))
+                    {
+                setBackground(a1);
+            }
                 }
                 
         break;
@@ -70,6 +75,9 @@ public class Ayuda extends KinectWorld
                     if(Greenfoot.isKeyDown("left"))
                 {
                   cont--;
+                  removeObject(bmore);
+                  removeObject(bplay);
+                  setBackground(aup);
                 }
         }
         break;
