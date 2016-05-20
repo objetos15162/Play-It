@@ -9,11 +9,14 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class BMoreAbout extends Boton
 {
     /**
-     * Act - do whatever the more_about wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
+     * Act - lleva al mundo MoreAbout
      */
     public void act() 
     {
         // Add your action code here.
+        if(Greenfoot.mouseClicked(this)){
+            MoreAbout newWorld = new MoreAbout(); 
+            Greenfoot.setWorld(newWorld);
+        }
     }    
 }
