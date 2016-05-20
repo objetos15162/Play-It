@@ -13,10 +13,12 @@ public class Credito extends World
      * Constructor for objects of class credits.
      * 
      */
+    private BMainMenu main_menu;
     public Credito()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1); 
+         main_menu = new BMainMenu();
         prepare();
     }
 
@@ -26,7 +28,7 @@ public class Credito extends World
      */
     private void prepare()
     {
-        BMainMenu main_menu = new BMainMenu();
+        
         addObject(main_menu,23,383);
     }
 }

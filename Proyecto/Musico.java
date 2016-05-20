@@ -16,8 +16,8 @@ public class Musico extends Actor
     public GreenfootImage im2;
     public GreenfootImage im3;
     public GreenfootImage im4;
-    private Integer mov=1;
-    private Integer dir=1;
+    private Integer mov=1; //controla en cuál de las 4 imágenes va para el movimiento
+    private Integer dir=1; //hacia dónde se mueven los brazos, controla la secuencia de imágenes
     public Musico()
     {
         

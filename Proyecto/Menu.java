@@ -30,6 +30,10 @@ public class Menu extends World
         super(600, 400, 1); 
         ima1 = new GreenfootImage("m4.png");
         setBackground(ima1);
+        about = new About();    
+        howt = new BHowTo();
+        play = new BPlay();
+        quit = new BQuit(); 
         prepare();
     }
     /**
@@ -38,16 +42,13 @@ public class Menu extends World
      */
     private void prepare()
     {
-        about = new About();
-        addObject(about,488,272);
         
-        howt = new BHowTo();
+        addObject(about,488,272);
+       
         addObject(howt,120,273);
         
-        play = new BPlay();
         addObject(play,303,274);
-
-        quit = new BQuit(); 
+        
         addObject(quit,27,30);
     }
 }
