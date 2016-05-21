@@ -64,12 +64,19 @@ public class EscTrio extends Ensamble
     }
     public void act()
     {
-        if(Greenfoot.isKeyDown("o"))
-       {
-       t.playSounds();
-    }
+        
+        int x = t.getJ();
+        int i = t.getcontTV();
+       while(x<i)
+        {
+            t.playSounds();
+            violinistaa.act();
+            pianistaa2.act();
+            cellistab2.act();
+       }
+   }
     }
 
     
    
-}
+

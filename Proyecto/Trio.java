@@ -17,6 +17,7 @@ public class Trio extends Sonido
     private Integer contTP;
     private Integer contTV;
     private Integer contTC;
+    private Integer j=0,k=0,l=0;
     /**
      * constructor de la clase Trio
      */
@@ -39,10 +40,7 @@ public class Trio extends Sonido
     public void act() 
     {
         // Add your action code here.
-        while(Greenfoot.isKeyDown("space"))
-        {
-            playSounds();
-        }
+        
     }
     /**
      * 
@@ -50,14 +48,13 @@ public class Trio extends Sonido
     public void playSounds() 
     {
         // mientras siga habiendo elementos en el arreglo
-        Integer j = 0,k=0,l=0;
+        
         GreenfootSound m = null;
         GreenfootSound n = null;
         GreenfootSound o = null;
-        int band = 0;
+       
            
-        while(l<contTV)
-        {
+        
             m = piano.get(j);
             //si el sonido pasado ya se acabó
           if(soundStartTimea==0)
@@ -101,7 +98,7 @@ public class Trio extends Sonido
               soundStartTimec = System.currentTimeMillis();
           }
           // to check for sound stopping
-          if (soundStartTimec != 0 && !o.isPlaying())
+          if (soundStartTimec != 0 && !o.isPlaying()&&l<contTV-1)
           {
               long elapsedTime = System.currentTimeMillis()-soundStartTimec;
               System.out.println("The sound took "+(elapsedTime/1000)+" seconds to play.");
@@ -109,7 +106,7 @@ public class Trio extends Sonido
               l++;
           }
    
-        }  
+          
 
     }
     /**
@@ -148,5 +145,17 @@ public class Trio extends Sonido
     public int getcontTC()
     {
         return contTC;
+    }
+    public int getJ()
+    {
+        return j;
+    }
+    public int getK()
+    {
+        return k;
+    }
+    public int getL()
+    {
+        return l;
     }
 }
