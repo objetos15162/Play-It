@@ -31,7 +31,7 @@ public class EscDueto extends Ensamble
         violinistab = new Violinistab();
         violin5 = new Violin();
         prepare();
-         t= new Dueto();
+        t= new Dueto();
        
        
     }

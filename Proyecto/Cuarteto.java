@@ -14,7 +14,7 @@ public class Cuarteto extends Sonido
     private ArrayList<GreenfootSound> violin1;
     private ArrayList<GreenfootSound> violin2;
     private ArrayList<GreenfootSound> viola;
-    private long soundStartTime;
+    private long soundStartTimea,soundStartTimeb,soundStartTimec, soundStartTimed;;
     private Integer contCVa;
     private Integer contCVb;
     private Integer contCV;
@@ -23,9 +23,8 @@ public class Cuarteto extends Sonido
      * Act - do whatever the Cuarteto wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
-    public void act() 
+    public Cuarteto()
     {
-        // Add your action code here.
         violin1 = new ArrayList();
         violin2 = new ArrayList();
         viola = new ArrayList();
@@ -34,10 +33,112 @@ public class Cuarteto extends Sonido
         contCVb = 22;
         contCV = 24;
         contCC = 20;
-        soundStartTime = 0;
+        soundStartTimea = 0;
+        soundStartTimeb=0;
+        soundStartTimec=0;
+        soundStartTimed=0;
         fillArrays();
+    }
+    public void act() 
+    {
+        // Add your action code here.
+        
     }  
      public void playSounds(){
+         Integer i=0,j = 0,k=0,l=0;
+        GreenfootSound m = null;
+        GreenfootSound n = null;
+        GreenfootSound o = null;
+        GreenfootSound p = null;
+        int band = 0;
+   
+       while(j<contCC+1){
+           //actualiza el archivo que va a abrir
+           while(k<contCV+1){
+               
+               while(l<contCVa+1){
+                   
+                   while(i<contCVb+1){
+        m = cello.get(j);
+        //si el sonido pasado ya se acabó
+          if(soundStartTimea==0)
+          {   
+              m.play();
+              soundStartTimea = System.currentTimeMillis();
+          }
+        // to check for sound stopping
+          if (soundStartTimea != 0 && !m.isPlaying())
+          {
+              long elapsedTime = System.currentTimeMillis()-soundStartTimea;
+              System.out.println("The sound took "+(elapsedTime/1000)+" seconds to play.");
+              soundStartTimea = 0;
+              j++;
+          }
+          
+           //actualiza el archivo que va a abrir
+        n = viola.get(k);
+        //si el sonido pasado ya se acabó
+          if(soundStartTimeb==0)
+          {   
+              n.play();
+              soundStartTimeb = System.currentTimeMillis();
+          }
+        // to check for sound stopping
+          if (soundStartTimeb != 0 && !n.isPlaying())
+          {
+              long elapsedTime = System.currentTimeMillis()-soundStartTimeb;
+              System.out.println("The sound took "+(elapsedTime/1000)+" seconds to play.");
+              soundStartTimeb = 0;
+              k++;
+          }
+        
+        
+           //actualiza el archivo que va a abrir
+        o = violin1.get(l);
+        //si el sonido pasado ya se acabó
+          if(soundStartTimec==0)
+          {   
+              o.play();
+              soundStartTimec = System.currentTimeMillis();
+          }
+        // to check for sound stopping
+          if (soundStartTimec != 0 && !o.isPlaying())
+          {
+              long elapsedTime = System.currentTimeMillis()-soundStartTimec;
+              System.out.println("The sound took "+(elapsedTime/1000)+" seconds to play.");
+              soundStartTimec = 0;
+              l++;
+          }
+   
+          if(Greenfoot.getKey()=="s")
+          {
+              band=1;
+            }
+            
+            
+         p = violin2.get(i);
+        //si el sonido pasado ya se acabó
+          if(soundStartTimed==0)
+          {   
+              p.play();
+              soundStartTimed = System.currentTimeMillis();
+          }
+        // to check for sound stopping
+          if (soundStartTimed != 0 && !p.isPlaying())
+          {
+              long elapsedTime = System.currentTimeMillis()-soundStartTimed;
+              System.out.println("The sound took "+(elapsedTime/1000)+" seconds to play.");
+              soundStartTimed = 0;
+              i++;
+          }
+   
+           
+        }
+    }
+        }
+    
+    
+    }
     
     }
     public void fillArrays() {
@@ -49,9 +150,9 @@ public class Cuarteto extends Sonido
             violin1.add(new GreenfootSound("cva"+x+".wav"));
             x++;
         }
-        while(x!=contCVb+1){
-            violin2.add(new GreenfootSound("cvb"+x+".wav"));
-            x++;
+        while(w!=contCVb+1){
+            violin2.add(new GreenfootSound("cvb"+w+".wav"));
+            w++;
         }
         while(y!=contCV+1){
             viola.add(new GreenfootSound("cv"+y+".wav"));

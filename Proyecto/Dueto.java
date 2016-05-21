@@ -43,11 +43,11 @@ public class Dueto extends Sonido
       
         int band = 0;
         
-       while(j<contDP+1){
+       while(l<contDV+1){
            //actualiza el archivo que va a abrir
            
                
-               while(l<contDV+1){
+               while(j<contDP+1){
         m = piano.get(j);
         //si el sonido pasado ya se acabó
           if(soundStartTimea==0)
