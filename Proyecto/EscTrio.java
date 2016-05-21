@@ -36,9 +36,8 @@ public class EscTrio extends Ensamble
        pianistaa2 = new Pianistaa();
        
        prepare();
-      // t= new Trio();
+       t= new Trio();
        
-       //t.playSounds();
                  
     }
 
@@ -62,6 +61,13 @@ public class EscTrio extends Ensamble
         addObject(cello,93,149);
         
         addObject(violin,84,36);
+    }
+    public void act()
+    {
+        if(Greenfoot.isKeyDown("o"))
+       {
+       t.playSounds();
+    }
     }
 
     

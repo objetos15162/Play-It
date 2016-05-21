@@ -55,22 +55,18 @@ public class Trio extends Sonido
         GreenfootSound n = null;
         GreenfootSound o = null;
         int band = 0;
-        while(band==0)
-        { 
-       while(j<contTP+1){
-           //actualiza el archivo que va a abrir
-           while(k<contTC+1){
-               
-               while(l<contTV+1){
-        m = piano.get(j);
-        //si el sonido pasado ya se acabó
+           
+        while(l<contTV)
+        {
+            m = piano.get(j);
+            //si el sonido pasado ya se acabó
           if(soundStartTimea==0)
           {   
               m.play();
               soundStartTimea = System.currentTimeMillis();
           }
-        // to check for sound stopping
-          if (soundStartTimea != 0 && !m.isPlaying())
+          // to check for sound stopping
+          if (soundStartTimea != 0 && !m.isPlaying()&& j<contTP-1)
           {
               long elapsedTime = System.currentTimeMillis()-soundStartTimea;
               System.out.println("The sound took "+(elapsedTime/1000)+" seconds to play.");
@@ -79,15 +75,15 @@ public class Trio extends Sonido
           }
           
            //actualiza el archivo que va a abrir
-        n = cello.get(k);
-        //si el sonido pasado ya se acabó
+           n = cello.get(k);
+           //si el sonido pasado ya se acabó
           if(soundStartTimeb==0)
           {   
               n.play();
               soundStartTimeb = System.currentTimeMillis();
           }
-        // to check for sound stopping
-          if (soundStartTimeb != 0 && !n.isPlaying())
+          // to check for sound stopping
+          if (soundStartTimeb != 0 && !n.isPlaying() && k<contTC-1)
           {
               long elapsedTime = System.currentTimeMillis()-soundStartTimeb;
               System.out.println("The sound took "+(elapsedTime/1000)+" seconds to play.");
@@ -97,14 +93,14 @@ public class Trio extends Sonido
         
         
            //actualiza el archivo que va a abrir
-        o = violin.get(l);
-        //si el sonido pasado ya se acabó
+           o = violin.get(l);
+           //si el sonido pasado ya se acabó
           if(soundStartTimec==0)
           {   
               o.play();
               soundStartTimec = System.currentTimeMillis();
           }
-        // to check for sound stopping
+          // to check for sound stopping
           if (soundStartTimec != 0 && !o.isPlaying())
           {
               long elapsedTime = System.currentTimeMillis()-soundStartTimec;
@@ -113,17 +109,9 @@ public class Trio extends Sonido
               l++;
           }
    
-          if(Greenfoot.getKey()=="s")
-          {
-              band=1;
-            }
-        }
-        
-        }
-    
-    }  
-}
-}
+        }  
+
+    }
     /**
      * Método para rellenar los arreglos con los archivos de sonido
      * en secuencia

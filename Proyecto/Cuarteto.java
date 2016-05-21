@@ -52,13 +52,8 @@ public class Cuarteto extends Sonido
         GreenfootSound p = null;
         int band = 0;
    
-       while(j<contCC+1){
-           //actualiza el archivo que va a abrir
-           while(k<contCV+1){
-               
-               while(l<contCVa+1){
-                   
-                   while(i<contCVb+1){
+    
+                   while(i<contCV+1){
         m = cello.get(j);
         //si el sonido pasado ya se acabó
           if(soundStartTimea==0)
@@ -67,7 +62,7 @@ public class Cuarteto extends Sonido
               soundStartTimea = System.currentTimeMillis();
           }
         // to check for sound stopping
-          if (soundStartTimea != 0 && !m.isPlaying())
+          if (soundStartTimea != 0 && !m.isPlaying()&& j<contCC-1)
           {
               long elapsedTime = System.currentTimeMillis()-soundStartTimea;
               System.out.println("The sound took "+(elapsedTime/1000)+" seconds to play.");
@@ -102,7 +97,7 @@ public class Cuarteto extends Sonido
               soundStartTimec = System.currentTimeMillis();
           }
         // to check for sound stopping
-          if (soundStartTimec != 0 && !o.isPlaying())
+          if (soundStartTimec != 0 && !o.isPlaying()&&l<contCVa-1)
           {
               long elapsedTime = System.currentTimeMillis()-soundStartTimec;
               System.out.println("The sound took "+(elapsedTime/1000)+" seconds to play.");
@@ -124,7 +119,7 @@ public class Cuarteto extends Sonido
               soundStartTimed = System.currentTimeMillis();
           }
         // to check for sound stopping
-          if (soundStartTimed != 0 && !p.isPlaying())
+          if (soundStartTimed != 0 && !p.isPlaying()&& i<contCVb-1)
           {
               long elapsedTime = System.currentTimeMillis()-soundStartTimed;
               System.out.println("The sound took "+(elapsedTime/1000)+" seconds to play.");
@@ -134,11 +129,10 @@ public class Cuarteto extends Sonido
    
            
         }
-    }
-        }
     
     
-    }
+    
+    
     
     }
     public void fillArrays() {

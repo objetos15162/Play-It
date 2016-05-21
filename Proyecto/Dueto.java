@@ -43,11 +43,8 @@ public class Dueto extends Sonido
       
         int band = 0;
         
-       while(l<contDV+1){
-           //actualiza el archivo que va a abrir
-           
-               
-               while(j<contDP+1){
+          
+               while(j<contDP){
         m = piano.get(j);
         //si el sonido pasado ya se acabó
           if(soundStartTimea==0)
@@ -73,7 +70,7 @@ public class Dueto extends Sonido
               soundStartTimeb = System.currentTimeMillis();
           }
         // to check for sound stopping
-          if (soundStartTimeb != 0 && !n.isPlaying())
+          if (soundStartTimeb != 0 && !n.isPlaying() && l<contDV-1)
           {
               long elapsedTime = System.currentTimeMillis()-soundStartTimeb;
               System.out.println("The sound took "+(elapsedTime/1000)+" seconds to play.");
@@ -84,7 +81,7 @@ public class Dueto extends Sonido
     
         }
         
-        }
+        
     
     }  
     public void fillArrays() {
