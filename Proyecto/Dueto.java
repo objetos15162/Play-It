@@ -13,10 +13,13 @@ public class Dueto extends Sonido
     private ArrayList<GreenfootSound> piano;
     private ArrayList<GreenfootSound> violin;
     private long soundStartTime;
-    /**
-     * Act - do whatever the Dueto wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
+    private Integer contDP;
+    private Integer contDV;
+    public Dueto()
+    {
+        contDP=34;
+        contDV=30;
+    }
     public void act() 
     {
         // Add your action code here.
@@ -29,6 +32,23 @@ public class Dueto extends Sonido
     
     }
     public void fillArrays() {
-    
+        int y=1;
+        int z=1;
+        while(y!=contDP+1){
+            piano.add(new GreenfootSound("tc"+y+".wav"));
+            y++;
+        }
+        while(z!=contDV+1){
+            violin.add(new GreenfootSound("tv"+z+".wav"));
+            z++;
+        }
+    }
+    public int getcontDP()
+    {
+        return contDP;
+    }
+    public int getcontDV()
+    {
+        return contDV;
     }
 }

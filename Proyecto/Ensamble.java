@@ -30,6 +30,7 @@ public class Ensamble extends KinectWorld
        vidas3 = new Vida();
        vidas4 = new Vida();
        vidas5 = new Vida();
+       vidas = new ArrayList<Vida>();
         prepare();
       fillArrayVidas();
     }

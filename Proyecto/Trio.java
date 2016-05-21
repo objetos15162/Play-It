@@ -14,6 +14,9 @@ public class Trio extends Sonido
     private ArrayList<GreenfootSound> cello;
     private ArrayList<GreenfootSound> violin;
     private long soundStartTime;
+    private Integer contTP;
+    private Integer contTV;
+    private Integer contTC;
     /**
      * constructor de la clase Trio
      */
@@ -23,6 +26,9 @@ public class Trio extends Sonido
         cello = new ArrayList();
         violin = new ArrayList();
         soundStartTime = 0;
+        contTP = 26;
+        contTC = 27;
+        contTV = 35;
         fillArrays();
     }
     /**
@@ -76,18 +82,30 @@ public class Trio extends Sonido
         int y=1;
         int z=1;
         
-        while(x!=27){
+        while(x!= contTP+1){
             piano.add(new GreenfootSound("tp"+x+".wav"));
             x++;
         }
-        while(y!=28){
+        while(y!= contTC+1){
             cello.add(new GreenfootSound("tc"+y+".wav"));
             y++;
         }
-        while(z!=36){
+        while(z!= contTV+1){
             violin.add(new GreenfootSound("tv"+z+".wav"));
             z++;
         }
        
+    }
+    public int getcontTV()
+    {
+        return contTV;
+    }
+    public int getcontTP()
+    {
+        return contTP;
+    }
+    public int getcontTC()
+    {
+        return contTC;
     }
 }
