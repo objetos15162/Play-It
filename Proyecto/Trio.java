@@ -54,6 +54,9 @@ public class Trio extends Sonido
         GreenfootSound m = null;
         GreenfootSound n = null;
         GreenfootSound o = null;
+        int band = 0;
+        while(band==0)
+        { 
        while(j<contTP+1){
            //actualiza el archivo que va a abrir
            while(k<contTC+1){
@@ -110,12 +113,16 @@ public class Trio extends Sonido
               l++;
           }
    
-   
+          if(Greenfoot.getKey()=="s")
+          {
+              band=1;
+            }
         }
         
         }
     
     }  
+}
 }
     /**
      * Método para rellenar los arreglos con los archivos de sonido

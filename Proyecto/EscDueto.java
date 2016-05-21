@@ -19,6 +19,7 @@ public class EscDueto extends Ensamble
     private Piano piano; 
     private Violinistab violinistab;
     private Violin violin5;
+    private Dueto t;
     public EscDueto()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
@@ -30,8 +31,20 @@ public class EscDueto extends Ensamble
         violinistab = new Violinistab();
         violin5 = new Violin();
         prepare();
+         t= new Dueto();
+       
+       
     }
-
+    public void act()
+    {
+        if(Greenfoot.isKeyDown("t"))
+        {
+        t.playSounds();
+        }
+        if(Greenfoot.isKeyDown("g")){
+            Greenfoot.stop();
+        }
+    }
     /**
      * Crea los objetos y botones necesarios 
      */

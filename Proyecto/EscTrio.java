@@ -34,9 +34,11 @@ public class EscTrio extends Ensamble
        cellistab2 = new Cellistab();
        violinistaa = new Violinistaa();
        pianistaa2 = new Pianistaa();
-       t= new Trio();
+       
        prepare();
-       t.playSounds();
+      // t= new Trio();
+       
+       //t.playSounds();
                  
     }
 
