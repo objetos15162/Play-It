@@ -69,7 +69,7 @@ public class EscCuarteto extends Ensamble
     {
            int x = c.getI();
         int i = c.getcontCV();
-       while(x<i)
+       if(x<i)
         {
             c.playSounds();
             violinistab.act();

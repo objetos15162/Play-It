@@ -67,15 +67,16 @@ public class EscTrio extends Ensamble
         
         int x = t.getJ();
         int i = t.getcontTV();
-       while(x<i)
+       if(x<i)
         {
             t.playSounds();
+
             violinistaa.act();
             pianistaa2.act();
             cellistab2.act();
-       }
-   }
-    }
+       }}
+  }
+    
 
     
    

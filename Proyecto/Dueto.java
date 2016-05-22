@@ -41,11 +41,7 @@ public class Dueto extends Sonido
         
         GreenfootSound m = null;
         GreenfootSound n = null;
-      
-        int band = 0;
         
-          
-               while(j<contDP){
         m = piano.get(j);
         //si el sonido pasado ya se acabó
           if(soundStartTimea==0)
@@ -78,11 +74,6 @@ public class Dueto extends Sonido
               soundStartTimeb = 0;
               l++;
           }
-        
-    
-        }
-        
-        
     
     }  
     public void fillArrays() {
