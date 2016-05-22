@@ -80,6 +80,7 @@ class.Pianistaa.superclass=Musico
 class.Piano.image=detector_piano.png
 class.Piano.superclass=Detector
 class.Pieza.superclass=greenfoot.Actor
+class.Records.superclass=greenfoot.Actor
 class.Scores.image=pant_scores.png
 class.Scores.superclass=greenfoot.World
 class.SimpleTimer.superclass=
@@ -340,16 +341,6 @@ dependency80.type=UsesDependency
 dependency81.from=Name
 dependency81.to=Usuario
 dependency81.type=UsesDependency
-<<<<<<< HEAD
-dependency82.from=Scores
-dependency82.to=Records
-dependency82.type=UsesDependency
-dependency83.from=Scores
-dependency83.to=Usuario
-dependency83.type=UsesDependency
-dependency84.from=Records
-dependency84.to=Usuario
-=======
 dependency82.from=EscCuarteto
 dependency82.to=Instruccion4
 dependency82.type=UsesDependency
@@ -358,7 +349,6 @@ dependency83.to=Violin
 dependency83.type=UsesDependency
 dependency84.from=EscCuarteto
 dependency84.to=Violin
->>>>>>> origin/master
 dependency84.type=UsesDependency
 dependency85.from=EscDueto
 dependency85.to=Violin
@@ -372,37 +362,20 @@ dependency87.type=UsesDependency
 dependency9.from=Menu
 dependency9.to=BPlay
 dependency9.type=UsesDependency
-<<<<<<< HEAD
-editor.fx.0.height=744
-editor.fx.0.width=1382
-editor.fx.0.x=-32000
-editor.fx.0.y=-32000
-editor.swing.0.height=698
-editor.swing.0.width=1382
-editor.swing.0.x=0
-editor.swing.0.y=23
-mainWindow.height=744
-mainWindow.width=1382
-mainWindow.x=-8
-mainWindow.y=-8
-package.numDependencies=84
-package.numTargets=51
-=======
 editor.fx.0.height=700
 editor.fx.0.width=700
 editor.fx.0.x=0
 editor.fx.0.y=0
 editor.swing.0.height=698
-editor.swing.0.width=701
+editor.swing.0.width=700
 editor.swing.0.x=183
 editor.swing.0.y=23
-mainWindow.height=514
-mainWindow.width=889
-mainWindow.x=77
-mainWindow.y=23
+mainWindow.height=744
+mainWindow.width=1382
+mainWindow.x=-8
+mainWindow.y=-8
 package.numDependencies=81
-package.numTargets=50
->>>>>>> origin/master
+package.numTargets=51
 project.charset=UTF-8
 readme.height=58
 readme.name=@README
@@ -467,37 +440,37 @@ target15.width=80
 target15.x=10
 target15.y=790
 target16.height=50
-target16.name=MyWorld
+target16.name=Records
 target16.showInterface=false
 target16.type=ClassTarget
 target16.typeParameters=
 target16.width=80
-target16.x=70
-target16.y=10
+target16.x=10
+target16.y=310
 target17.height=50
-target17.name=Transicion
+target17.name=MyWorld
 target17.showInterface=false
 target17.type=ClassTarget
 target17.typeParameters=
-target17.width=90
-target17.x=100
-target17.y=430
+target17.width=80
+target17.x=70
+target17.y=10
 target18.height=50
-target18.name=SimpleTimer
+target18.name=Transicion
 target18.showInterface=false
 target18.type=ClassTarget
 target18.typeParameters=
-target18.width=100
-target18.x=10
-target18.y=250
+target18.width=90
+target18.x=100
+target18.y=430
 target19.height=50
-target19.name=Violin
+target19.name=SimpleTimer
 target19.showInterface=false
 target19.type=ClassTarget
 target19.typeParameters=
-target19.width=80
+target19.width=100
 target19.x=10
-target19.y=1330
+target19.y=250
 target2.height=50
 target2.name=BHowTo
 target2.showInterface=false
@@ -507,31 +480,19 @@ target2.width=80
 target2.x=190
 target2.y=370
 target20.height=50
-<<<<<<< HEAD
 target20.name=Violin
-=======
-target20.name=About
->>>>>>> origin/master
 target20.showInterface=false
 target20.type=ClassTarget
 target20.typeParameters=
 target20.width=80
-<<<<<<< HEAD
 target20.x=10
 target20.y=1330
 target21.height=50
 target21.name=About
-=======
-target20.x=100
-target20.y=370
-target21.height=50
-target21.name=Piano
->>>>>>> origin/master
 target21.showInterface=false
 target21.type=ClassTarget
 target21.typeParameters=
 target21.width=80
-<<<<<<< HEAD
 target21.x=100
 target21.y=370
 target22.height=50
@@ -540,8 +501,8 @@ target22.showInterface=false
 target22.type=ClassTarget
 target22.typeParameters=
 target22.width=80
-target22.x=10
-target22.y=670
+target22.x=200
+target22.y=1090
 target23.height=50
 target23.name=PCuarteto
 target23.showInterface=false
@@ -552,114 +513,52 @@ target23.x=10
 target23.y=670
 target24.height=50
 target24.name=Detector
-=======
-target21.x=200
-target21.y=1090
-target22.height=50
-target22.name=PCuarteto
-target22.showInterface=false
-target22.type=ClassTarget
-target22.typeParameters=
-target22.width=90
-target22.x=10
-target22.y=670
-target23.height=50
-target23.name=Detector
-target23.showInterface=false
-target23.type=ClassTarget
-target23.typeParameters=
-target23.width=80
-target23.x=10
-target23.y=850
-target24.height=50
-target24.name=Vida
->>>>>>> origin/master
 target24.showInterface=false
 target24.type=ClassTarget
 target24.typeParameters=
 target24.width=80
-<<<<<<< HEAD
-target24.x=160
-target24.y=10
-target25.height=50
-target25.name=Vida
-=======
-target24.x=200
+target24.x=10
 target24.y=850
 target25.height=50
-target25.name=Dueto
->>>>>>> origin/master
+target25.name=Vida
 target25.showInterface=false
 target25.type=ClassTarget
 target25.typeParameters=
 target25.width=80
-<<<<<<< HEAD
 target25.x=200
 target25.y=850
 target26.height=50
 target26.name=Dueto
-=======
-target25.x=100
-target25.y=1330
-target26.height=50
-target26.name=Cellistab
->>>>>>> origin/master
 target26.showInterface=false
 target26.type=ClassTarget
 target26.typeParameters=
 target26.width=80
 target26.x=100
-<<<<<<< HEAD
 target26.y=1330
 target27.height=50
 target27.name=Cellistab
-=======
-target26.y=490
-target27.height=50
-target27.name=Ensamble
->>>>>>> origin/master
 target27.showInterface=false
 target27.type=ClassTarget
 target27.typeParameters=
 target27.width=80
-target27.x=10
-<<<<<<< HEAD
-target27.y=250
+target27.x=100
+target27.y=490
 target28.height=50
 target28.name=Ensamble
 target28.showInterface=false
 target28.type=ClassTarget
 target28.typeParameters=
 target28.width=80
-target28.x=100
-target28.y=1330
+target28.x=10
+target28.y=130
 target29.height=50
 target29.name=GameControl
 target29.showInterface=false
 target29.type=AbstractTarget
 target29.typeParameters=
-target29.width=90
-target29.x=10
-target29.y=130
-=======
-target27.y=130
-target28.height=50
-target28.name=GameControl
-target28.showInterface=false
-target28.type=AbstractTarget
-target28.typeParameters=
-target28.width=110
-target28.x=120
-target28.y=1030
-target29.height=50
-target29.name=MoreAbout
-target29.showInterface=false
-target29.type=ClassTarget
-target29.typeParameters=
-target29.width=90
-target29.x=160
-target29.y=10
->>>>>>> origin/master
+target29.width=110
+target29.x=120
+target29.y=1030
 target3.height=50
 target3.name=Lectura
 target3.showInterface=false
@@ -669,90 +568,53 @@ target3.width=80
 target3.x=10
 target3.y=1210
 target30.height=50
-<<<<<<< HEAD
 target30.name=MoreAbout
-=======
-target30.name=Usuario
->>>>>>> origin/master
 target30.showInterface=false
 target30.type=ClassTarget
 target30.typeParameters=
-target30.width=80
-<<<<<<< HEAD
-target30.x=190
-target30.y=1330
+target30.width=90
+target30.x=160
+target30.y=10
 target31.height=50
 target31.name=Usuario
-=======
-target30.x=120
-target30.y=250
-target31.height=50
-target31.name=Cuarteto
->>>>>>> origin/master
 target31.showInterface=false
 target31.type=ClassTarget
 target31.typeParameters=
 target31.width=80
-<<<<<<< HEAD
 target31.x=120
 target31.y=250
 target32.height=50
 target32.name=Cuarteto
-=======
-target31.x=190
-target31.y=1330
-target32.height=50
-target32.name=Pianistaa
->>>>>>> origin/master
 target32.showInterface=false
 target32.type=ClassTarget
 target32.typeParameters=
 target32.width=80
-<<<<<<< HEAD
 target32.x=190
 target32.y=1330
 target33.height=50
 target33.name=Pianistaa
-=======
-target32.x=200
-target32.y=670
-target33.height=50
-target33.name=Violistaa
->>>>>>> origin/master
 target33.showInterface=false
 target33.type=ClassTarget
 target33.typeParameters=
 target33.width=80
-target33.x=10
-target33.y=190
+target33.x=200
+target33.y=670
 target34.height=50
-<<<<<<< HEAD
 target34.name=Violistaa
-=======
-target34.name=Menu
->>>>>>> origin/master
 target34.showInterface=false
 target34.type=ClassTarget
 target34.typeParameters=
 target34.width=80
-<<<<<<< HEAD
 target34.x=10
 target34.y=190
 target35.height=50
 target35.name=Menu
-=======
-target34.x=100
-target34.y=130
-target35.height=50
-target35.name=BPlay
->>>>>>> origin/master
 target35.showInterface=false
 target35.type=ClassTarget
 target35.typeParameters=
 target35.width=80
-target35.x=10
-<<<<<<< HEAD
-target35.y=1030
+target35.x=100
+target35.y=130
 target36.height=50
 target36.name=BPlay
 target36.showInterface=false
@@ -760,63 +622,31 @@ target36.type=ClassTarget
 target36.typeParameters=
 target36.width=80
 target36.x=10
-target36.y=1030
+target36.y=430
 target37.height=50
 target37.name=BMoreAbout
 target37.showInterface=false
 target37.type=ClassTarget
 target37.typeParameters=
-target37.width=90
-target37.x=10
-target37.y=310
-target38.height=50
-target38.name=BMainMenu
-=======
-target35.y=430
-target36.height=50
-target36.name=BMoreAbout
-target36.showInterface=false
-target36.type=ClassTarget
-target36.typeParameters=
-target36.width=100
-target36.x=10
-target36.y=1030
-target37.height=50
-target37.name=BMainMenu
-target37.showInterface=false
-target37.type=ClassTarget
-target37.typeParameters=
 target37.width=100
 target37.x=10
-target37.y=970
+target37.y=1030
 target38.height=50
-target38.name=Trio
->>>>>>> origin/master
+target38.name=BMainMenu
 target38.showInterface=false
 target38.type=ClassTarget
 target38.typeParameters=
-target38.width=80
+target38.width=100
 target38.x=10
-<<<<<<< HEAD
 target38.y=970
 target39.height=50
 target39.name=Trio
-=======
-target38.y=1390
-target39.height=50
-target39.name=Lineas4
->>>>>>> origin/master
 target39.showInterface=false
 target39.type=ClassTarget
 target39.typeParameters=
 target39.width=80
-<<<<<<< HEAD
-target39.x=110
-target39.y=310
-=======
-target39.x=190
-target39.y=490
->>>>>>> origin/master
+target39.x=10
+target39.y=1390
 target4.height=50
 target4.name=EscCuarteto
 target4.showInterface=false
@@ -826,47 +656,35 @@ target4.width=100
 target4.x=10
 target4.y=730
 target40.height=50
-<<<<<<< HEAD
 target40.name=Lineas4
-=======
-target40.name=Lineas3
->>>>>>> origin/master
 target40.showInterface=false
 target40.type=ClassTarget
 target40.typeParameters=
 target40.width=80
-<<<<<<< HEAD
 target40.x=190
 target40.y=490
 target41.height=50
 target41.name=Lineas3
-=======
-target40.x=100
-target40.y=790
-target41.height=50
-target41.name=Lineas2
->>>>>>> origin/master
 target41.showInterface=false
 target41.type=ClassTarget
 target41.typeParameters=
 target41.width=80
-<<<<<<< HEAD
-target41.x=10
-target41.y=1390
+target41.x=100
+target41.y=790
 target42.height=50
 target42.name=Lineas2
 target42.showInterface=false
 target42.type=ClassTarget
 target42.typeParameters=
 target42.width=80
-target42.x=200
-target42.y=310
+target42.x=190
+target42.y=790
 target43.height=50
 target43.name=Sonido
 target43.showInterface=false
 target43.type=AbstractTarget
 target43.typeParameters=
-target43.width=100
+target43.width=80
 target43.x=10
 target43.y=490
 target44.height=50
@@ -876,58 +694,21 @@ target44.type=ClassTarget
 target44.typeParameters=
 target44.width=80
 target44.x=10
-target44.y=550
+target44.y=1150
 target45.height=50
 target45.name=Instruccion2
-=======
-target41.x=190
-target41.y=790
-target42.height=50
-target42.name=Sonido
-target42.showInterface=false
-target42.type=AbstractTarget
-target42.typeParameters=
-target42.width=80
-target42.x=10
-target42.y=490
-target43.height=50
-target43.name=Cello
-target43.showInterface=false
-target43.type=ClassTarget
-target43.typeParameters=
-target43.width=80
-target43.x=10
-target43.y=1150
-target44.height=50
-target44.name=Instruccion2
-target44.showInterface=false
-target44.type=ClassTarget
-target44.typeParameters=
-target44.width=100
-target44.x=10
-target44.y=1270
-target45.height=50
-target45.name=MenuPiezas
->>>>>>> origin/master
 target45.showInterface=false
 target45.type=ClassTarget
 target45.typeParameters=
 target45.width=100
 target45.x=10
-<<<<<<< HEAD
 target45.y=1270
 target46.height=50
 target46.name=MenuPiezas
-=======
-target45.y=550
-target46.height=50
-target46.name=Instruccion3
->>>>>>> origin/master
 target46.showInterface=false
 target46.type=ClassTarget
 target46.typeParameters=
 target46.width=100
-<<<<<<< HEAD
 target46.x=10
 target46.y=550
 target47.height=50
@@ -935,9 +716,9 @@ target47.name=Instruccion3
 target47.showInterface=false
 target47.type=ClassTarget
 target47.typeParameters=
-target47.width=80
+target47.width=100
 target47.x=100
-target47.y=1210
+target47.y=1150
 target48.height=50
 target48.name=Instruccion4
 target48.showInterface=false
@@ -948,39 +729,12 @@ target48.x=100
 target48.y=1210
 target49.height=50
 target49.name=BQuit
-=======
-target46.x=100
-target46.y=1150
-target47.height=50
-target47.name=Instruccion4
-target47.showInterface=false
-target47.type=ClassTarget
-target47.typeParameters=
-target47.width=100
-target47.x=100
-target47.y=1210
-target48.height=50
-target48.name=BQuit
-target48.showInterface=false
-target48.type=ClassTarget
-target48.typeParameters=
-target48.width=80
-target48.x=110
-target48.y=1090
-target49.height=50
-target49.name=Credito
->>>>>>> origin/master
 target49.showInterface=false
 target49.type=ClassTarget
 target49.typeParameters=
 target49.width=80
-<<<<<<< HEAD
 target49.x=110
 target49.y=1090
-=======
-target49.x=200
-target49.y=430
->>>>>>> origin/master
 target5.height=50
 target5.name=PDueto
 target5.showInterface=false
@@ -990,13 +744,13 @@ target5.width=80
 target5.x=110
 target5.y=670
 target50.height=50
-target50.name=EscTrio
+target50.name=Credito
 target50.showInterface=false
 target50.type=ClassTarget
 target50.typeParameters=
 target50.width=80
-target50.x=10
-target50.y=610
+target50.x=200
+target50.y=430
 target51.height=50
 target51.name=EscTrio
 target51.showInterface=false
@@ -1102,8 +856,4 @@ target9.width=80
 target9.x=190
 target9.y=190
 version=2.8.0
-<<<<<<< HEAD
 world.lastInstantiated=EscCuarteto
-=======
-world.lastInstantiated=MyWorld
->>>>>>> origin/master
