@@ -43,13 +43,8 @@ public class EscDueto extends Ensamble
          t.playSounds();
          violinistab.act();
          pianistaa.act();
-<<<<<<< HEAD
-
        }
        else
-=======
-       }else
->>>>>>> origin/master
        {
            Greenfoot.delay(2);
            EndGame e = new EndGame(super.getVidas().size());

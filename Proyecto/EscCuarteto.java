@@ -69,7 +69,7 @@ public class EscCuarteto extends Ensamble
     public void act()
     {
         //super.act();
-        int x = c.getI();
+        int x = c.getK();
         int i = c.getcontCV();
        if(x<i)
         {

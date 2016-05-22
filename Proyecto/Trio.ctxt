@@ -1,20 +1,20 @@
 #BlueJ class context
 comment0.target=Trio
-comment0.text=\n\ clase\ de\ sonidos\ para\ el\ trio,\ genera\ los\ arreglos\ de\ sonido\ y\ se\ encarga\ de\n\ su\ reproducci\u00F3n\n\ \n\ @author\ (LiliaC)\ \n\ @version\ (may\ 2016)\n
+comment0.text=\r\n\ clase\ de\ sonidos\ para\ el\ trio,\ genera\ los\ arreglos\ de\ sonido\ y\ se\ encarga\ de\r\n\ su\ reproducci\u00F3n\r\n\ \r\n\ @author\ (LiliaC)\ \r\n\ @version\ (may\ 2016)\r\n
 comment1.params=
 comment1.target=Trio()
-comment1.text=\n\ constructor\ de\ la\ clase\ Trio\n
+comment1.text=\r\n\ constructor\ de\ la\ clase\ Trio\r\n
 comment10.params=
 comment10.target=int\ getL()
 comment2.params=
 comment2.target=void\ act()
-comment2.text=\n\ \n
+comment2.text=\r\n\ \r\n
 comment3.params=
 comment3.target=void\ playSounds()
-comment3.text=\n\ \n
+comment3.text=\r\n\ \r\n
 comment4.params=
 comment4.target=void\ fillArrays()
-comment4.text=\n\ M\u00E9todo\ para\ rellenar\ los\ arreglos\ con\ los\ archivos\ de\ sonido\n\ en\ secuencia\n
+comment4.text=\r\n\ M\u00E9todo\ para\ rellenar\ los\ arreglos\ con\ los\ archivos\ de\ sonido\r\n\ en\ secuencia\r\n
 comment5.params=
 comment5.target=int\ getcontTV()
 comment6.params=

@@ -23,13 +23,13 @@ public class Instruccion2 extends Actor
     }
     public void act() 
     {
-        if(move){
+        /*if(move){
         clock.mark();
         move = false;
     }
-    if(clock.millisElapsed() >= 1000){    
+    if(clock.millisElapsed() >= 1000){    */
      move(-5);
-     move = true;
-    }    
+     //move = true;
+    //}    
    }
 }

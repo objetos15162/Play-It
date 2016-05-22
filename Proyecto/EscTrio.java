@@ -30,8 +30,8 @@ public class EscTrio extends Ensamble
        violin = new Violin();
        cello = new Cello();
        piano3 = new Piano();
-       linea1 = new Linea("triopiano.txt",false,2);
-       linea2 = new Linea("trioviolin.txt",false,1);
+       linea1 = new Linea("triopiano.txt",false,1);
+       linea2 = new Linea("trioviolin.txt",false,2);
        linea3 = new Linea("triocello.txt",true,3);
        cellistab2 = new Cellistab();
        violinistaa = new Violinistaa();
@@ -63,7 +63,7 @@ public class EscTrio extends Ensamble
     public void act()
     {
         //super.act();
-        int x = t.getJ();
+        int x = t.getL();
         int i = t.getcontTV();
        if(x<i)
         {
@@ -72,23 +72,13 @@ public class EscTrio extends Ensamble
             pianistaa2.act();
             cellistab2.act();
        }
-<<<<<<< HEAD
-       
     else
-=======
-
-       else
->>>>>>> origin/master
        {
            Greenfoot.delay(5);
            EndGame e = new EndGame(super.getVidas().size());
            Greenfoot.setWorld(e);
            
         }
-<<<<<<< HEAD
-=======
-
->>>>>>> origin/master
     }
 }
   
