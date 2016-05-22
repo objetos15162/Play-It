@@ -9,12 +9,6 @@ import javax.sound.sampled.*;
  */
 public class EscTrio extends Ensamble
 {
-
-    /**
-     * Constructor para los objetos, llama a la función prepare
-     * 
-     */
-    
     private Violin violin;
     private Cello cello;
     private Piano piano3;
@@ -23,6 +17,10 @@ public class EscTrio extends Ensamble
     private Violinistaa violinistaa;
     private Pianistaa pianistaa2;
     private Trio t;
+    /**
+     * Constructor para los objetos, llama a la función prepare
+     * 
+     */
     public EscTrio()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
@@ -47,19 +45,14 @@ public class EscTrio extends Ensamble
      */
     private void prepare()
     {
-        
         addObject(pianistaa2,356,212);
-        
         addObject(violinistaa,181,277);
-        
         addObject(cellistab2,407,273);
 
         addObject(lineas3,353,93);
         
         addObject(piano3,85,91);
-                
         addObject(cello,93,149);
-        
         addObject(violin,84,36);
     }
     public void act()
@@ -74,7 +67,8 @@ public class EscTrio extends Ensamble
             violinistaa.act();
             pianistaa2.act();
             cellistab2.act();
-       }}
+       }
+    }
   }
     
 

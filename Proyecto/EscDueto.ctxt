@@ -3,6 +3,7 @@ comment0.target=EscDueto
 comment0.text=\r\n\ Crea\ el\ escenario\ para\ el\ dueto\r\n\ \r\n\ @author\ (Esa\u00FA\ y\ Lilia)\ \r\n\ @version\ (21.04.2016)\r\n
 comment1.params=
 comment1.target=EscDueto()
+comment1.text=\r\n\ Constructor\ para\ la\ clase\ dueto\r\n\ \r\n
 comment2.params=
 comment2.target=void\ act()
 comment3.params=

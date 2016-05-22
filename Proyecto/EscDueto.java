@@ -8,18 +8,16 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class EscDueto extends Ensamble
 {
-
-    /**
-     * Constructor para la clase dueto
-     * 
-     */
-    
     private Pianistaa pianistaa;
     private Lineas2 lineas2;
     private Piano piano; 
     private Violinistab violinistab;
     private Violin violin5;
     private Dueto t;
+    /**
+     * Constructor para la clase dueto
+     * 
+     */
     public EscDueto()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.

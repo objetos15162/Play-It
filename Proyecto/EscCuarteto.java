@@ -8,11 +8,6 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class EscCuarteto extends Ensamble
 {
-
-    /**
-     * Constructor for objects of class esc_cuarteto.
-     * 
-     */
     private Violistaa violistaa;
     private Violinistaa violinistaa;
     private Violinistab violinistab;
@@ -23,6 +18,11 @@ public class EscCuarteto extends Ensamble
     private Violin violin;
     private Violin violin2;
     private Cuarteto c;
+    
+    /**
+     * Constructor for objects of class esc_cuarteto.
+     * 
+     */
     public EscCuarteto()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
@@ -49,20 +49,16 @@ public class EscCuarteto extends Ensamble
      */
     private void prepare()
     {
-        
         addObject(violistaa,340,272);
-       
         addObject(violinistaa,247,272);
-       
         addObject(violinistab,157,284);
         addObject(cellistab,447,277);
+        
         addObject(lineas4,349,101);
+        
         addObject(cello2,81,183);
-        
         addObject(viola,87,124);
-        
         addObject(violin,90,77);
-        
         addObject(violin2,92,31);
     }
     public void act()

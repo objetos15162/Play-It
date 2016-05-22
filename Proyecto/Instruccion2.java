@@ -8,7 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (Esaú & Lilia) 
  * @version (may 2016)
  */
-public class Instruccion2 extends Lineas2
+public class Instruccion2 extends Actor
 {
     /**
      * Act - do whatever the Instruccion wants to do. This method is called whenever
