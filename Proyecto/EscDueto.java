@@ -39,18 +39,10 @@ public class EscDueto extends Ensamble
         int x = t.getJ();
         int i = t.getcontDP();
        if(x<i)
-<<<<<<< HEAD
         { 
-=======
-        {
->>>>>>> origin/master
          t.playSounds();
          violinistab.act();
          pianistaa.act();
-<<<<<<< HEAD
-       }
-       
-=======
        }else
        {
            Greenfoot.delay(2);
@@ -58,7 +50,6 @@ public class EscDueto extends Ensamble
            Greenfoot.setWorld(e);
            
         }
->>>>>>> origin/master
     }
     
     /**
