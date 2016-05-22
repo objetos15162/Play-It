@@ -19,6 +19,7 @@ public class Cuarteto extends Sonido
     private Integer contCVb;
     private Integer contCV;
     private Integer contCC;
+    private  Integer i=0,j = 0,k=0,l=0;
     /**
      * Act - do whatever the Cuarteto wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -45,7 +46,7 @@ public class Cuarteto extends Sonido
         
     }  
      public void playSounds(){
-         Integer i=0,j = 0,k=0,l=0;
+        
         GreenfootSound m = null;
         GreenfootSound n = null;
         GreenfootSound o = null;
@@ -53,7 +54,7 @@ public class Cuarteto extends Sonido
         int band = 0;
    
     
-                   while(i<contCV+1){
+                   while(i<contCV){
         m = cello.get(j);
         //si el sonido pasado ya se acabó
           if(soundStartTimea==0)
@@ -172,5 +173,21 @@ public class Cuarteto extends Sonido
     public int getcontCC()
     {
         return contCC;
+    }
+    public int getI()
+    {
+        return i;
+    }
+    public int getJ()
+    {
+        return j;
+    }
+    public int getK()
+    {
+        return k;
+    }
+    public int getL()
+    {
+        return l;
     }
 }

@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Dueto
-comment0.text=\r\n\ clase\ de\ sonidos\ para\ el\ dueto,\ genera\ los\ arreglos\ de\ sonido\ y\ se\ encarga\ de\r\n\ su\ reproducci\u00F3n\r\n\ \r\n\ @author\ (EsauBz)\ \r\n\ @version\ (may\ 2016)\r\n
+comment0.text=\n\ clase\ de\ sonidos\ para\ el\ dueto,\ genera\ los\ arreglos\ de\ sonido\ y\ se\ encarga\ de\n\ su\ reproducci\u00F3n\n\ \n\ @author\ (EsauBz)\ \n\ @version\ (may\ 2016)\n
 comment1.params=
 comment1.target=Dueto()
 comment2.params=
@@ -13,4 +13,8 @@ comment5.params=
 comment5.target=int\ getcontDP()
 comment6.params=
 comment6.target=int\ getcontDV()
-numComments=7
+comment7.params=
+comment7.target=int\ getJ()
+comment8.params=
+comment8.target=int\ getK()
+numComments=9
