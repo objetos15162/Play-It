@@ -52,7 +52,7 @@ public class Lectura extends GameControl
          if(entrada.hasNext()){
              String cadena = entrada.next();
              
-             Integer x =Integer.parseInt(cadena);
+             Integer x = Integer.parseInt(cadena);
              temp=x;
              // TODO here you can make whatever you want with the variable cadena that has saved the number in string
              //Remember to use Integer if you want a int 

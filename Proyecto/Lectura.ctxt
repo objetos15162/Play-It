@@ -1,16 +1,16 @@
 #BlueJ class context
 comment0.target=Lectura
-comment0.text=\n\ La\ funcion\ principal\ de\ la\ clase\ es\ recibir\ un\ string\ \n\ en\ su\ contructor\ que\ sera\ el\ nombre\ de\ algun\ archivo\ para\ asi\ poder\ abrirlo\ y\ leerlo\ linea\ por\ linea\n\ \n\ @author\ (EsauBz)\ \n\ @version\ (1.0)\n
+comment0.text=\r\n\ La\ funcion\ principal\ de\ la\ clase\ es\ recibir\ un\ string\ \r\n\ en\ su\ contructor\ que\ sera\ el\ nombre\ de\ algun\ archivo\ para\ asi\ poder\ abrirlo\ y\ leerlo\ linea\ por\ linea\r\n\ \r\n\ @author\ (EsauBz)\ \r\n\ @version\ (1.0)\r\n
 comment1.params=archivo
 comment1.target=Lectura(java.lang.String)
-comment1.text=\n\ @param\ String\ that\ represents\ the\ File\ that\ later\ will\ try\ to\ open.\n
+comment1.text=\r\n\ @param\ String\ that\ represents\ the\ File\ that\ later\ will\ try\ to\ open.\r\n
 comment2.params=
 comment2.target=java.io.File\ getArchivo()
-comment2.text=\n\ @return\ The\ file\ that\ "archivo"\ has\ saved\n
+comment2.text=\r\n\ @return\ The\ file\ that\ "archivo"\ has\ saved\r\n
 comment3.params=
 comment3.target=void\ openFile()
-comment3.text=\n\ Try\ to\ open\ a\ File,\ if\ the\ File\ exist\ archivoOk\ turns\ True,\ if\ not\ the\ class\ throws\ a\ exception.\ \n
+comment3.text=\r\n\ Try\ to\ open\ a\ File,\ if\ the\ File\ exist\ archivoOk\ turns\ True,\ if\ not\ the\ class\ throws\ a\ exception.\ \r\n
 comment4.params=
 comment4.target=int\ readStrings()
-comment4.text=\n\ Read\ all\ the\ lines\ of\ the\ File\ and\ ...\ \n
+comment4.text=\r\n\ Read\ all\ the\ lines\ of\ the\ File\ and\ ...\ \r\n
 numComments=5

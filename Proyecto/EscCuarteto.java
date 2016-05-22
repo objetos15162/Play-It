@@ -12,7 +12,10 @@ public class EscCuarteto extends Ensamble
     private Violinistaa violinistaa;
     private Violinistab violinistab;
     private Cellistab cellistab;
-    private Lineas4 lineas4;
+    private Linea linea1;
+    private Linea linea2;
+    private Linea linea3;
+    private Linea linea4;
     private Cello cello2;
     private Viola viola;
     private Violin violin;
@@ -26,15 +29,14 @@ public class EscCuarteto extends Ensamble
     public EscCuarteto()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        //insva=new Instruccion2("cuartetoviolina.txt");
-        //insvb=new Instruccion2("cuartetoviolinb.txt");
-        //insc=new Instruccion2("cuartetocello.txt");
-        //insv=new Instruccion2("cuartetoviola.txt");
+        linea1 = new Linea("cuartetoviolina.txt",true);
+        linea2 = new Linea("cuartetoviolinb.txt",false);
+        linea3 = new Linea("cuartetocello.txt",false);
+        linea4 = new Linea("cuartetoviola.txt",false);
         violistaa = new Violistaa();
         violinistaa = new Violinistaa();
         violinistab = new Violinistab();
         cellistab = new Cellistab();
-        lineas4 = new Lineas4();
         cello2 = new Cello();
         viola = new Viola();
         violin = new Violin();
@@ -54,7 +56,10 @@ public class EscCuarteto extends Ensamble
         addObject(violinistab,157,284);
         addObject(cellistab,447,277);
         
-        addObject(lineas4,349,101);
+        addObject(linea1,349,77);
+        addObject(linea2,349,31);
+        addObject(linea3,349,183);
+        addObject(linea4,349,124);
         
         addObject(cello2,81,183);
         addObject(viola,87,124);

@@ -12,7 +12,9 @@ public class EscTrio extends Ensamble
     private Violin violin;
     private Cello cello;
     private Piano piano3;
-    private Lineas3 lineas3;
+    private Linea linea1;
+    private Linea linea2;
+    private Linea linea3;
     private Cellistab cellistab2;
     private Violinistaa violinistaa;
     private Pianistaa pianistaa2;
@@ -28,7 +30,9 @@ public class EscTrio extends Ensamble
        violin = new Violin();
        cello = new Cello();
        piano3 = new Piano();
-       lineas3 = new Lineas3();
+       linea1 = new Linea("triopiano.txt",false);
+       linea2 = new Linea("trioviolin.txt",false);
+       linea3 = new Linea("triocello.txt",true);
        cellistab2 = new Cellistab();
        violinistaa = new Violinistaa();
        pianistaa2 = new Pianistaa();
@@ -49,7 +53,9 @@ public class EscTrio extends Ensamble
         addObject(violinistaa,181,277);
         addObject(cellistab2,407,273);
 
-        addObject(lineas3,353,93);
+        addObject(linea1,353,91);
+        addObject(linea2,353,36);
+        addObject(linea3,353,149);
         
         addObject(piano3,85,91);
         addObject(cello,93,149);

@@ -9,7 +9,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class EscDueto extends Ensamble
 {
     private Pianistaa pianistaa;
-    private Lineas2 lineas2;
+    private Linea linea1;
+    private Linea linea2;
     private Piano piano; 
     private Violinistab violinistab;
     private Violin violin5;
@@ -21,10 +22,9 @@ public class EscDueto extends Ensamble
     public EscDueto()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        //insv=new Instruccion2("duetoviolin.txt");
-        //insp=new Instruccion2("duetopiano.txt");
+        linea1 = new Linea("duetoviolin.txt",false);
+        linea2 = new Linea("duetopiano.txt",false);
         pianistaa = new Pianistaa();
-        lineas2 = new Lineas2();
         piano = new Piano();
         violinistab = new Violinistab();
         violin5 = new Violin();
@@ -51,15 +51,11 @@ public class EscDueto extends Ensamble
      */
     private void prepare()
     {
-        
-        addObject(pianistaa,256,208);
-
-        addObject(lineas2,351,93);
-        
+        addObject(linea1,351,129);
+        addObject(linea2,351,58);
         addObject(piano,90,58);
-
-        addObject(violinistab,370,267);
-        
+        addObject(pianistaa,256,208);
+        addObject(violinistab,370,267);   
         addObject(violin5,95,129);
     }
 }
