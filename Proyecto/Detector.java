@@ -19,21 +19,10 @@ public class Detector extends GameControl
     }
     public void act() 
     {
-        // Add your action code here.
-        touchesInst();
-      if(touch)
+      if(this.isTouching(Instruccion2.class))
       {
           removeTouching(Instruccion2.class);
         }
     }
-    private void touchesInst()
-    {
-        if(this.isTouching(Instruccion2.class)){
-            touch=true;
-        }
-    }
-    public boolean getTouch()
-    {   
-        return touch;
-    }
+    
 }

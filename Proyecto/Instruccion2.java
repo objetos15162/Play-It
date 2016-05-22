@@ -20,6 +20,7 @@ public class Instruccion2 extends Actor
     }
     public void act() 
     {
+        
         move(-5);
     }    
 
