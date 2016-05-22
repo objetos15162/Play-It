@@ -44,7 +44,6 @@ public class Ensamble extends KinectWorld
         vidas2.setLocation(545,364);
         
         addObject(vidas3,525,374);
-        vidas3.setLocation(519,363);
         vidas3.setLocation(521,365);
        
         addObject(vidas4,500,370);
