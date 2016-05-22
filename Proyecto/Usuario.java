@@ -14,7 +14,7 @@ public class Usuario  extends Actor
       name = "";
       World mundo = getWorld();
       Ensamble miMundo = (Ensamble)mundo;
-      puntos = miMundo.getVidas().size();
+      puntos = 0;
     }
     /**
      * Act - do whatever the Usuario wants to do. This method is called whenever

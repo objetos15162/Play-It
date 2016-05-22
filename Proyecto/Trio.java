@@ -105,6 +105,8 @@ public class Trio extends Sonido
               soundStartTimec = 0;
               l++;
           }
+          
+          
    
           
 

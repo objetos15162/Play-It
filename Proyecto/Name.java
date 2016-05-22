@@ -12,6 +12,7 @@ public class Name extends World
     private GreenfootImage imag2;
     private GreenfootImage imag3;
     private GreenfootImage imag4;
+    private String name = "";
     /**
      * Constructor for objects of class Name.
      * 
@@ -47,8 +48,11 @@ public class Name extends World
             Greenfoot.delay(2);
     }
     public void pidePlayer(){
-      String name = "";
+      
       name = Greenfoot.ask("Please Enter Your Name");
       this.player.setName(name);
+    }
+    public Usuario getPlayer(){
+        return player;
     }
 }

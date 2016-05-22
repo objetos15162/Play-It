@@ -77,13 +77,14 @@ public class Cuarteto extends Sonido
               soundStartTimeb = System.currentTimeMillis();
           }
         // to check for sound stopping
-          if (soundStartTimeb != 0 && !n.isPlaying())
+          if (soundStartTimeb != 0 && !n.isPlaying()&&k<contCV-1)
           {
               long elapsedTime = System.currentTimeMillis()-soundStartTimeb;
               System.out.println("The sound took "+(elapsedTime/1000)+" seconds to play.");
               soundStartTimeb = 0;
               k++;
           }
+          
         
         
            //actualiza el archivo que va a abrir

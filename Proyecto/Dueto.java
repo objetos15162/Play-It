@@ -57,6 +57,10 @@ public class Dueto extends Sonido
               soundStartTimea = 0;
               j++;
           }
+          if(j>=contDP-1)
+          {
+              j++;
+            }
           
            //actualiza el archivo que va a abrir
         n = violin.get(l);
@@ -74,6 +78,7 @@ public class Dueto extends Sonido
               soundStartTimeb = 0;
               l++;
           }
+          
     
     }  
     public void fillArrays() {

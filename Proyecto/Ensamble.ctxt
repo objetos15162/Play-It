@@ -1,12 +1,11 @@
 #BlueJ class context
 comment0.target=Ensamble
-comment0.text=\r\n\ Clase\ escenarios\ que\ contiene\ los\ escenarios\ de\ los\ distintos\ duetos\r\n\ \r\n\ \r\n\ @author\ (Lilia\ &\ Esa\u00FA)\ \r\n\ @version\ (may\ 2016)\r\n
+comment0.text=\n\ Clase\ escenarios\ que\ contiene\ los\ escenarios\ de\ los\ distintos\ duetos\n\ \n\ \n\ @author\ (Lilia\ &\ Esa\u00FA)\ \n\ @version\ (may\ 2016)\n
 comment1.params=
 comment1.target=Ensamble()
 comment2.params=
 comment2.target=void\ act()
 comment3.params=
-<<<<<<< HEAD
 comment3.target=void\ prepare()
 comment4.params=
 comment4.target=void\ fillArrayVidas()
@@ -18,14 +17,3 @@ comment6.params=
 comment6.target=void\ removeVida()
 comment6.text=\n\ m\u00E9todo\ para\ remover\ una\ vida\n
 numComments=7
-=======
-comment3.target=void\ fillArrayVidas()
-comment3.text=\r\n\ m\u00E9todo\ para\ rellenar\ el\ arreglo\ de\ vidas\ con\ las\ vidas\r\n
-comment4.params=
-comment4.target=java.util.ArrayList\ getVidas()
-comment4.text=\r\n\ m\u00E9todo\ para\ regresar\ vidas\r\n
-comment5.params=
-comment5.target=void\ removeVida()
-comment5.text=\r\n\ m\u00E9todo\ para\ remover\ una\ vida\r\n
-numComments=6
->>>>>>> origin/master

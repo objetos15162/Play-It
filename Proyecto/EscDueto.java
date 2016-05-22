@@ -39,14 +39,13 @@ public class EscDueto extends Ensamble
         int i = t.getcontDP();
         
        if(x<i)
-        {
-            t.playSounds();
+        { 
+         t.playSounds();
          violinistab.act();
-        
          pianistaa.act();
        }else
        {
-           Greenfoot.delay(5);
+           Greenfoot.delay(2);
            EndGame e = new EndGame(super.getVidas().size());
            Greenfoot.setWorld(e);
            

@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=MenuPiezas
-comment0.text=\r\n\ Muestra\ el\ men\u00FA\ de\ las\ piezas\ para\ jugar\r\n\ \r\n\ @author\ (Lilia\ &\ Esa\u00FA)\ \r\n\ @version\ (april\ &\ may\ 2016)\r\n
+comment0.text=\n\ Muestra\ el\ men\u00FA\ de\ las\ piezas\ para\ jugar\n\ \n\ @author\ (Lilia\ &\ Esa\u00FA)\ \n\ @version\ (april\ &\ may\ 2016)\n
 comment1.params=
 comment1.target=MenuPiezas()
 comment2.params=
