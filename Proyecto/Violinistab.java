@@ -34,6 +34,9 @@ public class Violinistab extends Musico
          super.act();
         }
     }   
-    
+    public void musiciansMove()
+    {
+        super.musiciansMove();
+    }
     
 }

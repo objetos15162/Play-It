@@ -1,10 +1,12 @@
 #BlueJ class context
 comment0.target=Pianistaa
-comment0.text=\r\n\ Clase\ para\ el\ Pianista\r\n\ declara\ sus\ im\u00E1genes\ y\ controla\ cu\u00E1ndo\ se\ mueve\r\n\ \r\n\ @author\ (Lilia\ &\ Esa\u00FA)\ \r\n\ @version\ (may\ 2016)\r\n
+comment0.text=\n\ Clase\ para\ el\ Pianista\n\ declara\ sus\ im\u00E1genes\ y\ controla\ cu\u00E1ndo\ se\ mueve\n\ \n\ @author\ (Lilia\ &\ Esa\u00FA)\ \n\ @version\ (may\ 2016)\n
 comment1.params=
 comment1.target=Pianistaa()
-comment1.text=\r\n\ Act\ -\ do\ whatever\ the\ pianistaa\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
+comment1.text=\n\ Act\ -\ do\ whatever\ the\ pianistaa\ wants\ to\ do.\ This\ method\ is\ called\ whenever\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\n
 comment2.params=
 comment2.target=void\ act()
-comment2.text=\r\n\ llama\ a\ act\ de\ pianista\ para\ que\ act\u00FAe\ (se\ mueva)\r\n
-numComments=3
+comment2.text=\n\ llama\ a\ act\ de\ pianista\ para\ que\ act\u00FAe\ (se\ mueva)\n
+comment3.params=
+comment3.target=void\ musiciansMove()
+numComments=4

@@ -51,10 +51,7 @@ public class Cuarteto extends Sonido
         GreenfootSound n = null;
         GreenfootSound o = null;
         GreenfootSound p = null;
-        int band = 0;
-   
-    
-                   while(i<contCV){
+        
         m = cello.get(j);
         //si el sonido pasado ya se acabó
           if(soundStartTimea==0)
@@ -104,14 +101,7 @@ public class Cuarteto extends Sonido
               System.out.println("The sound took "+(elapsedTime/1000)+" seconds to play.");
               soundStartTimec = 0;
               l++;
-          }
-   
-          if(Greenfoot.getKey()=="s")
-          {
-              band=1;
-            }
-            
-            
+          }  
          p = violin2.get(i);
         //si el sonido pasado ya se acabó
           if(soundStartTimed==0)
@@ -128,12 +118,6 @@ public class Cuarteto extends Sonido
               i++;
           }
    
-           
-        }
-    
-    
-    
-    
     
     }
     public void fillArrays() {

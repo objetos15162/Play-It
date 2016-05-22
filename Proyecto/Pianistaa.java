@@ -31,8 +31,12 @@ public class Pianistaa extends Musico
         if(Greenfoot.isKeyDown("p"))
         {
           super.act();
-          Trio t=new Trio();
+          //Trio t=new Trio();
           //t.playSounds();
         }     
-    }    
+    }   
+   public void musiciansMove()
+   {
+       super.musiciansMove();
+    }
 }

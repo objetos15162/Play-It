@@ -39,11 +39,13 @@ public class EscDueto extends Ensamble
     {
         int x = t.getJ();
         int i = t.getcontDP();
-       while(x<i)
+        
+       if(x<i)
         {
             t.playSounds();
-            violinistab.act();
-            pianistaa.act();
+         violinistab.act();
+        
+         pianistaa.act();
        }
     }
     /**
