@@ -62,7 +62,7 @@ public class Records extends Actor
    /**
    * Metodo que lee el archivo y lo pasa a una variable que lo almacena.
    */
-    public void leeRecords(){
+    private void leeRecords(){
         Usuario usuario;
         String nombre = "";
         int puntos = 0;
@@ -76,10 +76,12 @@ public class Records extends Actor
                 usuario = new Usuario();
                 texto = linea;
                 usuario.setName(texto);
+                //System.out.println(texto);
                 if((linea = bl.readLine()) != null){
                     texto = linea;
                     puntos = Integer.parseInt(texto);
                     usuario.setPoints(puntos);
+                    //System.out.println(puntos);
                 }
                 records.add(usuario);
             }   
@@ -110,7 +112,7 @@ public class Records extends Actor
    /**
    * Metodo que retorna la variable de records 
    */
-    public LinkedList<Usuario> creaTablaRecords(){
+    public LinkedList<Usuario> escribeTabla(){
         return records;
     }
    private void acomodaRecords(){

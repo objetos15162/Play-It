@@ -1,10 +1,10 @@
 #BlueJ class context
 comment0.target=Transicion
-comment0.text=\n\ Write\ a\ description\ of\ class\ transicion\ here.\n\ \n\ @author\ (Lilia\ &\ Esa\u00FA)\ \n\ @version\ (may\ 2016)\n
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ transicion\ here.\r\n\ \r\n\ @author\ (Lilia\ &\ Esa\u00FA)\ \r\n\ @version\ (may\ 2016)\r\n
 comment1.params=op
 comment1.target=Transicion(int)
-comment1.text=\n\ @param\ int\ op\ que\ ayudar\u00E1\ a\ definir\ qu\u00E9\ mundo\ se\ abre\ \n\ despu\u00E9s\ de\ la\ transici\u00F3n\n
+comment1.text=\r\n\ @param\ int\ op\ que\ ayudar\u00E1\ a\ definir\ qu\u00E9\ mundo\ se\ abre\ \r\n\ despu\u00E9s\ de\ la\ transici\u00F3n\r\n
 comment2.params=
 comment2.target=void\ act()
-comment2.text=\n\ cuando\ se\ llama\ transicion\ por\ un\ objeto\ o\ clase,\ y\ el\ caso\ 1\ llama\ \n\ a\ las\ piezas\ (ensambles)\ disponibles\n\ la\ opcion\ 2\ abre\ un\ dueto\n\ la\ opcion\ 3\ abre\ el\ trio\n\ la\ opcion\ 4\ abre\ el\ cuarteto\n
+comment2.text=\r\n\ cuando\ se\ llama\ transicion\ por\ un\ objeto\ o\ clase,\ y\ el\ caso\ 1\ llama\ \r\n\ a\ las\ piezas\ (ensambles)\ disponibles\r\n\ la\ opcion\ 2\ abre\ un\ dueto\r\n\ la\ opcion\ 3\ abre\ el\ trio\r\n\ la\ opcion\ 4\ abre\ el\ cuarteto\r\n
 numComments=3

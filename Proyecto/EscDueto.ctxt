@@ -1,11 +1,11 @@
 #BlueJ class context
 comment0.target=EscDueto
-comment0.text=\n\ Crea\ el\ escenario\ para\ el\ dueto\n\ \n\ @author\ (Esa\u00FA\ y\ Lilia)\ \n\ @version\ (21.04.2016)\n
+comment0.text=\r\n\ Crea\ el\ escenario\ para\ el\ dueto\r\n\ \r\n\ @author\ (Esa\u00FA\ y\ Lilia)\ \r\n\ @version\ (21.04.2016)\r\n
 comment1.params=
 comment1.target=EscDueto()
 comment2.params=
 comment2.target=void\ act()
 comment3.params=
 comment3.target=void\ prepare()
-comment3.text=\n\ Crea\ los\ objetos\ y\ botones\ necesarios\ \n
+comment3.text=\r\n\ Crea\ los\ objetos\ y\ botones\ necesarios\ \r\n
 numComments=4
