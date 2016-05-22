@@ -72,7 +72,11 @@ public class EscTrio extends Ensamble
             pianistaa2.act();
             cellistab2.act();
        }
+<<<<<<< Updated upstream
     else
+=======
+       else
+>>>>>>> Stashed changes
        {
            Greenfoot.delay(5);
            EndGame e = new EndGame(super.getVidas().size());
