@@ -23,18 +23,7 @@ public class Pianistaa extends Musico
        
         setImage(im1);
     }
-    /**
-     * llama a act de pianista para que actúe (se mueva)
-     */
-    public void act() 
-    {
-        if(Greenfoot.isKeyDown("p"))
-        {
-          super.act();
-          //Trio t=new Trio();
-          //t.playSounds();
-        }     
-    }   
+      
    public void musiciansMove()
    {
        super.musiciansMove();

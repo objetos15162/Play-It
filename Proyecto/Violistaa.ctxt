@@ -5,6 +5,5 @@ comment1.params=
 comment1.target=Violistaa()
 comment1.text=\n\ Act\ -\ do\ whatever\ the\ violistaa\ wants\ to\ do.\ This\ method\ is\ called\ whenever\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\n
 comment2.params=
-comment2.target=void\ act()
-comment2.text=\n\ \ llama\ a\ act\ de\ violista\ para\ que\ se\ mueva\n
+comment2.target=void\ musiciansMove()
 numComments=3

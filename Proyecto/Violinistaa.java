@@ -25,12 +25,9 @@ public class Violinistaa extends Musico
     /**
      * Act - llama a aAct de Violinista para que actúe (en este caso, se mueva)
      */
-    public void act() 
+      
+    public void musiciansMove()
     {
-        // Add your action code here.
-        if(Greenfoot.isKeyDown("x"))
-        {
-         super.act();
-        }
-    }    
+        super.musiciansMove();
+    }
 }
