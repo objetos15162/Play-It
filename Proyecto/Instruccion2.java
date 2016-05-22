@@ -10,18 +10,26 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Instruccion2 extends Actor
 {
-    /**
+    private SimpleTimer clock;
+    private Boolean move;
+   /**
      * Act - do whatever the Instruccion wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public Instruccion2()
     {
-        
+        clock = new SimpleTimer();
+        move = true;
     }
     public void act() 
     {
-        //Greenfoot.delay(1);
-        move(-5);
+        if(move){
+        clock.mark();
+        move = false;
+    }
+    if(clock.millisElapsed() >= 1000){    
+     move(-5);
+     move = true;
     }    
-
+   }
 }

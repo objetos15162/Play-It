@@ -16,6 +16,8 @@ public class Linea  extends Actor
     private boolean archivoOk; // Verificar si el archivo existe
     private File archivo1;// Archivo que se intentara abrir
     private int linea;
+    private SimpleTimer clock;
+    private boolean c;
     /**
      * Constructor for objects of class Linea
      */
@@ -25,6 +27,8 @@ public class Linea  extends Actor
         cont = 0;
         toca = genera;
         linea = lin;
+        clock = new SimpleTimer();
+        c = true;
         this.openFile();
     }
     public void act(){
@@ -32,28 +36,33 @@ public class Linea  extends Actor
         cont = this.readStrings();
         System.out.println(cont);
       }
-        if( toca != false){
-          if(cont != 0){
-             this.addInstruction();
-             //Greenfoot.delay(1);
-             cont--;
-             System.out.println(cont);
+     else{
+        if(c){
+         clock.mark();
+         c = false;
+         }
+         else{
+          if(clock.millisElapsed() >= 999){
+           if( toca != false){
+               this.addInstruction();
+               cont--;
+               System.out.println(clock.millisElapsed());
+              if(cont == 0){
+                toca = false;
+             }
             }
-            if(cont == 0){
-          toca = false;
-        }
-          }
-      else{
-          if(cont != 0){
-              //Greenfoot.delay(3);
+           else{
               cont--;
-              System.out.println(cont);
-            }
-           if(cont == 0){
-            toca = true;
-        }
+              System.out.println(clock.millisElapsed());
+             if(cont == 0){
+              toca = true;
+             }
+           }
+             c = true;
+         }
         }
     }
+}
     private void openFile(){
       try{
           entrada = new Scanner(archivo1);
@@ -64,18 +73,14 @@ public class Linea  extends Actor
         }
     }
    public int readStrings(){
-       Integer temp = 0;
+       Integer x = 0;
       if(archivoOk){
          if(entrada.hasNext()){
              String cadena = entrada.next();
-             //System.out.println(cadena);
-             Integer x = Integer.parseInt(cadena);
-             temp = x;
-             // TODO here you can make whatever you want with the variable cadena that has saved the number in string
-             //Remember to use Integer if you want a int 
+             return  x = Integer.parseInt(cadena);
             }
         }
-        return temp;
+        return 0;
     }
     private void addInstruction(){
       Instruccion2 i = new Instruccion2();
