@@ -4,8 +4,21 @@ comment0.text=\r\n\ Clase\ escenarios\ que\ contiene\ los\ escenarios\ de\ los\ 
 comment1.params=
 comment1.target=Ensamble()
 comment2.params=
-comment2.target=void\ prepare()
+comment2.target=void\ act()
 comment3.params=
+<<<<<<< HEAD
+comment3.target=void\ prepare()
+comment4.params=
+comment4.target=void\ fillArrayVidas()
+comment4.text=\n\ m\u00E9todo\ para\ rellenar\ el\ arreglo\ de\ vidas\ con\ las\ vidas\n
+comment5.params=
+comment5.target=java.util.ArrayList\ getVidas()
+comment5.text=\n\ m\u00E9todo\ para\ regresar\ vidas\n
+comment6.params=
+comment6.target=void\ removeVida()
+comment6.text=\n\ m\u00E9todo\ para\ remover\ una\ vida\n
+numComments=7
+=======
 comment3.target=void\ fillArrayVidas()
 comment3.text=\r\n\ m\u00E9todo\ para\ rellenar\ el\ arreglo\ de\ vidas\ con\ las\ vidas\r\n
 comment4.params=
@@ -15,3 +28,4 @@ comment5.params=
 comment5.target=void\ removeVida()
 comment5.text=\r\n\ m\u00E9todo\ para\ remover\ una\ vida\r\n
 numComments=6
+>>>>>>> origin/master
