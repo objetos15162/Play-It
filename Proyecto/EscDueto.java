@@ -57,8 +57,8 @@ public class EscDueto extends Ensamble
      */
     private void prepare()
     {
-        addObject(linea1,349,77);
-        addObject(linea2,349,31);
+        addObject(linea1,410,77);
+        addObject(linea2,410,31);
         addObject(piano,30,31);
         addObject(pianistaa,256,208);
         addObject(violinistab,370,267);   

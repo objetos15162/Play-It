@@ -56,10 +56,10 @@ public class EscCuarteto extends Ensamble
         addObject(violinistab,157,284);
         addObject(cellistab,447,277);
         
-        addObject(linea1,349,77);
-        addObject(linea2,349,31);
-        addObject(linea3,349,183);
-        addObject(linea4,349,124);
+        addObject(linea1,410,77);
+        addObject(linea2,410,31);
+        addObject(linea3,410,183);
+        addObject(linea4,410,124);
         
         addObject(cello2,40,183);
         addObject(viola,40,124);
