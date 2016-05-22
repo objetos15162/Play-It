@@ -72,13 +72,12 @@ public class EscTrio extends Ensamble
             pianistaa2.act();
             cellistab2.act();
        }
-<<<<<<< Updated upstream
-    else
-=======
        else
->>>>>>> Stashed changes
+       if(linea3.readStrings()==0 && linea2.readStrings()==0 && linea1.readStrings()==0)
        {
            Greenfoot.delay(5);
+           
+           t.stopSounds();
            EndGame e = new EndGame(super.getVidas().size());
            Greenfoot.setWorld(e);
            

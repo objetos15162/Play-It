@@ -1,7 +1,7 @@
 #BlueJ class context
 comment0.target=BQuit
-comment0.text=\r\n\ Clase\ bot\u00F3n\ para\ detener\ el\ juego\r\n\ \r\n\ @author\ (Lilia\ &\ Esa\u00FA)\ \r\n\ @version\ (may\ 2016)\r\n
+comment0.text=\n\ Clase\ bot\u00F3n\ para\ detener\ el\ juego\n\ \n\ @author\ (Lilia\ &\ Esa\u00FA)\ \n\ @version\ (may\ 2016)\n
 comment1.params=
 comment1.target=void\ act()
-comment1.text=\r\n\ Act\ -\ detiene\ el\ juego\ si\ se\ da\ click\ sobre\ el\ bot\u00F3n\r\n
+comment1.text=\n\ Act\ -\ detiene\ el\ juego\ si\ se\ da\ click\ sobre\ el\ bot\u00F3n\n
 numComments=2

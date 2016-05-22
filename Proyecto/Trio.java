@@ -18,6 +18,9 @@ public class Trio extends Sonido
     private Integer contTV;
     private Integer contTC;
     private Integer j=0,k=0,l=0;
+    private GreenfootSound m = null;
+    private GreenfootSound n = null;
+    private GreenfootSound o = null;
     /**
      * constructor de la clase Trio
      */
@@ -26,6 +29,7 @@ public class Trio extends Sonido
         piano = new ArrayList();
         cello = new ArrayList();
         violin = new ArrayList();
+        
         soundStartTimea = 0;
         soundStartTimeb=0;
         soundStartTimec=0;
@@ -48,12 +52,6 @@ public class Trio extends Sonido
     public void playSounds() 
     {
         // mientras siga habiendo elementos en el arreglo
-        
-        GreenfootSound m = null;
-        GreenfootSound n = null;
-        GreenfootSound o = null;
-       
-           
         
             m = piano.get(j);
             //si el sonido pasado ya se acabó
@@ -113,6 +111,24 @@ public class Trio extends Sonido
    
           
 
+    }
+    /**
+     * método para parar los sonidos
+     */
+    public void stopSounds()
+    {
+       if(m.isPlaying())
+        {
+        m.stop();
+       }
+        if(n.isPlaying())
+        {
+        n.stop();
+       }
+        if(o.isPlaying())
+        {
+        o.stop();
+       }
     }
     /**
      * Método para rellenar los arreglos con los archivos de sonido

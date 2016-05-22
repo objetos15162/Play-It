@@ -17,7 +17,8 @@ public class Dueto extends Sonido
     private Integer contDV;
     private long soundStartTimea,soundStartTimeb,soundStartTimec;
     private Integer j = 0,l=0;
-    
+     private GreenfootSound m = null;
+    private GreenfootSound n = null;
     public Dueto()
     {
         contDP=34;
@@ -38,9 +39,6 @@ public class Dueto extends Sonido
     public void playSounds()
     {
         // mientras siga habiendo elementos en el arreglo
-        
-        GreenfootSound m = null;
-        GreenfootSound n = null;
         
         m = piano.get(j);
         //si el sonido pasado ya se acabó
@@ -81,6 +79,18 @@ public class Dueto extends Sonido
           
     
     }  
+    public void stopSounds()
+    {
+        if(m.isPlaying())
+        {
+        m.stop();
+       }
+        if(n.isPlaying())
+        {
+        n.stop();
+       }
+        
+    }
     public void fillArrays() {
         int y=1;
         int z=1;

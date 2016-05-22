@@ -43,14 +43,17 @@ public class EscDueto extends Ensamble
          t.playSounds();
          violinistab.act();
          pianistaa.act();
-       }
-       else
+       }else{
+       if(linea2.readStrings()==0 && linea1.readStrings()==0)
        {
-           Greenfoot.delay(2);
+           Greenfoot.delay(5);
+           
+           t.stopSounds();
            EndGame e = new EndGame(super.getVidas().size());
            Greenfoot.setWorld(e);
            
         }
+    }
     }
     /**
      * Crea los objetos y botones necesarios 

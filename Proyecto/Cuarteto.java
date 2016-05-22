@@ -19,6 +19,10 @@ public class Cuarteto extends Sonido
     private Integer contCVb;
     private Integer contCV;
     private Integer contCC;
+    private GreenfootSound m = null;
+    private GreenfootSound n = null;
+    private GreenfootSound o = null;
+    private GreenfootSound p = null;
     private  Integer i=0,j = 0,k=0,l=0;
     /**
      * Act - do whatever the Cuarteto wants to do. This method is called whenever
@@ -47,10 +51,6 @@ public class Cuarteto extends Sonido
     }  
      public void playSounds(){
         
-        GreenfootSound m = null;
-        GreenfootSound n = null;
-        GreenfootSound o = null;
-        GreenfootSound p = null;
         
         m = cello.get(j);
         //si el sonido pasado ya se acabó
@@ -145,6 +145,25 @@ public class Cuarteto extends Sonido
             cello.add(new GreenfootSound("cc"+z+".wav"));
             z++;
         }
+    }
+    public void stopSounds()
+    {
+        if(m.isPlaying())
+        {
+        m.stop();
+       }
+        if(n.isPlaying())
+        {
+        n.stop();
+       }
+        if(o.isPlaying())
+        {
+        o.stop();
+       }
+        if(p.isPlaying())
+        {
+        p.stop();
+       }
     }
     public int getcontCVa()
     {
