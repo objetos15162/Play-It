@@ -76,7 +76,11 @@ public class Ensamble extends KinectWorld
      */
     public void removeVida()
     {
-        vidas.remove(vidas.size()-1);
+        Vida v;
+        v= vidas.get(vidas.size()-1);
+        removeObject(v);
+        vidas.remove(v);
+        
     }
     
     
