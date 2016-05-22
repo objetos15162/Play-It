@@ -7,9 +7,9 @@ comment2.params=nombre
 comment2.target=void\ setName(java.lang.String)
 comment2.text=\n\ Act\ -\ do\ whatever\ the\ Usuario\ wants\ to\ do.\ This\ method\ is\ called\ whenever\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\n\n\ \ \ \ public\ void\ act()\ \n\ \ \ \ {\n\ \ \ \ \ \ \ \ nombre\="";\n\ \ \ \ \ \ \ \ puntos\=0;\n}
 comment3.params=p
-comment3.target=void\ setPoints(java.lang.String)
+comment3.target=void\ setPoints(int)
 comment4.params=
 comment4.target=java.lang.String\ getName()
 comment5.params=
-comment5.target=java.lang.String\ getPoints()
+comment5.target=int\ getPoints()
 numComments=6

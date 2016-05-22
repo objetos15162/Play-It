@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=Records
+comment0.text=\r\n\ Esta\ clase\ crea\ un\ archivo\ de\ texto\ si\ es\ que\ no\ existe\ con\ records\ del\ juego.\r\n\ \ \ \ \ si\ existen\ ya\ los\ lee,\ tambien\ los\ sobreescribira.\r\n\ \r\n\ \r\n\ @author\ (EsauBz)\ \r\n\ @version\ (Mayo\ 2016)\r\n
+comment1.params=
+comment1.target=Records()
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Records\r\n
+comment2.params=
+comment2.target=void\ escribeRecords()
+comment2.text=\r\n\ Metodo\ que\ escribe\ en\ el\ archivo\ los\ records*\r\n
+comment3.params=
+comment3.target=void\ leeRecords()
+comment3.text=\r\n\ Metodo\ que\ lee\ el\ archivo\ y\ lo\ pasa\ a\ una\ variable\ que\ lo\ almacena.\r\n
+comment4.params=us
+comment4.target=void\ addUsuario(Usuario)
+comment4.text=\r\nMetodo\ que\ agrega\ un\ usuario\ a\ la\ variable\ records.
+comment5.params=
+comment5.target=java.util.LinkedList\ creaTablaRecords()
+comment5.text=\r\n\ Metodo\ que\ retorna\ la\ variable\ de\ records\ \r\n
+comment6.params=
+comment6.target=void\ acomodaRecords()
+numComments=7

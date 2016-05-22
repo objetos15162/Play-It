@@ -7,12 +7,12 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Usuario  extends Actor
 {
-    private String puntos;
+    private int puntos;
     private String name;
     public Usuario()
     {
       name = "";
-      puntos = "";
+      puntos = 0;
     }
     /**
      * Act - do whatever the Usuario wants to do. This method is called whenever
@@ -28,7 +28,7 @@ public class Usuario  extends Actor
         name = nombre;
     }
 
-    public void setPoints(String p){
+    public void setPoints(int p){
         puntos = p;
     }
 
@@ -36,7 +36,7 @@ public class Usuario  extends Actor
         return name;
     }
 
-    public String getPoints(){
+    public int getPoints(){
         return puntos;
     }    
 
