@@ -29,10 +29,10 @@ public class EscCuarteto extends Ensamble
     public EscCuarteto()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        linea1 = new Linea("cuartetoviolina.txt",true);
-        linea2 = new Linea("cuartetoviolinb.txt",false);
-        linea3 = new Linea("cuartetocello.txt",false);
-        linea4 = new Linea("cuartetoviola.txt",false);
+        linea1 = new Linea("cuartetoviolina.txt",true,2);
+        linea2 = new Linea("cuartetoviolinb.txt",false,1);
+        linea3 = new Linea("cuartetocello.txt",false,4);
+        linea4 = new Linea("cuartetoviola.txt",false,3);
         violistaa = new Violistaa();
         violinistaa = new Violinistaa();
         violinistab = new Violinistab();

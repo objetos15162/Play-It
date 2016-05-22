@@ -22,8 +22,8 @@ public class EscDueto extends Ensamble
     public EscDueto()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        linea1 = new Linea("duetoviolin.txt",false);
-        linea2 = new Linea("duetopiano.txt",false);
+        linea1 = new Linea("duetoviolin.txt",false,2);
+        linea2 = new Linea("duetopiano.txt",false,1);
         pianistaa = new Pianistaa();
         piano = new Piano();
         violinistab = new Violinistab();
@@ -51,11 +51,11 @@ public class EscDueto extends Ensamble
      */
     private void prepare()
     {
-        addObject(linea1,351,129);
-        addObject(linea2,351,58);
-        addObject(piano,90,58);
+        addObject(linea1,349,77);
+        addObject(linea2,349,31);
+        addObject(piano,90,31);
         addObject(pianistaa,256,208);
         addObject(violinistab,370,267);   
-        addObject(violin5,95,129);
+        addObject(violin5,95,77);
     }
 }

@@ -30,9 +30,9 @@ public class EscTrio extends Ensamble
        violin = new Violin();
        cello = new Cello();
        piano3 = new Piano();
-       linea1 = new Linea("triopiano.txt",false);
-       linea2 = new Linea("trioviolin.txt",false);
-       linea3 = new Linea("triocello.txt",true);
+       linea1 = new Linea("triopiano.txt",false,2);
+       linea2 = new Linea("trioviolin.txt",false,1);
+       linea3 = new Linea("triocello.txt",true,3);
        cellistab2 = new Cellistab();
        violinistaa = new Violinistaa();
        pianistaa2 = new Pianistaa();
@@ -53,13 +53,13 @@ public class EscTrio extends Ensamble
         addObject(violinistaa,181,277);
         addObject(cellistab2,407,273);
 
-        addObject(linea1,353,91);
-        addObject(linea2,353,36);
-        addObject(linea3,353,149);
+        addObject(linea1,349,77);
+        addObject(linea2,349,31);
+        addObject(linea3,349,130);
         
-        addObject(piano3,85,91);
-        addObject(cello,93,149);
-        addObject(violin,84,36);
+        addObject(piano3,85,77);
+        addObject(cello,93,130);
+        addObject(violin,84,31);
     }
     public void act()
     {
