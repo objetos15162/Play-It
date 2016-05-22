@@ -1,11 +1,16 @@
 #BlueJ class context
 comment0.target=Dueto
-comment0.text=\r\n\ clase\ de\ sonidos\ para\ el\ dueto,\ genera\ los\ arreglos\ de\ sonido\ y\ se\ encarga\ de\r\n\ su\ reproducci\u00F3n\r\n\ \r\n\ @author\ (EsauBz)\ \r\n\ @version\ (may\ 2016)\r\n
+comment0.text=\n\ clase\ de\ sonidos\ para\ el\ dueto,\ genera\ los\ arreglos\ de\ sonido\ y\ se\ encarga\ de\n\ su\ reproducci\u00F3n\n\ \n\ @author\ (EsauBz)\ \n\ @version\ (may\ 2016)\n
 comment1.params=
-comment1.target=void\ act()
-comment1.text=\r\n\ Act\ -\ do\ whatever\ the\ Dueto\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
+comment1.target=Dueto()
 comment2.params=
-comment2.target=void\ playSounds()
+comment2.target=void\ act()
 comment3.params=
-comment3.target=void\ fillArrays()
-numComments=4
+comment3.target=void\ playSounds()
+comment4.params=
+comment4.target=void\ fillArrays()
+comment5.params=
+comment5.target=int\ getcontDP()
+comment6.params=
+comment6.target=int\ getcontDV()
+numComments=7

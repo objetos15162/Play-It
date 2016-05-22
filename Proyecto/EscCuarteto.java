@@ -22,6 +22,7 @@ public class EscCuarteto extends Ensamble
     private Viola viola;
     private Violin violin;
     private Violin violin2;
+    private Cuarteto c;
     public EscCuarteto()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
@@ -38,6 +39,7 @@ public class EscCuarteto extends Ensamble
         viola = new Viola();
         violin = new Violin();
         violin2 = new Violin();
+        c= new Cuarteto();
         prepare();
     }
 
@@ -62,5 +64,16 @@ public class EscCuarteto extends Ensamble
         addObject(violin,90,77);
         
         addObject(violin2,92,31);
+    }
+    public void act()
+    {
+            if(Greenfoot.isKeyDown("t"))
+        {
+        c.playSounds();
+        }
+        if(Greenfoot.isKeyDown("g")){
+            Greenfoot.stop();
+        }
+    
     }
 }

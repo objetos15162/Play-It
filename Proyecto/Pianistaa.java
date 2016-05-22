@@ -32,7 +32,7 @@ public class Pianistaa extends Musico
         {
           super.act();
           Trio t=new Trio();
-          t.playSounds();
+          //t.playSounds();
         }     
     }    
 }

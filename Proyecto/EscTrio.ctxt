@@ -6,4 +6,6 @@ comment1.target=EscTrio()
 comment2.params=
 comment2.target=void\ prepare()
 comment2.text=\n\ Prepara\ el\ mundo\n\ Crea\ el\ pianista,\ violinista\ y\ cellista\ y\ los\ posiciona\n
-numComments=3
+comment3.params=
+comment3.target=void\ act()
+numComments=4

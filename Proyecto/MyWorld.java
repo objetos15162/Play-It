@@ -15,18 +15,13 @@ public class MyWorld extends World
      */
     //violinista v=new violinista();
     private GreenfootImage imag1;
-    private GreenfootImage imag2;
-    private GreenfootImage imag3;
-    private GreenfootImage imag4;
+   
     public MyWorld()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1); 
           
         imag1=new GreenfootImage("m1.png");
-        imag2=new GreenfootImage("m2.png");
-        imag3=new GreenfootImage("m3.png");
-        imag4=new GreenfootImage("m4.png");
         
         setBackground(imag1);
           
@@ -39,15 +34,9 @@ public class MyWorld extends World
     {
         if(Greenfoot.mouseClicked(this))
         {
-            Greenfoot.delay(2);
-            setBackground(imag2);
-            Greenfoot.delay(2);
-            setBackground(imag3);
-            Greenfoot.delay(2);
-            setBackground(imag4);
-            Greenfoot.delay(2);
             
-            Menu newWorld = new Menu();
+            
+            Name newWorld = new Name();
             Greenfoot.setWorld(newWorld);
         }
     }   

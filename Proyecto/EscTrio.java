@@ -22,6 +22,7 @@ public class EscTrio extends Ensamble
     private Cellistab cellistab2;
     private Violinistaa violinistaa;
     private Pianistaa pianistaa2;
+    private Trio t;
     public EscTrio()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
@@ -33,7 +34,10 @@ public class EscTrio extends Ensamble
        cellistab2 = new Cellistab();
        violinistaa = new Violinistaa();
        pianistaa2 = new Pianistaa();
+       
        prepare();
+       t= new Trio();
+       
                  
     }
 
@@ -58,7 +62,21 @@ public class EscTrio extends Ensamble
         
         addObject(violin,84,36);
     }
+    public void act()
+    {
+        
+        int x = t.getJ();
+        int i = t.getcontTV();
+       while(x<i)
+        {
+            t.playSounds();
+            violinistaa.act();
+            pianistaa2.act();
+            cellistab2.act();
+       }
+   }
+    }
 
     
    
-}
+
