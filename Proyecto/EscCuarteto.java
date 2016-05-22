@@ -61,10 +61,10 @@ public class EscCuarteto extends Ensamble
         addObject(linea3,349,183);
         addObject(linea4,349,124);
         
-        addObject(cello2,81,183);
-        addObject(viola,87,124);
-        addObject(violin,90,77);
-        addObject(violin2,92,31);
+        addObject(cello2,40,183);
+        addObject(viola,40,124);
+        addObject(violin,40,77);
+        addObject(violin2,40,31);
     }
     public void act()
     {
