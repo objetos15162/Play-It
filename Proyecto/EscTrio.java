@@ -52,13 +52,13 @@ public class EscTrio extends Ensamble
         addObject(violinistaa,181,277);
         addObject(cellistab2,407,273);
 
-        addObject(linea1,349,77);
-        addObject(linea2,349,31);
-        addObject(linea3,349,130);
+        addObject(linea1,410,77);
+        addObject(linea2,410,31);
+        addObject(linea3,410,130);
         
-        addObject(piano3,85,77);
-        addObject(cello,93,130);
-        addObject(violin,84,31);
+        addObject(piano3,40,77);
+        addObject(cello,40,130);
+        addObject(violin,40,31);
     }
     public void act()
     {
@@ -72,12 +72,8 @@ public class EscTrio extends Ensamble
             pianistaa2.act();
             cellistab2.act();
        }
-<<<<<<< HEAD
-    else
-=======
-       else
+    else{
        if(linea3.readStrings()==0 && linea2.readStrings()==0 && linea1.readStrings()==0)
->>>>>>> origin/master
        {
            Greenfoot.delay(5);
            
@@ -87,6 +83,7 @@ public class EscTrio extends Ensamble
            
         }
     }
+   }
 }
   
     

@@ -7,7 +7,7 @@ import java.util.ArrayList;
  * @author (Lilia & Esaú) 
  * @version (may 2016)
  */
-public class Ensamble extends KinectWorld
+public class Ensamble extends World
 {
 
     /**
@@ -26,7 +26,8 @@ public class Ensamble extends KinectWorld
     public Ensamble()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-       main_menu3 = new BMainMenu();
+       super(600,400,1);
+        main_menu3 = new BMainMenu();
        vidas1 = new Vida();
        vidas2 = new Vida();
        vidas3 = new Vida();
