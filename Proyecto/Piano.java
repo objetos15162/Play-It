@@ -15,5 +15,6 @@ public class Piano extends Detector
     public void act() 
     {
         // Add your action code here.
+        super.act();
     }    
 }

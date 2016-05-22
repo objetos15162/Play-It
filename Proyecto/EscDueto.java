@@ -46,6 +46,7 @@ public class EscDueto extends Ensamble
          pianistaa.act();
        }
     }
+    
     /**
      * Crea los objetos y botones necesarios 
      */
@@ -57,5 +58,6 @@ public class EscDueto extends Ensamble
         addObject(pianistaa,256,208);
         addObject(violinistab,370,267);   
         addObject(violin5,95,77);
+        violin5.setLocation(79,81);
     }
 }
