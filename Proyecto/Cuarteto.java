@@ -63,7 +63,7 @@ public class Cuarteto extends Sonido
           if (soundStartTimea != 0 && !m.isPlaying()&& j<contCC-1)
           {
               long elapsedTime = System.currentTimeMillis()-soundStartTimea;
-              System.out.println("The sound took "+(elapsedTime/1000)+" seconds to play.");
+              //System.out.println("The sound took "+(elapsedTime/1000)+" seconds to play.");
               soundStartTimea = 0;
               j++;
           }
@@ -80,7 +80,7 @@ public class Cuarteto extends Sonido
           if (soundStartTimeb != 0 && !n.isPlaying())
           {
               long elapsedTime = System.currentTimeMillis()-soundStartTimeb;
-              System.out.println("The sound took "+(elapsedTime/1000)+" seconds to play.");
+              //System.out.println("The sound took "+(elapsedTime/1000)+" seconds to play.");
               soundStartTimeb = 0;
               k++;
           }
@@ -98,7 +98,7 @@ public class Cuarteto extends Sonido
           if (soundStartTimec != 0 && !o.isPlaying()&&l<contCVa-1)
           {
               long elapsedTime = System.currentTimeMillis()-soundStartTimec;
-              System.out.println("The sound took "+(elapsedTime/1000)+" seconds to play.");
+              //System.out.println("The sound took "+(elapsedTime/1000)+" seconds to play.");
               soundStartTimec = 0;
               l++;
           }  
@@ -113,7 +113,7 @@ public class Cuarteto extends Sonido
           if (soundStartTimed != 0 && !p.isPlaying()&& i<contCVb-1)
           {
               long elapsedTime = System.currentTimeMillis()-soundStartTimed;
-              System.out.println("The sound took "+(elapsedTime/1000)+" seconds to play.");
+              //System.out.println("The sound took "+(elapsedTime/1000)+" seconds to play.");
               soundStartTimed = 0;
               i++;
           }

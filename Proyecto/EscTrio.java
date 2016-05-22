@@ -42,7 +42,6 @@ public class EscTrio extends Ensamble
        
                  
     }
-
     /**
      * Prepara el mundo
      * Crea el pianista, violinista y cellista y los posiciona
@@ -63,17 +62,17 @@ public class EscTrio extends Ensamble
     }
     public void act()
     {
-        
+        //super.act();
         int x = t.getJ();
         int i = t.getcontTV();
        if(x<i)
         {
             t.playSounds();
-
             violinistaa.act();
             pianistaa2.act();
             cellistab2.act();
        }
+       
     }
   }
     

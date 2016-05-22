@@ -30,24 +30,31 @@ public class Linea  extends Actor
     public void act(){
         if(cont == 0){
         cont = this.readStrings();
+        System.out.println(cont);
       }
         if( toca != false){
-          while(cont != 0){
+          if(cont != 0){
              this.addInstruction();
-             //Greenfoot.delay(3);
+             //Greenfoot.delay(1);
              cont--;
+             System.out.println(cont);
             }
+            if(cont == 0){
           toca = false;
+        }
           }
       else{
-          while(cont != 0){
-              //Greenfoot.delay(4);
+          if(cont != 0){
+              //Greenfoot.delay(3);
               cont--;
+              System.out.println(cont);
             }
+           if(cont == 0){
             toca = true;
         }
+        }
     }
-    public void openFile(){
+    private void openFile(){
       try{
           entrada = new Scanner(archivo1);
           archivoOk = true;
@@ -61,7 +68,7 @@ public class Linea  extends Actor
       if(archivoOk){
          if(entrada.hasNext()){
              String cadena = entrada.next();
-             System.out.println(cadena);
+             //System.out.println(cadena);
              Integer x = Integer.parseInt(cadena);
              temp = x;
              // TODO here you can make whatever you want with the variable cadena that has saved the number in string

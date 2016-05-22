@@ -35,16 +35,16 @@ public class EscDueto extends Ensamble
     }
     public void act()
     {
+        //super.act();
         int x = t.getJ();
         int i = t.getcontDP();
-        
        if(x<i)
         {
-            t.playSounds();
+         t.playSounds();
          violinistab.act();
-        
          pianistaa.act();
        }
+       
     }
     
     /**
@@ -54,10 +54,9 @@ public class EscDueto extends Ensamble
     {
         addObject(linea1,349,77);
         addObject(linea2,349,31);
-        addObject(piano,90,31);
+        addObject(piano,30,31);
         addObject(pianistaa,256,208);
         addObject(violinistab,370,267);   
-        addObject(violin5,95,77);
-        violin5.setLocation(79,81);
+        addObject(violin5,40,77);
     }
 }
