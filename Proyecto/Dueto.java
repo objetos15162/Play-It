@@ -53,7 +53,7 @@ public class Dueto extends Sonido
           if (soundStartTimea != 0 && !m.isPlaying())
           {
               long elapsedTime = System.currentTimeMillis()-soundStartTimea;
-              System.out.println("The sound took "+(elapsedTime/1000)+" seconds to play.");
+              //System.out.println("The sound took "+(elapsedTime/1000)+" seconds to play.");
               soundStartTimea = 0;
               j++;
           }
@@ -74,7 +74,7 @@ public class Dueto extends Sonido
           if (soundStartTimeb != 0 && !n.isPlaying() && l<contDV-1)
           {
               long elapsedTime = System.currentTimeMillis()-soundStartTimeb;
-              System.out.println("The sound took "+(elapsedTime/1000)+" seconds to play.");
+              //System.out.println("The sound took "+(elapsedTime/1000)+" seconds to play.");
               soundStartTimeb = 0;
               l++;
           }

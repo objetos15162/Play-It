@@ -1,9 +1,9 @@
 #BlueJ class context
 comment0.target=Cuarteto
-comment0.text=\n\ clase\ de\ sonidos\ para\ el\ cuarteto,\ genera\ los\ arreglos\ de\ sonido\ y\ se\ encarga\ de\n\ su\ reproducci\u00F3n\n\ \n\ @author\ (EsauBZ)\ \n\ @version\ (may\ 2016)\n
+comment0.text=\r\n\ clase\ de\ sonidos\ para\ el\ cuarteto,\ genera\ los\ arreglos\ de\ sonido\ y\ se\ encarga\ de\r\n\ su\ reproducci\u00F3n\r\n\ \r\n\ @author\ (EsauBZ)\ \r\n\ @version\ (may\ 2016)\r\n
 comment1.params=
 comment1.target=Cuarteto()
-comment1.text=\n\ Act\ -\ do\ whatever\ the\ Cuarteto\ wants\ to\ do.\ This\ method\ is\ called\ whenever\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\n
+comment1.text=\r\n\ Act\ -\ do\ whatever\ the\ Cuarteto\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
 comment10.params=
 comment10.target=int\ getJ()
 comment11.params=

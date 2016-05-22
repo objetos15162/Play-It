@@ -20,7 +20,7 @@ public class Instruccion2 extends Actor
     }
     public void act() 
     {
-        
+        //Greenfoot.delay(1);
         move(-5);
     }    
 
