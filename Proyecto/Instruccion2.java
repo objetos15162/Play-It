@@ -23,8 +23,7 @@ public class Instruccion2 extends Lineas2
     }
     public void act() 
     {
-        // Add your action code here.
-      
+        move(4);
     }    
     public void generarInstruc()
     {
