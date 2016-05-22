@@ -63,6 +63,7 @@ public class Records extends Actor
    * Metodo que lee el archivo y lo pasa a una variable que lo almacena.
    */
     private void leeRecords(){
+        
         Usuario usuario;
         String nombre = "";
         int puntos = 0;

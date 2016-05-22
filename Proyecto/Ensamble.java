@@ -21,6 +21,8 @@ public class Ensamble extends KinectWorld
      private Vida vidas4;
      private Vida vidas5;
      private ArrayList<Vida> vidas;
+     private GreenfootImage imag1;
+   
     public Ensamble()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
@@ -31,8 +33,13 @@ public class Ensamble extends KinectWorld
        vidas4 = new Vida();
        vidas5 = new Vida();
        vidas = new ArrayList<Vida>();
+       imag1=new GreenfootImage("end_game.png");
         prepare();
       fillArrayVidas();
+    }
+    public void act()
+    {
+        
     }
     private void prepare()
     {

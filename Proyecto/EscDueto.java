@@ -44,7 +44,13 @@ public class EscDueto extends Ensamble
          violinistab.act();
         
          pianistaa.act();
-       }
+       }else
+       {
+           Greenfoot.delay(5);
+           EndGame e = new EndGame(super.getVidas().size());
+           Greenfoot.setWorld(e);
+           
+        }
     }
     
     /**
