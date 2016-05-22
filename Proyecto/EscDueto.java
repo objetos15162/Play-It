@@ -37,13 +37,14 @@ public class EscDueto extends Ensamble
     }
     public void act()
     {
-        if(Greenfoot.isKeyDown("t"))
+        int x = t.getJ();
+        int i = t.getcontDP();
+       while(x<i)
         {
-        t.playSounds();
-        }
-        if(Greenfoot.isKeyDown("g")){
-            Greenfoot.stop();
-        }
+            t.playSounds();
+            violinistab.act();
+            pianistaa.act();
+       }
     }
     /**
      * Crea los objetos y botones necesarios 

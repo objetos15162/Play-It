@@ -67,13 +67,16 @@ public class EscCuarteto extends Ensamble
     }
     public void act()
     {
-            if(Greenfoot.isKeyDown("t"))
+           int x = c.getI();
+        int i = c.getcontCV();
+       while(x<i)
         {
-        c.playSounds();
-        }
-        if(Greenfoot.isKeyDown("g")){
-            Greenfoot.stop();
-        }
+            c.playSounds();
+            violinistab.act();
+            violinistaa.act();
+            cellistab.act();
+            violistaa.act();
+       }
     
     }
 }

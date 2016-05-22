@@ -16,6 +16,7 @@ public class Dueto extends Sonido
     private Integer contDP;
     private Integer contDV;
     private long soundStartTimea,soundStartTimeb,soundStartTimec;
+    private Integer j = 0,l=0;
     
     public Dueto()
     {
@@ -37,7 +38,7 @@ public class Dueto extends Sonido
     public void playSounds()
     {
         // mientras siga habiendo elementos en el arreglo
-        Integer j = 0,l=0;
+        
         GreenfootSound m = null;
         GreenfootSound n = null;
       
@@ -104,4 +105,13 @@ public class Dueto extends Sonido
     {
         return contDV;
     }
+     public int getJ()
+    {
+        return j;
+    }
+    public int getK()
+    {
+        return l;
+    }
+  
 }
