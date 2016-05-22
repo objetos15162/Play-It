@@ -25,11 +25,8 @@ public class Cellistab extends Musico
     /**
      *  llama a act de cellista para que se mueva
      */
-    public void act() 
-    {
-        if(Greenfoot.isKeyDown("c"))
-        {
-        super.act();
-        }
-    }    
+    public void musiciansMove()
+   {
+       super.musiciansMove();
+    }
 }

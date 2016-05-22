@@ -30,7 +30,7 @@ public class Musico extends Actor
     public void act() 
     {
         // Add your action code here.
-        musiciansMove();     
+          
     }
     public void musiciansMove()
     {

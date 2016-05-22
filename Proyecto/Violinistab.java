@@ -23,17 +23,7 @@ public class Violinistab extends Musico
        
         setImage(im1);
     }
-    /**
-     *  llama a act de violinista para que se mueva
-     */
-    public void act() 
-    {
-        // Add your action code here.
-        if(Greenfoot.isKeyDown("z"))
-        {
-         super.act();
-        }
-    }   
+      
     public void musiciansMove()
     {
         super.musiciansMove();

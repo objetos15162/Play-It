@@ -12,7 +12,7 @@ public class Violin extends Detector
      * Act - do whatever the Violin wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
-    private Boolean tou;
+   
     public void act() 
     {
         // Add your act

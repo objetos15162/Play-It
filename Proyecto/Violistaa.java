@@ -22,14 +22,9 @@ public class Violistaa extends Musico
        
         setImage(im1);
     }
-    /**
-     *  llama a act de violista para que se mueva
-     */
-    public void act() 
+       
+    public void musiciansMove()
     {
-        if(Greenfoot.isKeyDown("l"))
-         {
-            super.act();
-         }
-    }    
+        super.musiciansMove();
+    }
 }

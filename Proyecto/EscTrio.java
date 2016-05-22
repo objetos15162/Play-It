@@ -19,6 +19,9 @@ public class EscTrio extends Ensamble
     private Violinistaa violinistaa;
     private Pianistaa pianistaa2;
     private Trio t;
+    private Integer Ptouch;
+    private Integer Vtouch;
+    private Integer Ctouch;
     /**
      * Constructor para los objetos, llama a la función prepare
      * 
@@ -26,6 +29,7 @@ public class EscTrio extends Ensamble
     public EscTrio()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
+       
        
        violin = new Violin();
        cello = new Cello();
@@ -40,7 +44,6 @@ public class EscTrio extends Ensamble
        prepare();
        t= new Trio();
        
-                 
     }
     /**
      * Prepara el mundo
@@ -65,15 +68,36 @@ public class EscTrio extends Ensamble
         //super.act();
         int x = t.getL();
         int i = t.getcontTV();
+        
        if(x<i)
         {
             t.playSounds();
-            violinistaa.act();
-            pianistaa2.act();
-            cellistab2.act();
+            Vtouch = violin.detectorTouches();
+            Ctouch = cello.detectorTouches();
+            Ptouch = piano3.detectorTouches();
+            if(Vtouch==1)
+            {
+            violinistaa.musiciansMove();
+            }
+            if(Ptouch==1)
+            {
+            pianistaa2.musiciansMove();
+            }
+            if(Ctouch==1)
+            {
+            cellistab2.musiciansMove();
+             
+            }
        }
+<<<<<<< HEAD
     else{
        if(linea3.readStrings()==0 && linea2.readStrings()==0 && linea1.readStrings()==0)
+=======
+       else
+       {
+       if(linea3.readStrings()==0 && linea2.readStrings()==0 && linea1.readStrings()==0)
+
+>>>>>>> origin/master
        {
            Greenfoot.delay(5);
            

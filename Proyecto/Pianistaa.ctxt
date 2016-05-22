@@ -5,8 +5,13 @@ comment1.params=
 comment1.target=Pianistaa()
 comment1.text=\r\n\ Act\ -\ do\ whatever\ the\ pianistaa\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
 comment2.params=
+<<<<<<< HEAD
 comment2.target=void\ act()
 comment2.text=\r\n\ llama\ a\ act\ de\ pianista\ para\ que\ act\u00FAe\ (se\ mueva)\r\n
 comment3.params=
 comment3.target=void\ musiciansMove()
 numComments=4
+=======
+comment2.target=void\ musiciansMove()
+numComments=3
+>>>>>>> origin/master

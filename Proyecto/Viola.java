@@ -17,4 +17,5 @@ public class Viola extends Detector
         // Add your action code here.
         super.act();
     }    
+    
 }
