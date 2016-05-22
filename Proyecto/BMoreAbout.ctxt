@@ -1,7 +1,7 @@
 #BlueJ class context
 comment0.target=BMoreAbout
-comment0.text=\n\ Write\ a\ description\ of\ class\ more_about\ here.\n\ \n\ @author\ (Lilia\ &\ Esa\u00FA)\ \n\ @version\ (may\ 2016)\n
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ more_about\ here.\r\n\ \r\n\ @author\ (Lilia\ &\ Esa\u00FA)\ \r\n\ @version\ (may\ 2016)\r\n
 comment1.params=
 comment1.target=void\ act()
-comment1.text=\n\ Act\ -\ lleva\ al\ mundo\ MoreAbout\n
+comment1.text=\r\n\ Act\ -\ lleva\ al\ mundo\ MoreAbout\r\n
 numComments=2
