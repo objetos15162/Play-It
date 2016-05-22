@@ -13,11 +13,13 @@ public class EndGame extends World
      * Constructor for objects of class EndGame.
      * 
      */
+    private Usuario player;
     public EndGame(int v)
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1); 
         
+        //player = getPlayer();
     }
     public void act()
     {
@@ -27,4 +29,5 @@ public class EndGame extends World
             Greenfoot.setWorld(newWorld);
         }
     }
+    
 }

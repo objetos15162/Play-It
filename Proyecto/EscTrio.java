@@ -72,16 +72,26 @@ public class EscTrio extends Ensamble
             pianistaa2.act();
             cellistab2.act();
        }
+<<<<<<< HEAD
        
     else
+=======
+
+       else
+>>>>>>> origin/master
        {
            Greenfoot.delay(5);
            EndGame e = new EndGame(super.getVidas().size());
            Greenfoot.setWorld(e);
            
         }
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/master
     }
-  }
+}
+  
     
 
     

@@ -78,9 +78,10 @@ public class EscCuarteto extends Ensamble
             violinistaa.act();
             cellistab.act();
             violistaa.act();
-       }else
+       }
+       if(x>=i)
        {
-           Greenfoot.delay(5);
+           Greenfoot.delay(2);
            EndGame e = new EndGame(super.getVidas().size());
            Greenfoot.setWorld(e);
            

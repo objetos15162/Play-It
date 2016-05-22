@@ -19,6 +19,7 @@ public class Scores extends World
     public Scores()
     {
         super(600, 400, 1);
+        prepare();
         actuales = new Records();
     }
     public void act(){
@@ -32,5 +33,10 @@ public class Scores extends World
                 showText(aux.getPoints()+"",400,y1);
                 y1 = y1 + 30;
             }
+    }
+    public void prepare()
+    {
+        BMainMenu main_menu = new BMainMenu();
+        addObject(main_menu,23,383);
     }
 }
