@@ -1,4 +1,7 @@
 #Greenfoot project file
+=\=\=\=\=\=\=
+<<<<<<<=HEAD
+>>>>>>>=origin/master
 class.About.image=but_about.png
 class.About.superclass=Boton
 class.Ayuda.image=ayuda_carteles1.png
@@ -361,20 +364,14 @@ editor.fx.0.height=700
 editor.fx.0.width=700
 editor.fx.0.x=0
 editor.fx.0.y=0
-<<<<<<< HEAD
 editor.swing.0.height=700
 editor.swing.0.width=701
-editor.swing.0.x=21
-=======
-editor.swing.0.height=698
-editor.swing.0.width=700
-editor.swing.0.x=-32
->>>>>>> origin/master
-editor.swing.0.y=23
-mainWindow.height=514
-mainWindow.width=889
-mainWindow.x=0
-mainWindow.y=23
+editor.swing.0.x=0
+editor.swing.0.y=0
+mainWindow.height=744
+mainWindow.width=1382
+mainWindow.x=-8
+mainWindow.y=-8
 package.numDependencies=80
 package.numTargets=49
 project.charset=UTF-8
@@ -857,4 +854,4 @@ target9.width=80
 target9.x=190
 target9.y=190
 version=2.8.0
-world.lastInstantiated=EscTrio
+world.lastInstantiated=Name
