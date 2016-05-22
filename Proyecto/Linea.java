@@ -79,8 +79,10 @@ public class Linea  extends Actor
              String cadena = entrada.next();
              return  x = Integer.parseInt(cadena);
             }
+        }else if(!entrada.hasNext()){
+            x=0;
         }
-        return 0;
+        return x;
     }
     private void addInstruction(){
       Instruccion2 i = new Instruccion2();

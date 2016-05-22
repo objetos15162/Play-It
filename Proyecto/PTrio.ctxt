@@ -1,7 +1,7 @@
 #BlueJ class context
 comment0.target=PTrio
-comment0.text=\r\n\ Clase\ que\ da\ a\ escoger\ el\ men\u00FA\ para\ decidir\ qu\u00E9\ ensamble\ se\ va\ a\ usar\r\n\ \r\n\ @author\ (Lilia\ &\ Esa\u00FA)\ \r\n\ @version\ (may\ 2016)\r\n
+comment0.text=\n\ Clase\ que\ da\ a\ escoger\ el\ men\u00FA\ para\ decidir\ qu\u00E9\ ensamble\ se\ va\ a\ usar\n\ \n\ @author\ (Lilia\ &\ Esa\u00FA)\ \n\ @version\ (may\ 2016)\n
 comment1.params=
 comment1.target=void\ act()
-comment1.text=\r\n\ Act\ -\ llama\ a\ la\ trnasicion\ y\ le\ dice\ qu\u00E9\ escenario\ cargar,\ en\ \r\n\ este\ caso\ es\ el\ del\ trio\r\n
+comment1.text=\n\ Act\ -\ llama\ a\ la\ trnasicion\ y\ le\ dice\ qu\u00E9\ escenario\ cargar,\ en\ \n\ este\ caso\ es\ el\ del\ trio\n
 numComments=2
