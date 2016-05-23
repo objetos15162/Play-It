@@ -3,29 +3,22 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 /**
  * Write a description of class Name here.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (Lilia & Esau) 
+ * @version (Mayo 2016)
  */
 public class Name extends World
 {   
     private Usuario player;
-    private GreenfootImage imag2;
-    private GreenfootImage imag3;
-    private GreenfootImage imag4;
     private String name = "";
     /**
      * Constructor for objects of class Name.
      * 
      */
-    public Name()
+    public Name(Usuario pl)
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1); 
-        player = new Usuario();
-        imag2=new GreenfootImage("m2.png");
-        imag3=new GreenfootImage("m3.png");
-        imag4=new GreenfootImage("m4.png");
-        
+        player = pl;
     }
     public void act()
     {
@@ -33,22 +26,13 @@ public class Name extends World
         this.pidePlayer();
     }
         else{ 
-          this.makeAnimation();
-          Menu newWorld = new Menu();
+          Records aux = new Records();
+          aux.addUsuario(player);
+          Scores newWorld = new Scores();
           Greenfoot.setWorld(newWorld);
         }
     }
-    private void makeAnimation(){
-            Greenfoot.delay(2);
-            setBackground(imag2);
-            Greenfoot.delay(2);
-            setBackground(imag3);
-            Greenfoot.delay(2);
-            setBackground(imag4);
-            Greenfoot.delay(2);
-    }
     public void pidePlayer(){
-      
       name = Greenfoot.ask("Please Enter Your Name");
       this.player.setName(name);
     }

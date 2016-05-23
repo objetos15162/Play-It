@@ -1,32 +1,29 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
-
 /**
  * Write a description of class EndGame here.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (Esau & Lilia) 
+ * @version (Mayo 2016)
  */
 public class EndGame extends World
 {
-
+    private Usuario player;
     /**
      * Constructor for objects of class EndGame.
      * 
      */
-    private Usuario player;
     public EndGame(int v)
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1); 
         player = new Usuario();
-        //Name miMundo 
-        //player= getPlayer();
+        player.setPoints(v);
     }
     public void act()
     {
         if(Greenfoot.mouseClicked(this))
         {
-            Scores newWorld = new Scores();
+            Name newWorld = new Name(player);
             Greenfoot.setWorld(newWorld);
         }
     }

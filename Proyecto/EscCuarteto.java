@@ -21,7 +21,7 @@ public class EscCuarteto extends Ensamble
     private Violin violin;
     private Violin violin2;
     private Cuarteto c;
-    
+    UserData us = null;
     /**
      * Constructor for objects of class esc_cuarteto.
      * 
@@ -68,7 +68,47 @@ public class EscCuarteto extends Ensamble
     }
     public void act()
     {
-        //super.act();
+        super.act();
+         if (!isConnected()){
+            return;
+        }
+        us = getTrackedUser();
+            if(us != null){
+               if(us.getJoint(Joint.LEFT_HAND).getY() > us.getJoint(Joint.HEAD).getY())
+            {
+                violinistab.musiciansMove();
+            }
+              else{
+                          if(violin.detectorTouches()){
+                          super.removeVida();
+                         }
+                      }
+                       if(us.getJoint(Joint.RIGHT_HAND).getY() > us.getJoint(Joint.HEAD).getY())
+            {
+                    cellistab.musiciansMove();
+            }
+              else{
+                          if(cello2.detectorTouches()){
+                          super.removeVida();
+                         }
+                      }
+            if(us.getJoint(Joint.RIGHT_HAND).getY() < us.getJoint(Joint.HEAD).getY()){
+                     violistaa.musiciansMove();
+                }
+                 else{
+                          if(viola.detectorTouches()){
+                          super.removeVida();
+                         }
+                        }
+            if(us.getJoint(Joint.LEFT_HAND).getY() < us.getJoint(Joint.HEAD).getY()){
+                    violinistaa.musiciansMove();
+                }
+                   else{
+                      if(violin2.detectorTouches()){
+                          super.removeVida();
+                         }
+                    }
+        }     
         int x = c.getK();
         int i = c.getcontCV();
        if(x<i)

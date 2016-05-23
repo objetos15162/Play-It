@@ -1,15 +1,13 @@
 #BlueJ class context
 comment0.target=Name
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ Name\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
-comment1.params=
-comment1.target=Name()
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Name\ here.\r\n\ \r\n\ @author\ (Lilia\ &\ Esau)\ \r\n\ @version\ (Mayo\ 2016)\r\n
+comment1.params=pl
+comment1.target=Name(Usuario)
 comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Name.\r\n\ \r\n
 comment2.params=
 comment2.target=void\ act()
 comment3.params=
-comment3.target=void\ makeAnimation()
+comment3.target=void\ pidePlayer()
 comment4.params=
-comment4.target=void\ pidePlayer()
-comment5.params=
-comment5.target=Usuario\ getPlayer()
-numComments=6
+comment4.target=Usuario\ getPlayer()
+numComments=5

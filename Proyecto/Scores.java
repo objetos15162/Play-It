@@ -39,4 +39,7 @@ public class Scores extends World
         BMainMenu main_menu = new BMainMenu();
         addObject(main_menu,23,383);
     }
+    public Scores getMiMundo(){
+     return this;
+    }
 }

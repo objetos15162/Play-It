@@ -67,7 +67,7 @@ public class EscTrio extends Ensamble
         }
         u = getTrackedUser();
             if(u != null){
-               if(u.getJoint(Joint.RIGHT_HAND).getY() < u.getJoint(Joint.HEAD).getY())
+               if(u.getJoint(Joint.LEFT_HAND).getY() > u.getJoint(Joint.HEAD).getY())
             {
                 cellistab2.musiciansMove();
             }
@@ -76,7 +76,7 @@ public class EscTrio extends Ensamble
                           super.removeVida();
                          }
                       }
-                       if(u.getJoint(Joint.LEFT_HAND).getY() < u.getJoint(Joint.LEFT).getY())
+                       if(u.getJoint(Joint.RIGHT_HAND).getY() > u.getJoint(Joint.HEAD).getY())
             {
                     violinistaa.musiciansMove();
             }
@@ -85,7 +85,7 @@ public class EscTrio extends Ensamble
                           super.removeVida();
                          }
                       }
-             if(u.getJoint(Joint.LEFT_HAND).getY() < u.getJoint(Joint.LEFT).getY() && (u.getJoint(Joint.LEFT_HAND).getY() < u.getJoint(Joint.LEFT).getY())){
+             if((u.getJoint(Joint.RIGHT_HAND).getY() < u.getJoint(Joint.HEAD).getY()) || (u.getJoint(Joint.LEFT_HAND).getY() < u.getJoint(Joint.HEAD).getY())){
                      pianistaa2.musiciansMove();
                 }
                  else{
