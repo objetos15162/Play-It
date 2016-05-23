@@ -16,7 +16,7 @@ public class Ensamble extends KinectWorld
      private Vida vidas5;
      private ArrayList<Vida> vidas;
      
-    private GreenfootImage ima1;
+     private GreenfootImage ima1;
      private GreenfootImage imag1;
      //***********************************************//
     private long leftHandUp;
@@ -43,8 +43,6 @@ public class Ensamble extends KinectWorld
        vidas = new ArrayList<Vida>();
        imag1 = new GreenfootImage("end_game.png");
        ima1 = new GreenfootImage("subfondo.png");
-     
-       
         prepare();
       fillArrayVidas();
     }
@@ -101,6 +99,4 @@ public class Ensamble extends KinectWorld
         vidas.remove(v);
         
     }
-    
-    
 }

@@ -15,9 +15,7 @@ public class EscDueto extends Ensamble
     private Violinistab violinistab;
     private Violin violin5;
     private Dueto t;
-          UserData us;
-          boolean anyLeftHandUp = false;
-          boolean anyrightHandUp = false;
+          UserData us = null;
     /**
      * Constructor para la clase dueto
      * 
@@ -43,32 +41,27 @@ public class EscDueto extends Ensamble
         if (!isConnected()){
             return;
         }
-              System.out.println("55555555555555555");
-         while(us == null)  {
-             us = getTrackedUser();
-            }
+        us = getTrackedUser();
             if(us != null){
-                 System.out.println("999999999999999999999999");
-               if(anyLeftHandUp = anyLeftHandUp || (us.getJoint(Joint.LEFT_HAND).getY() < us.getJoint(Joint.HEAD).getY()))
+               if(us.getJoint(Joint.RIGHT_HAND).getY() < us.getJoint(Joint.HEAD).getY())
             {
                 pianistaa.musiciansMove();
-                System.out.println("11111111111111");
-               if(!piano.detectorTouches()){
-                   super.removeVida();
-                   System.out.println("222222222222222222");
-                }
             }
               else{
                           if(piano.detectorTouches()){
                           super.removeVida();
-                            System.out.println("33333333333333333");
                          }
                       }
-        }
-        else{ 
-             us = getTrackedUser();
-             System.out.println(us);
+                       if(us.getJoint(Joint.LEFT_HAND).getY() < us.getJoint(Joint.LEFT).getY())
+            {
+                    violinistab.musiciansMove();
             }
+              else{
+                          if(violin5.detectorTouches()){
+                          super.removeVida();
+                         }
+                      }
+        }     
         int x = t.getJ();
         int i = t.getcontDP();
        if(x<i)
@@ -104,27 +97,5 @@ public class EscDueto extends Ensamble
     }
     public UserData getUser(){
        return us;
-    }
-    public void traking(){
-         boolean anyLeftHandUp = false;
-          boolean anyrightHandUp = false;
-    if(anyLeftHandUp = anyLeftHandUp || (us.getJoint(Joint.LEFT_HAND).getY() < us.getJoint(Joint.HEAD).getY()))
-            {
-                System.out.println("11111111111111");
-               if(!piano.detectorTouches()){
-                   super.removeVida();
-                   System.out.println("222222222222222222");
-                }
-            }
-    else{
-        if(piano.detectorTouches()){
-           super.removeVida();
-           System.out.println("33333333333333333");
-        }
-          else{
-              pianistaa.musiciansMove();
-              System.out.println("444444444444444444");
-     }
-    }
     }
 }

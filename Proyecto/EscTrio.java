@@ -19,6 +19,7 @@ public class EscTrio extends Ensamble
     private Violinistaa violinistaa;
     private Pianistaa pianistaa2;
     private Trio t;
+     private UserData u = null;
     /**
      * Constructor para los objetos, llama a la función prepare
      * 
@@ -37,10 +38,8 @@ public class EscTrio extends Ensamble
        cellistab2 = new Cellistab();
        violinistaa = new Violinistaa();
        pianistaa2 = new Pianistaa();
-       
        prepare();
        t= new Trio();
-       
     }
     /**
      * Prepara el mundo
@@ -60,15 +59,46 @@ public class EscTrio extends Ensamble
         addObject(cello,40,130);
         addObject(violin,40,31);
     }
-    public void act()
+      public void act()
     {
-        //super.act();
+        super.act();
+         if (!isConnected()){
+            return;
+        }
+        u = getTrackedUser();
+            if(u != null){
+               if(u.getJoint(Joint.RIGHT_HAND).getY() < u.getJoint(Joint.HEAD).getY())
+            {
+                cellistab2.musiciansMove();
+            }
+              else{
+                          if(cello.detectorTouches()){
+                          super.removeVida();
+                         }
+                      }
+                       if(u.getJoint(Joint.LEFT_HAND).getY() < u.getJoint(Joint.LEFT).getY())
+            {
+                    violinistaa.musiciansMove();
+            }
+              else{
+                          if(violin.detectorTouches()){
+                          super.removeVida();
+                         }
+                      }
+             if(u.getJoint(Joint.LEFT_HAND).getY() < u.getJoint(Joint.LEFT).getY() && (u.getJoint(Joint.LEFT_HAND).getY() < u.getJoint(Joint.LEFT).getY())){
+                     pianistaa2.musiciansMove();
+                }
+                 else{
+                          if(piano3.detectorTouches()){
+                          super.removeVida();
+                         }
+                        }
+        }     
         int x = t.getL();
         int i = t.getcontTV();
        if(x<i)
         {
             t.playSounds();
-       
         }
        else{
        if(linea3.readStrings()==0 && linea2.readStrings()==0 && linea1.readStrings()==0)
@@ -78,15 +108,8 @@ public class EscTrio extends Ensamble
            t.stopSounds();
            EndGame e = new EndGame(super.getVidas().size());
            Greenfoot.setWorld(e);
-      
+       }
+    }
    }
 }
 }
-}
-}
-
-    
-
-    
-   
-
