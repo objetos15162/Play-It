@@ -68,8 +68,14 @@ public class EscTrio extends Ensamble
        if(x<i)
         {
             t.playSounds();
+<<<<<<< HEAD
        }
     else{
+=======
+        }
+       else{
+
+>>>>>>> origin/master
        if(linea3.readStrings()==0 && linea2.readStrings()==0 && linea1.readStrings()==0)
        {
          {
@@ -77,13 +83,13 @@ public class EscTrio extends Ensamble
            t.stopSounds();
            EndGame e = new EndGame(super.getVidas().size());
            Greenfoot.setWorld(e);
-           
-          }
-    }
+      
    }
 }
 }
-  
+}
+}
+
     
 
     

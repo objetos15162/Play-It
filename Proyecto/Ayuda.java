@@ -16,6 +16,9 @@ public class Ayuda extends World
     private GreenfootImage a1;
     private GreenfootImage a2;
     private GreenfootImage a3;
+    private GreenfootImage aduet;
+    private GreenfootImage atrio;
+    private GreenfootImage acuarteto;
     private GreenfootImage aup;
     private GreenfootImage afin;
     private Boton bmore;
@@ -34,6 +37,9 @@ public class Ayuda extends World
         a1 = new GreenfootImage("ayuda_carteles1.png");
         a2 = new GreenfootImage("ayuda_carteles2.png");
         a3 = new GreenfootImage("ayuda_carteles3.png");
+        aduet = new GreenfootImage("ayuda_cartelesduet.png");
+        atrio = new GreenfootImage("ayuda_cartelestrio.png");
+        acuarteto = new GreenfootImage("ayuda_cartelescuarteto.png");
         aup = new GreenfootImage("ayuda_cartelesuphere.png");
         afin = new GreenfootImage("ayuda_cartelesfin.png");
         bmore = new BMoreAbout();
@@ -96,10 +102,8 @@ public class Ayuda extends World
          if(Greenfoot.isKeyDown("right"))
                 {
                     Greenfoot.delay(2);
-                    setBackground(aup);
-                    addObject(v1,570,363);
-                    addObject(v2,545,364);
-                    addObject(v3,521,365);
+                    setBackground(aduet);
+                    
                     removeObject(v);
                     cont++;
                 }else {
@@ -107,6 +111,52 @@ public class Ayuda extends World
                     {
                 setBackground(a3);
                 addObject(v,320,270);
+                cont--;
+            }
+                }
+        case 4: 
+         if(Greenfoot.isKeyDown("right"))
+                {
+                    Greenfoot.delay(2);
+                    setBackground(atrio);
+                    
+                    cont++;
+                }else {
+                    if(Greenfoot.isKeyDown("left"))
+                    {
+                setBackground(aduet);
+                removeObject(v);
+                cont--;
+            }
+                }
+                      
+        break;
+        case 5: 
+         if(Greenfoot.isKeyDown("right"))
+                {
+                    Greenfoot.delay(2);
+                    setBackground(acuarteto);
+                    cont++;
+                }else {
+                    if(Greenfoot.isKeyDown("left"))
+                    {
+                setBackground(atrio);
+                cont--;
+            }
+                }
+        case 6: 
+         if(Greenfoot.isKeyDown("right"))
+                {
+                    Greenfoot.delay(2);
+                    setBackground(aup);
+                    addObject(v1,570,363);
+                    addObject(v2,545,364);
+                    addObject(v3,521,365);
+                    cont++;
+                }else {
+                    if(Greenfoot.isKeyDown("left"))
+                    {
+                setBackground(acuarteto);
                 removeObject(v1);
                 removeObject(v2);
                 removeObject(v3);
@@ -114,8 +164,7 @@ public class Ayuda extends World
             }
                 }
                 
-        break;
-        case 4:
+        case 7:
            if(Greenfoot.isKeyDown("right"))
                 {
                     Greenfoot.delay(2);
