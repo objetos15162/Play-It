@@ -34,7 +34,6 @@ public class Linea  extends Actor
     public void act(){
         if(cont == 0){
         cont = this.readStrings();
-        System.out.println(cont);
       }
      else{
         if(c){
@@ -46,14 +45,12 @@ public class Linea  extends Actor
            if( toca != false){
                this.addInstruction();
                cont--;
-               System.out.println(clock.millisElapsed());
               if(cont == 0){
                 toca = false;
              }
             }
            else{
               cont--;
-              System.out.println(clock.millisElapsed());
              if(cont == 0){
               toca = true;
              }

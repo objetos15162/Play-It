@@ -126,7 +126,7 @@ public class Records extends Actor
                     records.add(c2,records.get(c2+1));
                     records.remove(c2+2);                    
                     // records.add(c2+1,aux);
-                    System.out.println("1");
+                    //System.out.println("1");
                 }
             }
         }
