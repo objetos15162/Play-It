@@ -42,9 +42,17 @@ public class Detector extends GameControl
             Greenfoot.setWorld(e);
         }
     }
-    public int detectorTouches()
+    public boolean detectorTouches()
     {
+<<<<<<< HEAD
        
         return x;
+=======
+        if(this.isTouching(Instruccion2.class))
+        {
+            return true;
+        }
+        return false;
+>>>>>>> origin/master
     }
 }

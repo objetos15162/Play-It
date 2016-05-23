@@ -19,9 +19,6 @@ public class EscTrio extends Ensamble
     private Violinistaa violinistaa;
     private Pianistaa pianistaa2;
     private Trio t;
-    private Integer Ptouch;
-    private Integer Vtouch;
-    private Integer Ctouch;
     /**
      * Constructor para los objetos, llama a la función prepare
      * 
@@ -68,13 +65,25 @@ public class EscTrio extends Ensamble
         //super.act();
         int x = t.getL();
         int i = t.getcontTV();
+<<<<<<< HEAD
         Ptouch = piano3.detectorTouches();
         Vtouch = violin.detectorTouches();
             
             if(Ptouch==1)
+=======
+       if(x<i)
+        {
+            t.playSounds();
+            /*if(violin.detectorTouches())
             {
-            pianistaa2.musiciansMove();
+             violinistaa.musiciansMove();
+            }*/
+            if(cello.detectorTouches())
+>>>>>>> origin/master
+            {
+             pianistaa2.musiciansMove();
             }
+<<<<<<< HEAD
             if(Vtouch==1)
             {
             violinistaa.musiciansMove();
@@ -83,27 +92,39 @@ public class EscTrio extends Ensamble
             
             Ctouch = cello.detectorTouches();
             if(Ctouch==1)
+=======
+            if(piano3.detectorTouches())
+>>>>>>> origin/master
             {
-            cellistab2.musiciansMove();
-             
+             cellistab2.musiciansMove();
             }
        if(x<i)
         {
             t.playSounds();
             
        }
+<<<<<<< HEAD
        else{
+=======
+    else{
+>>>>>>> origin/master
        if(linea3.readStrings()==0 && linea2.readStrings()==0 && linea1.readStrings()==0)
        {
+         {
            Greenfoot.delay(5);
-           
            t.stopSounds();
            EndGame e = new EndGame(super.getVidas().size());
            Greenfoot.setWorld(e);
            
+<<<<<<< HEAD
         }
        }
+=======
+          }
+    }
+>>>>>>> origin/master
    }
+}
 }
   
     

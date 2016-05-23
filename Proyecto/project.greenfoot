@@ -439,12 +439,21 @@ editor.swing.0.height=698
 editor.swing.0.width=849
 editor.swing.0.x=183
 editor.swing.0.y=23
+<<<<<<< HEAD
 mainWindow.height=698
 mainWindow.width=1280
 mainWindow.x=0
 mainWindow.y=23
 package.numDependencies=109
 package.numTargets=57
+=======
+mainWindow.height=744
+mainWindow.width=1382
+mainWindow.x=-8
+mainWindow.y=-8
+package.numDependencies=109
+package.numTargets=52
+>>>>>>> origin/master
 project.charset=UTF-8
 readme.height=58
 readme.name=@README
