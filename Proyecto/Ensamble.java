@@ -2,8 +2,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 import java.util.ArrayList;
 /**
  * Clase escenarios que contiene los escenarios de los distintos duetos
- * 
- * 
+ *
  * @author (Lilia & Esaú) 
  * @version (may 2016)
  */
