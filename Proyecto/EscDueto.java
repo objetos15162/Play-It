@@ -30,10 +30,11 @@ public class EscDueto extends Ensamble
         pianistaa = new Pianistaa();
         piano = new Piano();
         violinistab = new Violinistab();
+        
         violin5 = new Violin();
         prepare();
         t= new Dueto();
-       
+        
        
     }
     public void act()
@@ -99,6 +100,7 @@ public class EscDueto extends Ensamble
         addObject(pianistaa,256,208);
         addObject(violinistab,370,267);   
         addObject(violin5,40,77);
+        
     }
     public UserData getUser(){
        return us;

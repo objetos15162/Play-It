@@ -71,7 +71,6 @@ public class EscTrio extends Ensamble
        
         }
        else{
-
        if(linea3.readStrings()==0 && linea2.readStrings()==0 && linea1.readStrings()==0)
        {
          {
