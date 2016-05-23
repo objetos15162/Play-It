@@ -1,12 +1,12 @@
 #BlueJ class context
 comment0.target=EscCuarteto
-comment0.text=\r\n\ Crea\ el\ escenario\ para\ el\ cuarteto\r\n\ \r\n\ @author\ (Lilia\ &\ Esa\u00FA)\ \r\n\ @version\ (may\ 2016)\r\n
+comment0.text=\n\ Crea\ el\ escenario\ para\ el\ cuarteto\n\ \n\ @author\ (Lilia\ &\ Esa\u00FA)\ \n\ @version\ (may\ 2016)\n
 comment1.params=
 comment1.target=EscCuarteto()
-comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ esc_cuarteto.\r\n\ \r\n
+comment1.text=\n\ Constructor\ for\ objects\ of\ class\ esc_cuarteto.\n\ \n
 comment2.params=
 comment2.target=void\ prepare()
-comment2.text=\r\n\ Prepare\ the\ world\ for\ the\ start\ of\ the\ program.\r\n\ That\ is\:\ create\ the\ initial\ objects\ and\ add\ them\ to\ the\ world.\r\n
+comment2.text=\n\ Prepare\ the\ world\ for\ the\ start\ of\ the\ program.\n\ That\ is\:\ create\ the\ initial\ objects\ and\ add\ them\ to\ the\ world.\n
 comment3.params=
 comment3.target=void\ act()
 numComments=4

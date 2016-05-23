@@ -13,6 +13,7 @@ public class Detector extends GameControl
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     private List<Musico> m;
+    private Integer x = 0;
     public Detector()
     {
      
@@ -24,13 +25,15 @@ public class Detector extends GameControl
       if(this.isTouching(Instruccion2.class))
       {
           removeTouching(Instruccion2.class);
-          
+          x=1;
           //m = miMundo.getObjects(Musico.class);
           if(Greenfoot.isKeyDown("t")&&!miMundo.getVidas().isEmpty()){
               
               miMundo.removeVida();
             }
            
+        }else {
+        x=0;
         }
         if(miMundo.getVidas().isEmpty())
         {
@@ -41,11 +44,7 @@ public class Detector extends GameControl
     }
     public int detectorTouches()
     {
-       int x=0;
-        if(this.isTouching(Instruccion2.class))
-        {
-            x=1;
-        }
+       
         return x;
     }
 }
