@@ -68,18 +68,6 @@ public class EscTrio extends Ensamble
        if(x<i)
         {
             t.playSounds();
-            /*if(violin.detectorTouches())
-            {
-             violinistaa.musiciansMove();
-            }*/
-            if(cello.detectorTouches())
-            {
-             pianistaa2.musiciansMove();
-            }
-            if(piano3.detectorTouches())
-            {
-             cellistab2.musiciansMove();
-            }
        }
     else{
        if(linea3.readStrings()==0 && linea2.readStrings()==0 && linea1.readStrings()==0)

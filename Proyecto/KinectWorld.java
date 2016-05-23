@@ -81,8 +81,9 @@ public abstract class KinectWorld extends World
      */    
     public void act()
     {
-        if (isConnected())
+        if (isConnected()){
             kinect.update();
+        }
     }
     
     /**
@@ -159,7 +160,6 @@ public abstract class KinectWorld extends World
             if (u.isTracking())
                 return u;
         }
-        
         return null;
     }
     

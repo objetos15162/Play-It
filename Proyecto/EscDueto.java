@@ -15,6 +15,9 @@ public class EscDueto extends Ensamble
     private Violinistab violinistab;
     private Violin violin5;
     private Dueto t;
+          UserData us;
+          boolean anyLeftHandUp = false;
+          boolean anyrightHandUp = false;
     /**
      * Constructor para la clase dueto
      * 
@@ -35,7 +38,36 @@ public class EscDueto extends Ensamble
     }
     public void act()
     {
-        //super.act();
+        super.act();
+        if (!isConnected()){
+            return;
+        }
+              System.out.println("55555555555555555");
+         while(us == null)  {
+             us = getTrackedUser();
+            }
+            if(us != null){
+                 System.out.println("999999999999999999999999");
+               if(anyLeftHandUp = anyLeftHandUp || (us.getJoint(Joint.LEFT_HAND).getY() < us.getJoint(Joint.HEAD).getY()))
+            {
+                pianistaa.musiciansMove();
+                System.out.println("11111111111111");
+               if(!piano.detectorTouches()){
+                   super.removeVida();
+                   System.out.println("222222222222222222");
+                }
+            }
+              else{
+                          if(piano.detectorTouches()){
+                          super.removeVida();
+                            System.out.println("33333333333333333");
+                         }
+                      }
+        }
+        else{ 
+             us = getTrackedUser();
+             System.out.println(us);
+            }
         int x = t.getJ();
         int i = t.getcontDP();
        if(x<i)
@@ -43,7 +75,8 @@ public class EscDueto extends Ensamble
          t.playSounds();
          violinistab.act();
          pianistaa.act();
-       }else{
+       }
+       else{
        if(linea2.readStrings()==0 && linea1.readStrings()==0)
        {
            Greenfoot.delay(5);
@@ -66,5 +99,30 @@ public class EscDueto extends Ensamble
         addObject(pianistaa,256,208);
         addObject(violinistab,370,267);   
         addObject(violin5,40,77);
+    }
+    public UserData getUser(){
+       return us;
+    }
+    public void traking(){
+         boolean anyLeftHandUp = false;
+          boolean anyrightHandUp = false;
+    if(anyLeftHandUp = anyLeftHandUp || (us.getJoint(Joint.LEFT_HAND).getY() < us.getJoint(Joint.HEAD).getY()))
+            {
+                System.out.println("11111111111111");
+               if(!piano.detectorTouches()){
+                   super.removeVida();
+                   System.out.println("222222222222222222");
+                }
+            }
+    else{
+        if(piano.detectorTouches()){
+           super.removeVida();
+           System.out.println("33333333333333333");
+        }
+          else{
+              pianistaa.musiciansMove();
+              System.out.println("444444444444444444");
+     }
+    }
     }
 }

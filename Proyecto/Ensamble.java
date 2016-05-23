@@ -7,13 +7,8 @@ import java.util.ArrayList;
  * @author (Lilia & Esaú) 
  * @version (may 2016)
  */
-public class Ensamble extends World
+public class Ensamble extends KinectWorld
 {
-
-    /**
-     * Constructor for objects of class Ensamble
-     * 
-     */
      private BMainMenu main_menu3;
      private Vida vidas1; 
      private Vida vidas2;
@@ -22,11 +17,22 @@ public class Ensamble extends World
      private Vida vidas5;
      private ArrayList<Vida> vidas;
      private GreenfootImage imag1;
-   
+     //***********************************************//
+    private long leftHandUp;
+    private long rightHandUp;
+    private static final int THUMBNAIL_WIDTH = 80;
+    private static final int THUMBNAIL_HEIGHT = 60;
+    /**
+     * Constructor for objects of class Ensamble
+     * 
+     */
     public Ensamble()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-       super(600,400,1);
+        super(THUMBNAIL_WIDTH, THUMBNAIL_HEIGHT, 1.0, false);
+        final int width = getWidth();
+        final int height = getHeight();
+        addObject(new Thumbnail(), width - THUMBNAIL_WIDTH/2, height - THUMBNAIL_HEIGHT/2);
         main_menu3 = new BMainMenu();
        vidas1 = new Vida();
        vidas2 = new Vida();
@@ -34,13 +40,13 @@ public class Ensamble extends World
        vidas4 = new Vida();
        vidas5 = new Vida();
        vidas = new ArrayList<Vida>();
-       imag1=new GreenfootImage("end_game.png");
+       imag1 = new GreenfootImage("end_game.png");
         prepare();
       fillArrayVidas();
     }
     public void act()
     {
-        
+        super.act();
     }
     private void prepare()
     {

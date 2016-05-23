@@ -3,6 +3,7 @@ comment0.target=Ensamble
 comment0.text=\r\n\ Clase\ escenarios\ que\ contiene\ los\ escenarios\ de\ los\ distintos\ duetos\r\n\ \r\n\ \r\n\ @author\ (Lilia\ &\ Esa\u00FA)\ \r\n\ @version\ (may\ 2016)\r\n
 comment1.params=
 comment1.target=Ensamble()
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Ensamble\r\n\ \r\n
 comment2.params=
 comment2.target=void\ act()
 comment3.params=
