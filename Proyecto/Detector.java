@@ -44,15 +44,11 @@ public class Detector extends GameControl
     }
     public boolean detectorTouches()
     {
-<<<<<<< HEAD
-       
-        return x;
-=======
         if(this.isTouching(Instruccion2.class))
         {
             return true;
         }
         return false;
->>>>>>> origin/master
+
     }
 }

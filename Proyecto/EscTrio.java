@@ -65,49 +65,12 @@ public class EscTrio extends Ensamble
         //super.act();
         int x = t.getL();
         int i = t.getcontTV();
-<<<<<<< HEAD
-        Ptouch = piano3.detectorTouches();
-        Vtouch = violin.detectorTouches();
-            
-            if(Ptouch==1)
-=======
        if(x<i)
         {
             t.playSounds();
-            /*if(violin.detectorTouches())
-            {
-             violinistaa.musiciansMove();
-            }*/
-            if(cello.detectorTouches())
->>>>>>> origin/master
-            {
-             pianistaa2.musiciansMove();
-            }
-<<<<<<< HEAD
-            if(Vtouch==1)
-            {
-            violinistaa.musiciansMove();
-            }
-            
-            
-            Ctouch = cello.detectorTouches();
-            if(Ctouch==1)
-=======
-            if(piano3.detectorTouches())
->>>>>>> origin/master
-            {
-             cellistab2.musiciansMove();
-            }
-       if(x<i)
-        {
-            t.playSounds();
-            
-       }
-<<<<<<< HEAD
+        }
        else{
-=======
-    else{
->>>>>>> origin/master
+
        if(linea3.readStrings()==0 && linea2.readStrings()==0 && linea1.readStrings()==0)
        {
          {
@@ -115,18 +78,13 @@ public class EscTrio extends Ensamble
            t.stopSounds();
            EndGame e = new EndGame(super.getVidas().size());
            Greenfoot.setWorld(e);
-           
-<<<<<<< HEAD
-        }
-       }
-=======
-          }
-    }
->>>>>>> origin/master
+      
    }
 }
 }
-  
+}
+}
+
     
 
     
