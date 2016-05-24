@@ -25,7 +25,7 @@ public class Violinistab extends Musico
       /*
       *En este metodo se manda llamar al musicians de su super clase, que es donde surge el intercambio de 
       *  imagenes para la animacion.
-     /*
+     */
     public void musiciansMove()
     {
         super.musiciansMove();
