@@ -15,10 +15,16 @@ public class Dueto extends Sonido
     private long soundStartTime;
     private Integer contDP;
     private Integer contDV;
-    private long soundStartTimea,soundStartTimeb,soundStartTimec;
-    private Integer j = 0,l=0;
-     private GreenfootSound m = null;
-    private GreenfootSound n = null;
+    private long soundStartTimea;
+    private long soundStartTimeb;
+    private long soundStartTimec;
+    private Integer contV;
+    private Integer contP;
+     private GreenfootSound tempsoundP = null;
+     private GreenfootSound tempsoundV = null;
+     /**
+      * constructor para Dueto
+      */
     public Dueto()
     {
         contDP=34;
@@ -26,98 +32,101 @@ public class Dueto extends Sonido
         soundStartTimea = 0;
         soundStartTimeb=0;
         soundStartTimec=0;
+        contV = 0;
+        contP=0;
         piano = new ArrayList();
         violin = new ArrayList();
         soundStartTime = 0;
         fillArrays();
-    }
-    public void act() 
-    {
-        // Add your action code here.
-        
-    }    
+    }   
     public void playSounds()
     {
         // mientras siga habiendo elementos en el arreglo
         
-        m = piano.get(j);
+        tempsoundP = piano.get(contP);
         //si el sonido pasado ya se acabó
           if(soundStartTimea==0)
           {   
-              m.play();
+              tempsoundP.play();
               soundStartTimea = System.currentTimeMillis();
           }
         // to check for sound stopping
-          if (soundStartTimea != 0 && !m.isPlaying())
+          if (soundStartTimea != 0 && !tempsoundP.isPlaying())
           {
               long elapsedTime = System.currentTimeMillis()-soundStartTimea;
               //System.out.println("The sound took "+(elapsedTime/1000)+" seconds to play.");
               soundStartTimea = 0;
-              j++;
+              contP++;
           }
-          if(j>=contDP-1)
+          if(contP>=contDP-1)
           {
-              j++;
+              contP++;
             }
           
            //actualiza el archivo que va a abrir
-        n = violin.get(l);
+        tempsoundV = violin.get(contV);
         //si el sonido pasado ya se acabó
           if(soundStartTimeb==0)
           {   
-              n.play();
+              tempsoundV.play();
               soundStartTimeb = System.currentTimeMillis();
           }
         // to check for sound stopping
-          if (soundStartTimeb != 0 && !n.isPlaying() && l<contDV-1)
+          if (soundStartTimeb != 0 && !n.isPlaying() && contV<contDV-1)
           {
               long elapsedTime = System.currentTimeMillis()-soundStartTimeb;
               //System.out.println("The sound took "+(elapsedTime/1000)+" seconds to play.");
               soundStartTimeb = 0;
-              l++;
+              tempsoundV++;
           }
           
     
     }  
+    /**
+     * metodo para parar los sonidos
+     */
     public void stopSounds()
     {
-        if(m.isPlaying())
+        if(tempsoundP.isPlaying())
         {
-        m.stop();
+        tempsoundP.stop();
        }
-        if(n.isPlaying())
+        if(tempsoundV.isPlaying())
         {
-        n.stop();
+        tempsoundV.stop();
        }
         
     }
+    /**
+     * metodo para rellenar los arrelgos con los archivos de sonido
+     */
     public void fillArrays() {
-        int y=1;
-        int z=1;
-        while(y!=contDP+1){
-            piano.add(new GreenfootSound("dp"+y+".wav"));
-            y++;
+        int cP=1;
+        int cV=1;
+        while(cP!=contDP+1){
+            piano.add(new GreenfootSound("dp"+cP+".wav"));
+            cP++;
         }
-        while(z!=contDV+1){
-            violin.add(new GreenfootSound("dv"+z+".wav"));
-            z++;
+        while(cV!=contDV+1){
+            violin.add(new GreenfootSound("dv"+cV+".wav"));
+            cV++;
         }
     }
-    public int getcontDP()
+    /**
+     * method that returns the place where the sounds are at the moment in order to see if they continue playing
+     * this is controlled by the class EscDueto
+     */
+     public int getP()
     {
-        return contDP;
+        return contP;
     }
-    public int getcontDV()
+    /**
+     * method that returns the place where the sounds are at the moment in order to see if they continue playing
+     * this is controlled by the class EscDueto
+     */
+    public int getV()
     {
-        return contDV;
-    }
-     public int getJ()
-    {
-        return j;
-    }
-    public int getK()
-    {
-        return l;
+        return contV;
     }
   
 }
