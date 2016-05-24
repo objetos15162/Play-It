@@ -19,19 +19,19 @@ public class Transicion extends World
     private GreenfootImage ima4;
     private GreenfootImage ima5;
     private GreenfootImage ima6;
-    private Integer  x; // tiempo que espera para hacer la transicion más suave
-    private Integer  o; //variable para escoger qué escenario se abre
+    private Integer  delay; // tiempo que espera para hacer la transicion más suave
+    private Integer  scene; //varble para escoger qué escenario se abre
     
     /**
-     * @param int op que ayudará a definir qué mundo se abre 
+     * @param int sce que ayudará a definir qué mundo se abre 
      * después de la transición
      */
-    public Transicion(int op)
+    public Transicion(int sce)
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1); 
-        o = op;
-        x = 3;
+        scene = sce;
+        delay = 3;
         ima1 = new GreenfootImage("m4.png");
         ima2 = new GreenfootImage("e2.png");
         ima3 = new GreenfootImage("e3.png");
@@ -52,18 +52,18 @@ public class Transicion extends World
     {
            //cambio de imágenes
             setBackground(ima1);
-            Greenfoot.delay(x);
+            Greenfoot.delay(delay);
             setBackground(ima2);
-            Greenfoot.delay(x);
+            Greenfoot.delay(delay);
             setBackground(ima3);
-            Greenfoot.delay(x);
+            Greenfoot.delay(delay);
             setBackground(ima4);
-            Greenfoot.delay(x);
+            Greenfoot.delay(delay);
             setBackground(ima5);
-            Greenfoot.delay(x);
+            Greenfoot.delay(delay);
             setBackground(ima6);
-            Greenfoot.delay(x);
-            switch(o)
+            Greenfoot.delay(delay);
+            switch(scene)
            {
               case 1:
              MenuPiezas newWorld = new MenuPiezas();

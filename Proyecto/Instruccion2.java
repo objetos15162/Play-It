@@ -13,8 +13,7 @@ public class Instruccion2 extends Actor
     private SimpleTimer clock;
     private Boolean move;
    /**
-     * Act - do whatever the Instruccion wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
+     * Act - hace que se mueva el actor y crea un timer
      */
     public Instruccion2()
     {

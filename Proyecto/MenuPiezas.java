@@ -14,10 +14,10 @@ public class MenuPiezas extends World
      * 
      */
     private GreenfootImage ima1;
-    private PDueto p_dueto;
-    private PTrio p_trio;
-    private PCuarteto p_cuarteto;
-    private BMainMenu main_menu;
+    private PDueto pdueto;
+    private PTrio ptrio;
+    private PCuarteto pcuarteto;
+    private BMainMenu mainmenu;
     
     
     public MenuPiezas()
@@ -25,10 +25,10 @@ public class MenuPiezas extends World
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600,400,1);
         ima1 = new GreenfootImage("choose.png");
-        p_dueto = new PDueto();
-        main_menu = new BMainMenu();
-        p_trio = new PTrio();
-        p_cuarteto = new PCuarteto();
+        pdueto = new PDueto();
+        mainmenu = new BMainMenu();
+        ptrio = new PTrio();
+        pcuarteto = new PCuarteto();
         
         prepare();
     }
@@ -37,12 +37,12 @@ public class MenuPiezas extends World
     {
         getBackground().drawImage(ima1,75,0);
         
-        addObject(p_dueto,105,264);
+        addObject(pdueto,105,264);
         
-        addObject(p_trio,294,264);
+        addObject(ptrio,294,264);
         
-        addObject(p_cuarteto,482,264);
-        addObject(main_menu,27,384);
+        addObject(pcuarteto,482,264);
+        addObject(mainmenu,27,384);
         
     }
     

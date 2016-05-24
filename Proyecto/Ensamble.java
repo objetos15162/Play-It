@@ -8,7 +8,7 @@ import java.util.ArrayList;
  */
 public class Ensamble extends KinectWorld
 {
-     private BMainMenu main_menu3;
+     private BMainMenu mainmenu3;
      private Vida vidas1; 
      private Vida vidas2;
      private Vida vidas3;
@@ -34,7 +34,7 @@ public class Ensamble extends KinectWorld
         final int width = getWidth();
         final int height = getHeight();
         addObject(new Thumbnail(), width - THUMBNAIL_WIDTH/2, height - THUMBNAIL_HEIGHT/2);
-        main_menu3 = new BMainMenu();
+        mainmenu3 = new BMainMenu();
        vidas1 = new Vida();
        vidas2 = new Vida();
        vidas3 = new Vida();
@@ -66,7 +66,7 @@ public class Ensamble extends KinectWorld
         vidas4.setLocation(497,365);
         
         addObject(vidas5,473,365);
-        addObject(main_menu3,28,385);
+        addObject(mainmenu3,28,385);
           getBackground().drawImage(ima1,0,0);
         
     }
