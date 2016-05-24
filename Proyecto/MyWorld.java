@@ -28,6 +28,9 @@ public class MyWorld extends World
         setBackground(imag1);
           
     }
+    /**
+     * metodo que hace la animación del telón al inicio
+     */
     private void makeAnimation(){
             Greenfoot.delay(2);
             setBackground(imag2);
