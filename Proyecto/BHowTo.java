@@ -15,7 +15,7 @@ public class BHowTo extends Boton
      */
     public void act() 
     {
-        // Add your action code here.
+      
          if(Greenfoot.mouseClicked(this)){
             Ayuda newWorld = new Ayuda();
             Greenfoot.setWorld(newWorld);
