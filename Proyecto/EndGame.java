@@ -1,6 +1,6 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 /**
- * Write a description of class EndGame here.
+ * clase para mostrar el final del juego
  * 
  * @author (Esau & Lilia) 
  * @version (Mayo 2016)
@@ -9,16 +9,18 @@ public class EndGame extends World
 {
     private Usuario player;
     /**
-     * Constructor for objects of class EndGame.
+     * Constructor para la clase, recibe la cantidas de vidas del jugador
      * 
      */
-    public EndGame(int v)
+    public EndGame(int vidas)
     {    
-        // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1); 
         player = new Usuario();
-        player.setPoints(v);
+        player.setPoints(vidas);
     }
+    /**
+     * Act - actua llevando al mundo donde pide el nombre
+     */ 
     public void act()
     {
         if(Greenfoot.mouseClicked(this))
