@@ -10,7 +10,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Violistaa extends Musico
 {
     /**
-     * Constructor: En este se inicializan las imagenes que serviran para hacer la animacion del violinista 
+     * Constructor: En este se inicializan las imagenes que serviran para hacer la animacion del violinista A 
      * 4 instancias de Greenfoot image correspondientes a cada uno de los movimientos y finalmente utilizar 
      * el metodo setImage para colocar la primera de ellas.
      */
