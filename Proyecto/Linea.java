@@ -3,7 +3,9 @@ import java.io.File;
 import java.util.*;
 import java.io.*;
 /**
- * Write a description of class Linea here.
+ * Clase que contiene la línea por la que se transporta la instruccion
+ * controla la generación de instrucciones por medio de los archivos que lee 
+ * gracias a la clase Lectura
  * 
  * @author (EsauBz) 
  * @version (Mayo 2016)
@@ -17,7 +19,7 @@ public class Linea  extends Actor
     private File archivo1;// Archivo que se intentara abrir
     private int linea;
     private SimpleTimer clock;
-    private boolean c;
+    private boolean bandera;
     /**
      * Constructor for objects of class Linea
      */
@@ -28,7 +30,7 @@ public class Linea  extends Actor
         toca = genera;
         linea = lin;
         clock = new SimpleTimer();
-        c = true;
+        bandera = true;
         this.openFile();
     }
     public void act(){
@@ -36,9 +38,9 @@ public class Linea  extends Actor
         cont = this.readStrings();
       }
      else{
-        if(c){
+        if(bandera){
          clock.mark();
-         c = false;
+         bandera = false;
          }
          else{
           if(clock.millisElapsed() >= 999){
@@ -55,11 +57,14 @@ public class Linea  extends Actor
               toca = true;
              }
            }
-             c = true;
+             bandera = true;
          }
         }
     }
 }
+/**
+ * metodo que intenta abrir el archivo
+ */
     private void openFile(){
       try{
           entrada = new Scanner(archivo1);
@@ -69,34 +74,40 @@ public class Linea  extends Actor
           System.out.println(e.getMessage());
         }
     }
+    /**
+    * metodo que lee las cadenas y las regresa como enteros
+    */
    public int readStrings(){
-       Integer x = 0;
+       Integer entero = 0;
       if(archivoOk){
          if(entrada.hasNext()){
              String cadena = entrada.next();
-             return  x = Integer.parseInt(cadena);
+             return  entero = Integer.parseInt(cadena);
             }
         }else if(!entrada.hasNext()){
-            x=0;
+            entero=0;
         }
-        return x;
+        return entero;
     }
+    /**
+ * metodo que añade la instruccion a la línea
+ */
     private void addInstruction(){
-      Instruccion2 i = new Instruccion2();
+      Instruccion2 ins = new Instruccion2();
       World mundo = getWorld();
       Ensamble miMundo = (Ensamble)mundo;
       switch(linea){
         case 1:
-        miMundo.addObject(i,599,31);
+        miMundo.addObject(ins,599,31);
         break;
         case 2:
-        miMundo.addObject(i,599,77);
+        miMundo.addObject(ins,599,77);
         break;
         case 3:
-        miMundo.addObject(i,599,124);
+        miMundo.addObject(ins,599,124);
         break;
         case 4:
-        miMundo.addObject(i,599,183);
+        miMundo.addObject(ins,599,183);
         break;
       }
     }
