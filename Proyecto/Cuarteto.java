@@ -14,7 +14,10 @@ public class Cuarteto extends Sonido
     private ArrayList<GreenfootSound> violin1;
     private ArrayList<GreenfootSound> violin2;
     private ArrayList<GreenfootSound> viola;
-    private long soundStartTimea,soundStartTimeb,soundStartTimec, soundStartTimed;;
+    private long soundStartTimea;
+    private long soundStartTimeb;
+    private long soundStartTimec;
+    private long soundStartTimed;
     private Integer contCVa;
     private Integer contCVb;
     private Integer contCV;
