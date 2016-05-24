@@ -202,4 +202,28 @@ public class Cuarteto extends Sonido
     {
         return contV1;
     }
+     /**
+     * method that returns the place where the sounds end in order to see if they continue playing
+     * this is controlled by the class EscCuarteto
+     */
+    public int getcontTV()
+    {
+        return contTV;
+    }
+    /**
+     * method that returns the place where the sounds end in order to see if they continue playing
+     * this is controlled by the class EscCuarteto
+     */
+    public int getcontTP()
+    {
+        return contTP;
+    }
+    /**
+     * method that returns the place where the sounds end in order to see if they continue playing
+     * this is controlled by the class EscCuarteto
+     */
+    public int getcontTC()
+    {
+        return contTC;
+    }
 }
