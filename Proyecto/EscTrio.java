@@ -18,8 +18,8 @@ public class EscTrio extends Ensamble
     private Cellistab cellistab2;
     private Violinistaa violinistaa;
     private Pianistaa pianistaa2;
-    private Trio t;
-     private UserData u = null;
+    private Trio tri;
+     private UserData us = null;
     /**
      * Constructor para los objetos, llama a la función prepare
      * 
@@ -27,8 +27,6 @@ public class EscTrio extends Ensamble
     public EscTrio()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-       
-       
        violin = new Violin();
        cello = new Cello();
        piano3 = new Piano();
@@ -39,7 +37,7 @@ public class EscTrio extends Ensamble
        violinistaa = new Violinistaa();
        pianistaa2 = new Pianistaa();
        prepare();
-       t= new Trio();
+       tri= new Trio();
     }
     /**
      * Prepara el mundo
@@ -59,15 +57,19 @@ public class EscTrio extends Ensamble
         addObject(cello,40,130);
         addObject(violin,40,31);
     }
+    /**
+     * Act - contorla el kinect junto con el movimiento de los múscicos y checa la 
+     * reproducción de los sonidos
+     */
       public void act()
     {
         super.act();
          if (!isConnected()){
             return;
         }
-        u = getTrackedUser();
-            if(u != null){
-               if(u.getJoint(Joint.LEFT_HAND).getY() > u.getJoint(Joint.HEAD).getY())
+        us = getTrackedUser();
+            if(us != null){
+               if(us.getJoint(Joint.LEFT_HAND).getY() > us.getJoint(Joint.HEAD).getY())
             {
                 cellistab2.musiciansMove();
             }
@@ -76,7 +78,7 @@ public class EscTrio extends Ensamble
                           super.removeVida();
                          }
                       }
-                       if(u.getJoint(Joint.RIGHT_HAND).getY() > u.getJoint(Joint.HEAD).getY())
+                       if(us.getJoint(Joint.RIGHT_HAND).getY() > us.getJoint(Joint.HEAD).getY())
             {
                     violinistaa.musiciansMove();
             }
@@ -85,7 +87,7 @@ public class EscTrio extends Ensamble
                           super.removeVida();
                          }
                       }
-             if((u.getJoint(Joint.RIGHT_HAND).getY() < u.getJoint(Joint.HEAD).getY()) || (u.getJoint(Joint.LEFT_HAND).getY() < u.getJoint(Joint.HEAD).getY())){
+             if((us.getJoint(Joint.RIGHT_HAND).getY() < us.getJoint(Joint.HEAD).getY()) || (us.getJoint(Joint.LEFT_HAND).getY() < us.getJoint(Joint.HEAD).getY())){
                      pianistaa2.musiciansMove();
                 }
                  else{
@@ -94,20 +96,20 @@ public class EscTrio extends Ensamble
                          }
                         }
         }     
-        int x = t.getL();
-        int i = t.getcontTV();
-       if(x<i)
+        int presentV = tri.getcV();
+        int endV = tri.getcontTV();
+       if(presentV<endV)
         {
-            t.playSounds();
+            tri.playSounds();
         }
        else{
        if(linea3.readStrings()==0 && linea2.readStrings()==0 && linea1.readStrings()==0)
        {
          {
            Greenfoot.delay(5);
-           t.stopSounds();
-           EndGame e = new EndGame(super.getVidas().size());
-           Greenfoot.setWorld(e);
+           tri.stopSounds();
+           EndGame end = new EndGame(super.getVidas().size());
+           Greenfoot.setWorld(end);
        }
     }
    }
