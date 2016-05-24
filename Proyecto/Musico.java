@@ -8,10 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Musico extends Actor
 {
-    /**
-     * Act - do whatever the musicos wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
+    
     public GreenfootImage im1;
     public GreenfootImage im2;
     public GreenfootImage im3;
@@ -27,11 +24,6 @@ public class Musico extends Actor
      * dir muestra si van de ida o vuelta
      * mov muestra en qué etapa del movimiento va
      */
-    public void act() 
-    {
-        // Add your action code here.
-          
-    }
     public void musiciansMove()
     {
         if(dir==1)
