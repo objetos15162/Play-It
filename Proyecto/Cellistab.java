@@ -10,8 +10,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Cellistab extends Musico
 {
     /**
-     * Act - do whatever the cellistab wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
+     * constructor, crea las imágenes que va a usar 
      */
     public Cellistab()
     {
