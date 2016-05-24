@@ -19,11 +19,14 @@ public class Cuarteto extends Sonido
     private Integer contCVb;
     private Integer contCV;
     private Integer contCC;
-    private GreenfootSound m = null;
-    private GreenfootSound n = null;
-    private GreenfootSound o = null;
-    private GreenfootSound p = null;
-    private  Integer i=0,j = 0,k=0,l=0;
+    private GreenfootSound tempsoundC = null;
+    private GreenfootSound tempsoundV = null;
+    private GreenfootSound tempsoundV1 = null;
+    private GreenfootSound tempsoundV2 = null;
+    private  Integer contV2 = 0;
+    private  Integer contC = 0;
+    private  Integer contV=0;
+    private  Integer contV1=0;
     /**
      * Act - do whatever the Cuarteto wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -38,163 +41,162 @@ public class Cuarteto extends Sonido
         contCVb = 22;
         contCV = 24;
         contCC = 20;
+        Integer contV2 = 0;
+        Integer contC = 0;
+        Integer contV=0;
+        Integer contV1=0;
         soundStartTimea = 0;
         soundStartTimeb=0;
         soundStartTimec=0;
         soundStartTimed=0;
         fillArrays();
     }
-    public void act() 
-    {
-        // Add your action code here.
-        
-    }  
-     public void playSounds(){
-        
-        
-        m = cello.get(j);
+    /**
+     * métod que reproduce los sonidos de manera simultánea y controla que no se sobrepongan
+     */
+     public void playSounds()
+     {
+        tempsoundC = cello.get(contC);
         //si el sonido pasado ya se acabó
           if(soundStartTimea==0)
           {   
-              m.play();
+              tempsoundC.play();
               soundStartTimea = System.currentTimeMillis();
           }
         // to check for sound stopping
-          if (soundStartTimea != 0 && !m.isPlaying()&& j<contCC-1)
+          if (soundStartTimea != 0 && !tempsoundC.isPlaying()&& contC<contCC-1)
           {
               long elapsedTime = System.currentTimeMillis()-soundStartTimea;
-              System.out.println("The sound took "+(elapsedTime/1000)+" seconds to play.");
               soundStartTimea = 0;
-              j++;
+              contC++;
           }
           
-           //actualiza el archivo que va a abrir
-        n = viola.get(k);
+        tempsoundV = viola.get(contV);
         //si el sonido pasado ya se acabó
           if(soundStartTimeb==0)
           {   
-              n.play();
+              tempsoundV.play();
               soundStartTimeb = System.currentTimeMillis();
           }
         // to check for sound stopping
-          if (soundStartTimeb != 0 && !n.isPlaying()&&k<contCV-1)
+          if (soundStartTimeb != 0 && !tempsoundV.isPlaying()&&contV<contCV-1)
           {
               long elapsedTime = System.currentTimeMillis()-soundStartTimeb;
-              System.out.println("The sound took "+(elapsedTime/1000)+" seconds to play.");
               soundStartTimeb = 0;
-              k++;
+              contV++;
           }
-          if(k>=contCV-1)
+          if(contV>=contCV-1)
           {
-              k++;
+              contV++;
             }
-        
-        
            //actualiza el archivo que va a abrir
-        o = violin1.get(l);
+        tempsoundV1 = violin1.get(contV1);
         //si el sonido pasado ya se acabó
           if(soundStartTimec==0)
           {   
-              o.play();
+              tempsoundV1.play();
               soundStartTimec = System.currentTimeMillis();
           }
         // to check for sound stopping
-          if (soundStartTimec != 0 && !o.isPlaying()&&l<contCVa-1)
+          if (soundStartTimec != 0 && !tempsoundV1.isPlaying()&&contV1<contCVa-1)
           {
               long elapsedTime = System.currentTimeMillis()-soundStartTimec;
-              System.out.println("The sound took "+(elapsedTime/1000)+" seconds to play.");
               soundStartTimec = 0;
-              l++;
+              contV1++;
           }  
-         p = violin2.get(i);
+         tempsoundV2 = violin2.get(contV2);
         //si el sonido pasado ya se acabó
           if(soundStartTimed==0)
           {   
-              p.play();
+              tempsoundV2.play();
               soundStartTimed = System.currentTimeMillis();
           }
         // to check for sound stopping
-          if (soundStartTimed != 0 && !p.isPlaying()&& i<contCVb-1)
+          if (soundStartTimed != 0 && !tempsoundV2.isPlaying()&& contV2<contCVb-1)
           {
               long elapsedTime = System.currentTimeMillis()-soundStartTimed;
-              System.out.println("The sound took "+(elapsedTime/1000)+" seconds to play.");
               soundStartTimed = 0;
-              i++;
+              contV2++;
           }
    
-    
+    /**
+     * Métod que rellena los arreglos de sonidos
+     */
     }
     public void fillArrays() {
-        int w=1;
-        int x=1;
-        int y=1;
-        int z=1;
-        while(x!=contCVa+1){
-            violin1.add(new GreenfootSound("cva"+x+".wav"));
-            x++;
+        int cV1=1;
+        int cV2=1;
+        int cV=1;
+        int cC=1;
+        while(cV1!=contCVa+1){
+            violin1.add(new GreenfootSound("cva"+cV1+".wav"));
+            cV1++;
         }
-        while(w!=contCVb+1){
-            violin2.add(new GreenfootSound("cvb"+w+".wav"));
-            w++;
+        while(cV2!=contCVb+1){
+            violin2.add(new GreenfootSound("cvb"+cV2+".wav"));
+            cV2++;
         }
-        while(y!=contCV+1){
-            viola.add(new GreenfootSound("cv"+y+".wav"));
-            y++;
+        while(cV!=contCV+1){
+            viola.add(new GreenfootSound("c"+cV+".wav"));
+            cV++;
         }
-        while(z!=contCC+1){
-            cello.add(new GreenfootSound("cc"+z+".wav"));
-            z++;
+        while(cC!=contCC+1){
+            cello.add(new GreenfootSound("cc"+cC+".wav"));
+            cC++;
         }
     }
+    /**
+     * methode que controla que los sonidos dejen de reproducirse a tiempo.
+     */
     public void stopSounds()
     {
-        if(m.isPlaying())
+        if(tempsoundC.isPlaying())
         {
-        m.stop();
+        tempsoundC.stop();
        }
-        if(n.isPlaying())
+        if(tempsoundV.isPlaying())
         {
-        n.stop();
+        tempsoundV.stop();
        }
-        if(o.isPlaying())
+        if(tempsoundV1.isPlaying())
         {
-        o.stop();
+        tempsoundV1.stop();
        }
-        if(p.isPlaying())
+        if(tempsoundV2.isPlaying())
         {
-        p.stop();
+        tempsoundV2.stop();
        }
     }
-    public int getcontCVa()
+    /**
+     * method that returns the place where the sounds are at the moment in order to see if they continue playing
+     * this is controlled by the class EscCuarteto
+     */
+    public int getV2()
     {
-        return contCVa;
+        return contV2;
     }
-    public int getcontCVb()
+    /**
+     * method that returns the place where the sounds are at the moment in order to see if they continue playing
+     * this is controlled by the class EscCuarteto
+     */
+    public int getC()
     {
-        return contCVb;
+        return contC;
     }
-    public int getcontCV()
+    /**
+     * method that returns the place where the sounds are at the moment in order to see if they continue playing
+     * this is controlled by the class EscCuarteto
+     */
+    public int getV()
     {
-        return contCV;
+        return contV;
     }
-    public int getcontCC()
+    /**
+     * method that returns the place where the sounds are at the moment in order to see if they continue playing
+     * this is controlled by the class EscCuarteto
+     */
+    public int getV1()
     {
-        return contCC;
-    }
-    public int getI()
-    {
-        return i;
-    }
-    public int getJ()
-    {
-        return j;
-    }
-    public int getK()
-    {
-        return k;
-    }
-    public int getL()
-    {
-        return l;
+        return contV1;
     }
 }
