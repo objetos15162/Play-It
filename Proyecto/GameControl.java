@@ -1,7 +1,7 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class game_controls here.
+ * Clase abstracta de objetos de control del juego
  * 
  * @author (Lilia & Esaú) 
  * @version (may 2016)
