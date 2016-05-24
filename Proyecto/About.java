@@ -13,7 +13,7 @@ public class About extends Boton
      */
     public void act() 
     {
-        // Add your action code here.
+        //si el mouse hace click...
         if(Greenfoot.mouseClicked(this)){
             Credito newWorld = new Credito();
           
