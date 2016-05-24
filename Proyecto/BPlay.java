@@ -15,7 +15,6 @@ public class BPlay extends Boton
      */
     public void act() 
     {
-        // Add your action code here.
        
         if(Greenfoot.mouseClicked(this)){
             Transicion newWorld = new Transicion(1); //1 por que lleva al menú de piezas
