@@ -9,7 +9,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Violin extends Detector
 {
     /**
-     * Llama al act de la super clase, se encargara de saber si una clase instruccion esta tocando al objeto
+     * Llama al act de la super clase, se encargara de saber si una clase Instruccion esta tocando al objeto
      */
     public void act() 
     {
