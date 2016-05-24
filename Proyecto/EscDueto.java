@@ -14,7 +14,7 @@ public class EscDueto extends Ensamble
     private Piano piano; 
     private Violinistab violinistab;
     private Violin violin5;
-    private Dueto t;
+    private Dueto duet;
           UserData us = null;
     /**
      * Constructor para la clase dueto
@@ -28,13 +28,16 @@ public class EscDueto extends Ensamble
         pianistaa = new Pianistaa();
         piano = new Piano();
         violinistab = new Violinistab();
-        
         violin5 = new Violin();
         prepare();
-        t= new Dueto();
+        duet= new Dueto();
         
        
     }
+    /**
+     * Act - contorla el kinect junto con el movimiento de los múscicos y checa la 
+     * reproducción de los sonidos
+     */
     public void act()
     {
         super.act();
@@ -62,11 +65,11 @@ public class EscDueto extends Ensamble
                          }
                       }
         }     
-        int x = t.getJ();
-        int i = t.getcontDP();
-       if(x<i)
+        int presentP = duet.getcP();
+        int endP = duet.getcontDP();
+       if(presentP<endP)
         { 
-         t.playSounds();
+         duet.playSounds();
          violinistab.act();
          pianistaa.act();
        }
@@ -75,9 +78,9 @@ public class EscDueto extends Ensamble
        {
            Greenfoot.delay(5);
            
-           t.stopSounds();
-           EndGame e = new EndGame(super.getVidas().size());
-           Greenfoot.setWorld(e);
+           duet.stopSounds();
+           EndGame end = new EndGame(super.getVidas().size());
+           Greenfoot.setWorld(end);
            
         }
     }
@@ -95,6 +98,10 @@ public class EscDueto extends Ensamble
         addObject(violin5,40,77);
         
     }
+    /**
+     * regresa los datos del ususuario
+     * @return UserData us
+     */
     public UserData getUser(){
        return us;
     }
