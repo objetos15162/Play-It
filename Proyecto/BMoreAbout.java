@@ -1,7 +1,7 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class more_about here.
+ * botón que lleva a más sobre la música de cámara
  * 
  * @author (Lilia & Esaú) 
  * @version (may 2016)
@@ -13,7 +13,6 @@ public class BMoreAbout extends Boton
      */
     public void act() 
     {
-        // Add your action code here.
         if(Greenfoot.mouseClicked(this)){
             MoreAbout newWorld = new MoreAbout(); 
             Greenfoot.setWorld(newWorld);
