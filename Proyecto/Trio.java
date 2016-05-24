@@ -13,14 +13,18 @@ public class Trio extends Sonido
     private ArrayList<GreenfootSound> piano;
     private ArrayList<GreenfootSound> cello;
     private ArrayList<GreenfootSound> violin;
-    private long soundStartTimea,soundStartTimeb,soundStartTimec;
+    private long soundStartTimea;
+    private long soundStartTimeb;
+    private long soundStartTimec;
     private Integer contTP;
     private Integer contTV;
     private Integer contTC;
-    private Integer j=0,k=0,l=0;
-    private GreenfootSound m = null;
-    private GreenfootSound n = null;
-    private GreenfootSound o = null;
+    private Integer cP;
+    private Integer cC;
+    private Integer cV;
+    private GreenfootSound tempsoundP;
+    private GreenfootSound tempsoundC;
+    private GreenfootSound tempsoundV;
     /**
      * constructor de la clase Trio
      */
@@ -29,105 +33,96 @@ public class Trio extends Sonido
         piano = new ArrayList();
         cello = new ArrayList();
         violin = new ArrayList();
-        
         soundStartTimea = 0;
         soundStartTimeb=0;
         soundStartTimec=0;
         contTP = 26;
         contTC = 27;
         contTV = 35;
+        cP=0;
+        cC=0;
+        cV=0;
+         tempsoundP = null;
+         tempsoundC = null;
+         tempsoundV = null;
         fillArrays();
     }
+   
     /**
-     * 
-     */
-    public void act() 
-    {
-        // Add your action code here.
-        
-    }
-    /**
-     * 
+     * metodo que toca los sonidos
      */
     public void playSounds() 
     {
         // mientras siga habiendo elementos en el arreglo
         
-            m = piano.get(j);
+            tempsoundP = piano.get(cP);
             //si el sonido pasado ya se acabó
           if(soundStartTimea==0)
           {   
-              m.play();
+              tempsoundP.play();
               soundStartTimea = System.currentTimeMillis();
           }
           // to check for sound stopping
-          if (soundStartTimea != 0 && !m.isPlaying()&& j<contTP-1)
+          if (soundStartTimea != 0 && !tempsoundP.isPlaying()&& cP<contTP-1)
           {
               long elapsedTime = System.currentTimeMillis()-soundStartTimea;
-              System.out.println("The sound took "+(elapsedTime/1000)+" seconds to play.");
               soundStartTimea = 0;
-              j++;
+              cP++;
           }
           
            //actualiza el archivo que va a abrir
-           n = cello.get(k);
+           tempsoundC = cello.get(cC);
            //si el sonido pasado ya se acabó
           if(soundStartTimeb==0)
           {   
-              n.play();
+              tempsoundC.play();
               soundStartTimeb = System.currentTimeMillis();
           }
           // to check for sound stopping
-          if (soundStartTimeb != 0 && !n.isPlaying() && k<contTC-1)
+          if (soundStartTimeb != 0 && !tempsoundC.isPlaying() && cC<contTC-1)
           {
               long elapsedTime = System.currentTimeMillis()-soundStartTimeb;
-              System.out.println("The sound took "+(elapsedTime/1000)+" seconds to play.");
               soundStartTimeb = 0;
-              k++;
+              cC++;
           }
         
-        
            //actualiza el archivo que va a abrir
-           o = violin.get(l);
+           tempsoundV = violin.get(cV);
            //si el sonido pasado ya se acabó
           if(soundStartTimec==0)
           {   
-              o.play();
+              tempsoundV.play();
               soundStartTimec = System.currentTimeMillis();
           }
           // to check for sound stopping
-          if (soundStartTimec != 0 && !o.isPlaying()&&l<contTV-1)
+          if (soundStartTimec != 0 && !tempsoundV .isPlaying()&&cV<contTV-1)
           {
               long elapsedTime = System.currentTimeMillis()-soundStartTimec;
-              System.out.println("The sound took "+(elapsedTime/1000)+" seconds to play.");
               soundStartTimec = 0;
-              l++;
+              cV++;
           }
-          if(l>=contTV-1)
+          if(cV>=contTV-1)
           {
-              l++;
+              cV++;
             }
           
-   
-          
-
     }
     /**
      * método para parar los sonidos
      */
     public void stopSounds()
     {
-       if(m.isPlaying())
+       if(tempsoundP.isPlaying())
         {
-        m.stop();
+        tempsoundP.stop();
        }
-        if(n.isPlaying())
+        if(tempsoundC.isPlaying())
         {
-        n.stop();
+        tempsoundC.stop();
        }
-        if(o.isPlaying())
+        if(tempsoundV.isPlaying())
         {
-        o.stop();
+        tempsoundV.stop();
        }
     }
     /**
@@ -137,46 +132,47 @@ public class Trio extends Sonido
     public void fillArrays() 
     {
         //contadores
-        int x=1;
-        int y=1;
-        int z=1;
+        int contP=1;
+        int contC=1;
+        int contV=1;
         
-        while(x!= contTP+1){
-            piano.add(new GreenfootSound("tp"+x+".wav"));
-            x++;
+        while(contP!= contTP+1){
+            piano.add(new GreenfootSound("tp"+contP+".wav"));
+            contP++;
         }
-        while(y!= contTC+1){
-            cello.add(new GreenfootSound("tc"+y+".wav"));
-            y++;
+        while(contC!= contTC+1){
+            cello.add(new GreenfootSound("tc"+contC+".wav"));
+            contC++;
         }
-        while(z!= contTV+1){
-            violin.add(new GreenfootSound("tv"+z+".wav"));
-            z++;
+        while(contV!= contTV+1){
+            violin.add(new GreenfootSound("tv"+contV+".wav"));
+            contV++;
         }
        
     }
+    /**
+     * method that returns the place where the sounds are at the moment in order to see if they continue playing
+     * this is controlled by the class EscTrio
+     */
     public int getcontTV()
     {
         return contTV;
     }
+     /**
+     * method that returns the place where the sounds are at the moment in order to see if they continue playing
+     * this is controlled by the class EscTrio
+     */
     public int getcontTP()
     {
         return contTP;
     }
+     /**
+     * method that returns the place where the sounds are at the moment in order to see if they continue playing
+     * this is controlled by the class EscTrio
+     */
     public int getcontTC()
     {
         return contTC;
     }
-    public int getJ()
-    {
-        return j;
-    }
-    public int getK()
-    {
-        return k;
-    }
-    public int getL()
-    {
-        return l;
-    }
+    
 }
