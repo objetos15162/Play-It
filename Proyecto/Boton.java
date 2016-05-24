@@ -1,7 +1,7 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class botones here.
+ * clase abstracta para los botones
  * 
  * @author (Lilia & Esaú) 
  * @version (may 2016)
