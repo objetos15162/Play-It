@@ -20,7 +20,7 @@ public class EscCuarteto extends Ensamble
     private Viola viola;
     private Violin violin;
     private Violin violin2;
-    private Cuarteto c;
+    private Cuarteto cuart;
     UserData us = null;
     /**
      * Constructor for objects of class esc_cuarteto.
@@ -41,13 +41,12 @@ public class EscCuarteto extends Ensamble
         viola = new Viola();
         violin = new Violin();
         violin2 = new Violin();
-        c= new Cuarteto();
+        cuart = new Cuarteto();
         prepare();
     }
 
     /**
-     * Prepare the world for the start of the program.
-     * That is: create the initial objects and add them to the world.
+     * Prepara el mundo
      */
     private void prepare()
     {
@@ -66,6 +65,9 @@ public class EscCuarteto extends Ensamble
         addObject(violin,40,77);
         addObject(violin2,40,31);
     }
+    /**
+     * Act - checa si se deben eliminar vidas y controla que el usuario pueda mover los instrumentos
+     */
     public void act()
     {
         super.act();
@@ -109,11 +111,11 @@ public class EscCuarteto extends Ensamble
                          }
                     }
         }     
-        int x = c.getK();
-        int i = c.getcontCV();
-       if(x<i)
+        int presentV = cuart.getV();
+        int endV = cuart.getcontCV();
+       if(present<endV)
         {
-            c.playSounds();
+            cuart.playSounds();
             violinistab.act();
             violinistaa.act();
             cellistab.act();
@@ -123,12 +125,13 @@ public class EscCuarteto extends Ensamble
        {
            Greenfoot.delay(5);
            
-           c.stopSounds();
-           EndGame e = new EndGame(super.getVidas().size());
-           Greenfoot.setWorld(e);
+           cuart.stopSounds();
+           EndGame end = new EndGame(super.getVidas().size());
+           Greenfoot.setWorld(end);
            
         }
     }
     
     }
 }
+
