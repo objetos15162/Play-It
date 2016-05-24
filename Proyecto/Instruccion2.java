@@ -1,7 +1,7 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- *Clase para generar las instrucciones para el dueto
+ * Clase para generar las instrucciones para el dueto
  * usa la clase Lectura para leer un archivo con el que 
  * se define cad acuando mostrar las instrucciones
  * 
@@ -13,22 +13,18 @@ public class Instruccion2 extends Actor
     private SimpleTimer clock;
     private Boolean move;
    /**
-     * Act - hace que se mueva el actor y crea un timer
-     */
+    * constructor
+    */ 
     public Instruccion2()
     {
         clock = new SimpleTimer();
         move = true;
     }
+    /**
+     * Act - hace que se mueva el actor y crea un timer
+     */
     public void act() 
     {
-        /*if(move){
-        clock.mark();
-        move = false;
-    }
-    if(clock.millisElapsed() >= 1000){    */
-     move(-5);
-     //move = true;
-    //}    
+     move(-5); 
    }
 }
