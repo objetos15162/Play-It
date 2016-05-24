@@ -11,7 +11,9 @@ public class Violinistaa extends Musico
 {
     
     /**
-     * contstructor para la clase violinistaa
+     * Constructor: En este se inicializan las imagenes que serviran para hacer la animacion del violinista A 
+     * 4 instancias de Greenfoot image correspondientes a cada uno de los movimientos y finalmente utilizar 
+     * el metodo setImage para colocar la primera de ellas.
      */
     public Violinistaa()
     {
@@ -23,9 +25,9 @@ public class Violinistaa extends Musico
         setImage(im1);
     }
     /**
-     * Act - llama a aAct de Violinista para que actúe (en este caso, se mueva)
+     *En este metodo se manda llamar al musiciansMove de su super clase, que es donde surge el intercambio de 
+      *  imagenes para la animacion.
      */
-      
     public void musiciansMove()
     {
         super.musiciansMove();
