@@ -46,10 +46,16 @@ public class Ensamble extends KinectWorld
         prepare();
       fillArrayVidas();
     }
+    /**
+     * Act - llama al act de la super clase
+     */
     public void act()
     {
         super.act();
     }
+    /**
+     * prepara el mundo añadiendo objetos
+     */ 
     private void prepare()
     {
         
