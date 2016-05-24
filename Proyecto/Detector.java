@@ -1,23 +1,21 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 import java.util.List;
 /**
- * Write a description of class detectores here.
+ * clase que controla los detectores del juego
  * 
  * @author (Lilia & Esaú) 
  * @version (may 2016)
  */
 public class Detector extends GameControl
 {
-    /**
-     * Act - do whatever the detectores wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
-    private List<Musico> m;
-    private Integer x = 0;
+    private Integer bandera = 0;
     public Detector()
     {
      
     }
+    /**
+     * Act - revisa y hace que las instrucciones desaparezcan si detecta una
+     */
     public void act() 
     {
         World mundo = getWorld();
@@ -25,23 +23,25 @@ public class Detector extends GameControl
       if(this.isTouching(Instruccion2.class))
       {
           removeTouching(Instruccion2.class);
-          x=1;
-          //m = miMundo.getObjects(Musico.class);
-          if(Greenfoot.isKeyDown("t")&&!miMundo.getVidas().isEmpty()){
+          bandera=1;
+          /*if(Greenfoot.isKeyDown("t")&&!miMundo.getVidas().isEmpty()){
               
               miMundo.removeVida();
             }
-           
+           */ //testing the method
         }else {
-        x=0;
+        bandera=0;
         }
         if(miMundo.getVidas().isEmpty())
         {
             Greenfoot.delay(5);
-            EndGame e = new EndGame(0);
-            Greenfoot.setWorld(e);
+            EndGame end = new EndGame(0);
+            Greenfoot.setWorld(end);
         }
     }
+    /**
+     * metodo para saber si hay una instruccion o no tocando al detector
+     */ 
     public boolean detectorTouches()
     {
         if(this.isTouching(Instruccion2.class))
