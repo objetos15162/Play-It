@@ -1,7 +1,9 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class transicion here.
+ * Esta clase esta encargada de generar una animacion en la que el escenario hace una transicion hacia otro mundo,
+ * para decidir hacia donde se dirige tiene una variable int que mediante un switch eligira el escenario correspondiente, 
+ * este int se recibe como parametro en el constructor.Esta clase hereda de World
  * 
  * @author (Lilia & Esaú) 
  * @version (may 2016)
@@ -24,7 +26,9 @@ public class Transicion extends World
     
     /**
      * @param int sce que ayudará a definir qué mundo se abre 
-     * después de la transición
+     * después de la transición.
+     * instancias de GreenfootImage que ayudan a generar la animacion.
+     * se manda llamar al contructor de la super clase World
      */
     public Transicion(int sce)
     {    
@@ -42,7 +46,8 @@ public class Transicion extends World
         
     }
     /**
-     * cuando se llama transicion por un objeto o clase, y el caso 1 llama 
+     * Cuando se llama transicion por un objeto o clase, este cambia entre sus instancias GreenfootImage para
+     * generar la animacion, seguido analiza la variable sce mediante un switch, en el caso 1 llama 
      * a las piezas (ensambles) disponibles
      * la opcion 2 abre un dueto
      * la opcion 3 abre el trio
