@@ -1,7 +1,7 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Clase para el violinista a
+ * Clase para el violinista A
  * declara sus imágenes y controla cuándo se mueve
  * 
  * @author (Lilia & Esaú) 
