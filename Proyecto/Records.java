@@ -3,7 +3,7 @@ import java.util.*;
 import java.io.*;
 /**
  * Esta clase crea un archivo de texto si es que no existe con records del juego.
-     si existen ya los lee, tambien los sobreescribira.
+     si el archivo existe leera lo que tenga dentro de el linea por linea, tambien tiene la capacidad de sobreescribirlo.
  * 
  * 
  * @author (EsauBz) 
@@ -22,7 +22,9 @@ public class Records extends Actor
     private PrintWriter salida;
     private LinkedList<Usuario>  records;
    /**
-     * Constructor for objects of class Records
+     * Constructor: Aqui se inicializa una LinkedList que se usara para recuperar los datos del archivo y usarla mientras el juego este
+     * en ejecucion una vez se termine esta lista se escribira en el archivo. La variable File que contiene al archivo Records, si
+     * es que este archivo no existe, intentara crearlo.
      */
     public Records()
     {
@@ -38,7 +40,8 @@ public class Records extends Actor
         }
     }
    /**
-   * Metodo que escribe en el archivo los records*
+   * Metodo que toma a la LinkedList y avanza dentro de sus campos de usuario, recupera el nombre y puntuacion de los jugadores y 
+   * escribe su nombre y puntuacion en lineas separadas respectivamente.
    */
     public void escribeRecords(){
         PrintWriter escritor;
@@ -60,7 +63,8 @@ public class Records extends Actor
 
     }
    /**
-   * Metodo que lee el archivo y lo pasa a una variable que lo almacena.
+   * Metodo que lee el archivo, se crea una instancia de Usuario para ahi guardar el nombre y puntuacion que se han leido, una vez 
+   * terminado el proceso de recuperacion del n usuario este se agrega a la LinkedList.
    */
     private void leeRecords(){
         
@@ -101,7 +105,10 @@ public class Records extends Actor
 
     }
    /**
-     * Metodo que agrega un usuario a la variable records. */
+     * Metodo que agrega un usuario a la LinkedList, esta una vez agregado el usuario acomoda los nombres con respecto a las puntuaciones
+     * y si el tamaño de la lista sobrepasa a 4 esta borra al ultimo usuario.
+     * @param Usuario que se quiere agregar a la lista.
+     */
     public void addUsuario(Usuario us){        
         records.add(us);
         this.acomodaRecords();
@@ -111,11 +118,14 @@ public class Records extends Actor
         this.escribeRecords();
     }
    /**
-   * Metodo que retorna la variable de records 
+   * Metodo que retorna la variable de records, que es una LinkedList
    */
     public LinkedList<Usuario> escribeTabla(){
         return records;
     }
+    /*
+    *Metodo privado, acomoda a los usuarios dentro de la lista de acuerdo a sus puntuaciones, o la variable puntos de la clase Usuario
+    */
    private void acomodaRecords(){
         Usuario aux;
         int n = records.size();
@@ -125,8 +135,6 @@ public class Records extends Actor
                     aux = records.get(c2);
                     records.add(c2,records.get(c2+1));
                     records.remove(c2+2);                    
-                    // records.add(c2+1,aux);
-                    //System.out.println("1");
                 }
             }
         }
