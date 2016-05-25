@@ -1,19 +1,14 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class vidas here.
- * 
+ * Esta clase representa los iconos de vidas que se mandan llamar dentro de cada mundo, 5 para ser especificos. 
+ * Esta Clase hereda de GameControl
  * @author (Lilia & Esaú) 
  * @version (may 2016)
  */
 public class Vida extends GameControl
 {
-    /**
-     * Act - do whatever the vidas wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
     public void act() 
     {
-        // Add your action code here.
     }    
 }
