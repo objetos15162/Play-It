@@ -10,7 +10,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class PCuarteto extends Boton
 {
     /**
-     * Act - llama a la trnasicion y le dice qué escenario cargar, en 
+     * Act - llama a la transicion y le dice qué escenario cargar, en 
      * este caso es el del cuarteto
      */
     public void act() 
