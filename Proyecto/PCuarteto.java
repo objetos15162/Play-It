@@ -1,7 +1,8 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Clase que da a escoger el menú para decidir qué ensamble se va a usar
+ *  Esta clase representa a un boton que si es presionado nos generara una clase Transicion que le pasa a su constructor el numero 4
+ * indicando que nos llevara al mundo del Cuarteto.
  * 
  * @author (Lilia & Esaú) 
  * @version (may 2016)
