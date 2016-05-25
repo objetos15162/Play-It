@@ -1,7 +1,8 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class piano here.
+ * El detector encargado de la linea Piano,cada mundo si asi lo requiere llamara uno para asignarlo
+ * a la linea correspondiente, esta clase hereda de Detector. 
  * 
  * @author (Lilia & Esaú) 
  * @version (may 2016)
@@ -9,12 +10,10 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Piano extends Detector
 {
     /**
-     * Act - do whatever the piano wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
+     * Llama al act de la super clase, se encargara de saber si una clase Instruccion esta tocando al objeto
      */
     public void act() 
     {
-        // Add your action code here.
         super.act();
     }    
 }
